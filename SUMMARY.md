@@ -4,4 +4,5 @@
 * [Double representation](double_rep.md)
 * [Basic datatypes](basic-datatypes.md)
 * [Functions](functions.md)
+* [Classes & Objects](classes.md)
 
