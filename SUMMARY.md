@@ -1,5 +1,5 @@
 # Summary
 
 * [Introduction](README.md)
-* [Double representation](chapter1.md)
+* [Double representation](double_rep.md)
 
