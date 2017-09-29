@@ -5,6 +5,7 @@
 Each node in a Luna graph corresponds to a line of Luna code. For example:
 
 {% method %}
+## 
 
 ```
 a = 1
@@ -15,7 +16,7 @@ c.succ
 
 {% common %}
 
-<img src="ex1.png" style="width: 10px; height: 10px;" />
+![](ex1.png)
 
 {% endmethod %}
 
