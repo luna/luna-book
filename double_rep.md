@@ -15,7 +15,7 @@ c.succ
 
 {% common %}
 
-<img src="ex1.png" style="width: 10px" />
+<img src="ex1.png" style="width: 10px; height: 10px;" />
 
 {% endmethod %}
 
