@@ -6,10 +6,15 @@ Each node in a Luna graph corresponds to a line of Luna code. For example:
 
 {% method %}
 
-## Simple method
+```
+a = 1
+b = 2
+c = a + b
+c.succ
+```
 
-{% sample lang="js" %}
+{% sample lang="gfx" %}
 
-This text will only appear for Javascript
+![](ex1.png)
 
 {% endmethod %}
