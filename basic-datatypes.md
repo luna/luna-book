@@ -9,6 +9,7 @@ Numeric types
 The basic numeric types in Luna are `Int`, representing integers of arbitrary size and `Real`, for floating point numbers.
 
 > **[info] Changes ahead!**
+>
 > Currently, the type of a numeric literal is decided based on the presence of decimal point. This means, that `1` has the type `Int`, while `1.0` has the type `Real`. In the future releases of Luna, the numeric literals will be polymorphic, allowing to write expressions like `1.7 + 2`.
 
 They support basic arithmetic operators and mathematical functions. Consult the relevant (TODO: LINK) part of Std docs.
@@ -43,6 +44,7 @@ Tuples are like lists, but they can store elements of different types and they h
     ("hi", 3.0)         :: (Text, Real)
 
 > **[info] Changes ahead!**
+>
 > In the future versions of Luna, lists and tuples will be merged into one type – a list which fully understands its structure and allows to encode information about its length and different element types on type level. Thus you may expect code like ``["Hello", 32, False]`` to be valid Luna soon.
 
 
