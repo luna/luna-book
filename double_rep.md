@@ -13,7 +13,7 @@ c = a + b
 c.succ
 ```
 
-{% sample lang="gfx" %}
+{% common %}
 
 ![](ex1.png)
 
