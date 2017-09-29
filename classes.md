@@ -21,3 +21,11 @@ class Bool:
     
 ```
 
+The first section in this code snippet defines constructors. Constructors are different variants of a given object. So the first part of the definition says "a Bool object is either True or False". Then we define some methods. Methods are just like functions, but they have one implicit argument – `self`. They are called using the `.` operator and the object before `.` becomes the `self` inside method definition.
+
+Both methods defined in the above snippet use pattern matching – the `case` construction, that allows to change the behavior based on the constructor of some object.
+
+We can use our newly defined `Bool` class as follows:
+
+```True . negate . and False```
+
