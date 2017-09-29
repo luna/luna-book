@@ -43,6 +43,7 @@ Function definitions
 Defining toplevel or complex functions is best accomplished with the ``def`` keyword. The first line defines the function name and its arguments. The last line of a definition is the returned value. In the graphical language, the arguments are ports on the left hand side bar, and the returned value is connected to the right hand side.
 
 {% method %}
+### 
 
     def move shape tx ty:
         translation = translationTrans tx ty
