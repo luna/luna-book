@@ -1,3 +1,6 @@
-# First Chapter
+# Double representation
 
-GitBook allows you to organize your book into chapters, each chapter is stored in a separate file like this one.
+## Basics
+
+Each node in a Luna graph corresponds to a line of Luna code. For example:
+
