@@ -60,4 +60,12 @@ While this code is much more concise, it has some drawbacks. First of all it isn
 > Currently Luna allows accessing fields by name only when there is exactly one constructor present. This behavior will be extended in the near future, providing great capabilities for multi-constructor classes.
 
 
+Finally, when there is only one constructor present, you may skip its name. In this case Luna will create a constructor with the same name as the class name:
+
+```
+class Vector:
+    x y z :: Real
+```
+
+This snippet defines a `Vector` class and a `Vector` constructor with three `Real` fields: `x`, `y` and `z`.
 
