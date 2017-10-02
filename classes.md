@@ -29,3 +29,35 @@ We can use our newly defined `Bool` class as follows:
 
 ```True . negate . and False```
 
+## Constructors
+
+Most classes in Luna have at least one constructor. They are used to create instances of the class and to pattern match on the objects. The basic way to define them is as follows:
+
+```
+class Shape:
+    Circle:
+        center :: Point
+        radius :: Real
+    Rectangle:
+        topLeft     :: Point
+        bottomRight :: Point
+```
+
+This snippet defines a `Shape` class with two constructors: `Circle` and `Rectangle`. Each of the constructors stores information essential for a given kind of shape.
+
+You may also omit the field names, resulting in code like this:
+
+```
+class Shape:
+    Circle    Point Real
+    Rectangle Point Point
+```
+
+While this code is much more concise, it has some drawbacks. First of all it isn't clear from the definition what the fields are really representing. Moreover, you lose the ability to access the fields by name.
+
+> **[info] Changes ahead!**
+>
+> Currently Luna allows accessing fields by name only when there is exactly one constructor present. This behavior will be extended in the near future, providing great capabilities for multi-constructor classes.
+
+
+
