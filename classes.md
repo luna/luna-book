@@ -67,5 +67,14 @@ class Vector:
     x y z :: Real
 ```
 
-This snippet defines a `Vector` class and a `Vector` constructor with three `Real` fields: `x`, `y` and `z`.
+This snippet defines a `Vector` class and a `Vector` constructor with three `Real` fields: `x`, `y` and `z`. Luna also automatically defines field accessors, so you can now write code like this:
+
+```
+v1 = Vector 1.0 2.0 3.0
+v2 = v1.y = 3.14
+v1.x  # returns 1.0
+v2.y  # returns 3.14
+```
+
+## Pattern Matching
 
