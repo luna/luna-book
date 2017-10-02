@@ -33,7 +33,7 @@ We can use our newly defined `Bool` class as follows:
 
 Most classes in Luna have at least one constructor. They are used to create instances of the class and to pattern match on the objects. The basic way to define them is as follows:
 
-```
+```haskell
 class Shape:
     Circle:
         center :: Point
@@ -47,7 +47,7 @@ This snippet defines a `Shape` class with two constructors: `Circle` and `Rectan
 
 You may also omit the field names, resulting in code like this:
 
-```
+```haskell
 class Shape:
     Circle    Point Real
     Rectangle Point Point
@@ -62,7 +62,7 @@ While this code is much more concise, it has some drawbacks. First of all it isn
 
 Finally, when there is only one constructor present, you may skip its name. In this case Luna will create a constructor with the same name as the class name:
 
-```
+```haskell
 class Vector:
     x y z :: Real
 ```
