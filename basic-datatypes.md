@@ -23,7 +23,7 @@ Booleans
 --------
 Logical values are represented using the `Bool` class. It has two constructors: `True` and `False`. They support basic logical combinators such as `&&`, `||` or `not`. The most common function used for branching is `if_then_else`. It can be used in this form (i.e. `if_then_else condintion valueWhenTrue valueWhenFalse`) or, more elegantly, in its _mixfix_ form:
 
-```haskell
+```ruby
 if condition then valueWhenTrue else valueWhenFalse
 ```
 
@@ -44,14 +44,18 @@ The most basic compound types in Luna are tuples and lists.
 
 Lists are arbitrary–length containers for same-type values. Some examples are `[3, 4, 5]` of type `[Int]` or `['first', 'second', 'third']` of type ``[Text]``. There are also some interesting functions and methods in the standard library, that return lists of desired shape. Some examples are:
 
-    1.upto 5                       # => [1, 2, 3, 4, 5]
-    3.times "hello"                # => ["hello", "hello", "hello"]
-    [True, False] . cycle . take 5 # => [True, False, True, False, True]
+```ruby
+1.upto 5                       # => [1, 2, 3, 4, 5]
+3.times "hello"                # => ["hello", "hello", "hello"]
+[True, False] . cycle . take 5 # => [True, False, True, False, True]
+```
 
 Tuples are like lists, but they can store elements of different types and they have a statically defined lengths. Some examples of tuples are:
 
-    (1, "hello", False) :: (Int, Text, Bool)
-    ("hi", 3.0)         :: (Text, Real)
+```ruby
+(1, "hello", False) :: (Int, Text, Bool)
+("hi", 3.0)         :: (Text, Real)
+```
 
 > **[info] Changes ahead!**
 >
