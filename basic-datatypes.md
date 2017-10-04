@@ -21,11 +21,21 @@ The basic type for text processing in Luna is, unsurprisingly, `Text`. Luna also
 
 Booleans
 --------
+Logical values are represented using the `Bool` class. It has two constructors: `True` and `False`. They support basic logical combinators such as `&&`, `||` or `not`. The most common function used for branching is `if_then_else`. It can be used in this form (i.e. `if_then_else condintion valueWhenTrue valueWhenFalse`) or, more elegantly, in its _mixfix_ form:
 
-TODO
+```haskell
+if condition then valueWhenTrue else valueWhenFalse
+```
 
-1. `if_then`
-2. `if_then_else`
+There is nothing special about this function, all the arguments are standard values and it returns a value just like any other function would:
+
+```ruby
+def reportRelationshipToSeven x:
+    relation = if x > 7 then "greater than" else "less than or equal to"
+    putStr (x.toText + " is " + relation + " seven")
+```
+
+
 
 Lists & Tuples
 --------------
