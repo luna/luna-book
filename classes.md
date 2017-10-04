@@ -78,3 +78,60 @@ v2.y  # returns 3.14
 
 ## Pattern Matching
 
+Pattern matching is a mechanism allowing to discover which particular constructor was used to create a given object. It also allows to bring the values of fields (even unnamed) of the constructor into the scope. Let's get back to the `Shape` example once again. Suppose you have facilities for rendering circles and rectangles and you need to render `Shape`s. This can be accomplished with a simple pattern match:
+
+```
+def render shape:
+    case shape of
+        Circle c r:      renderCircle c r
+        Rectangle tl br: renderRectangle tl br
+```
+
+## Parametric Polymorphism
+
+Classes in Luna can also take type parameters, making them polymorphic in some values. For an example, consider the previous definition of `Vector`:
+
+```haskell
+class Vector:
+    x y z :: Real
+```
+
+What if we wanted a `Vector` of `Int`s? In the current approach, it would require us to create another class just for this purpose. We can, however pass a type parameter to the `Vector` class:
+
+```haskell
+class Vector a:
+    x y z :: a
+```
+
+With the current implementation, we can create vectors containing elements of any type, such as `Real`s, `Int`s, `Bool`s etc.
+
+```haskell
+Vector "hello" "world" "!" :: Vector Text
+Vector 1 2 3               :: Vector Int
+Vector 1.0 2.0 3.0         :: Vector Real
+```
+
+It is also possible to implement methods that assume some additional properties of the type `a` (such as supporting arithmetic operations, or having defined some other methods). For example:
+
+```haskell
+class Vector a:
+    x y z :: a
+    
+    def dotProduct that:
+        self.x * that.x + self.y * that.y + self.z * that.z
+```
+
+The `dotProduct` method will work with any elements supporting addition and multiplication, so it's OK to write:
+
+```
+Vector 1 2 3 . dotProduct (Vector 4 5 6)
+```
+or
+```
+Vector 1.0 2.0 3.0 . dotProduct (Vector 4.0 5.0 6.0)
+```
+but
+```
+Vector "hello" "world" "!" . dotProduct (Vector "foo" "bar" "baz")
+```
+will result in a compilation error.
