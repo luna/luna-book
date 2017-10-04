@@ -12,7 +12,7 @@ The basic numeric types in Luna are `Int`, representing integers of arbitrary si
 >
 > Currently, the type of a numeric literal is decided based on the presence of decimal point. This means, that `1` has the type `Int`, while `1.0` has the type `Real`. In the future releases of Luna, the numeric literals will be polymorphic, allowing to write expressions like `1.7 + 2`.
 
-They support basic arithmetic operators and mathematical functions. Consult the relevant (TODO: LINK) part of Std docs.
+They support basic arithmetic operators and mathematical functions. Consult the relevant (TODO: LINK) part of Std docs for more details.
 
 Text
 ----
@@ -40,7 +40,7 @@ def reportRelationshipToSeven x:
 Lists & Tuples
 --------------
 
-The most basic compound types in Luna are tuples and lists.
+The most basic container types in Luna are tuples and lists.
 
 Lists are arbitrary–length containers for same-type values. Some examples are `[3, 4, 5]` of type `[Int]` or `['first', 'second', 'third']` of type ``[Text]``. There are also some interesting functions and methods in the standard library, that return lists of desired shape. Some examples are:
 
