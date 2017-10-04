@@ -5,4 +5,5 @@
 * [Basic datatypes](basic-datatypes.md)
 * [Functions](functions.md)
 * [Classes & Objects](classes.md)
+* [Types](types.md)
 
