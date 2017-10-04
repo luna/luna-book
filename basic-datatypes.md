@@ -17,7 +17,12 @@ They support basic arithmetic operators and mathematical functions. Consult the 
 Text
 ----
 
-The basic type for text processing in Luna is, unsurprisingly, `Text`. Luna also supports two kinds of text literals. TODO DESCRIBE.
+The basic type for text processing in Luna is, unsurprisingly, `Text`. Luna also supports two kinds of text literals: interpreted and uninterpreted. The interpreted texts are wrapped in single quotes. They provide the capabilities to insert escaped character sequences such as `\n` etc. The uninterpreted strings are wrapped in double quotes and do not provide any such facilities. The only character that can be escaped in an uninterpreted text is `\"` itself.
+
+> **[info] Changes ahead!**
+>
+> In the future releases of Luna the interpreted texts will also allow to insert arbitrary expressions, results of which will be then inserted into the resulting text. For example ``'Adding 2 and 2 gives `2 + 2` in result'`` will be evaluated to `'Adding 2 and 2 gives 4 in result'`.
+
 
 Booleans
 --------
