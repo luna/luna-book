@@ -13,8 +13,7 @@ Left (Right "hello") :: Either (Either a Text) b
 
 > **[info] Changes ahead!**
 >
-> In the future versions Luna will have a much deeper understanding of the structure of objects and will retain that information on type level. That means all of the following will be valid:  ```haskell
-Just 5 :: Just 5
-Just 5 :: Just Int
-Just 5 :: Maybe Int
-```
+> In the future versions Luna will have a much deeper understanding of the structure of objects and will retain that information on type level. That means all of the following will be valid: 
+> `Just 5 :: Just 5`
+> `Just 5 :: Just Int`
+> `Just 5 :: Maybe Int`
