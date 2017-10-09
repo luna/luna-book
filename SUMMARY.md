@@ -6,4 +6,5 @@
 * [Functions](functions.md)
 * [Classes & Objects](classes.md)
 * [Types](types.md)
+* [Shame](shame.md)
 
