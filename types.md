@@ -69,3 +69,4 @@ foo :: a -> Int
 for any `a` such that
 ```a.succ = Int```
 
+All those assumptions can grow with more complex, multiline functions. That's why Luna tracks them under the hood, revealing them only when some of them can't be satisfied.
