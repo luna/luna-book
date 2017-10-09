@@ -37,7 +37,7 @@ There is nothing special about this function, all the arguments are standard val
 ```ruby
 def reportRelationshipToSeven x:
     relation = if x > 7 then "greater than" else "less than or equal to"
-    putStr (x.toText + " is " + relation + " seven")
+    print (x.toText + " is " + relation + " seven")
 ```
 
 
@@ -67,7 +67,15 @@ Tuples are like lists, but they can store elements of different types and they h
 > In the future versions of Luna, lists and tuples will be merged into one type – a list which fully understands its structure and allows to encode information about its length and different element types on type level. Thus you may expect code like ``["Hello", 32, False]`` to be valid Luna soon.
 
 
-Optionals
----------
+Maybe
+-----
 
-TODO Maybe & Either
+Luna, much like other functional languages, does not have a `null` value. That means, if you have a value of type `Int`, there will always be a number, there is no way to have an "invalid" number. If there is a possibility of a value not being there, it needs to be encoded in a type-safe manner. This is where `Maybe` enters the stage. A value of class `Maybe` can either be `Just value` or `None`. You can check which of the possibilities happened using pattern matching. Suppose you have a value `myNumber` of type `Maybe Int`. You can use it like so:
+
+```
+reportedValue = case myNumber of
+    Just v -> 'Got a number ' + v.toText + '.'
+    None   -> 'Didn't get a number.'
+print reportedValue
+```
+There is also a bunch of useful methods like `getWithDefault`, which are handy to replace the pattern match in most cases. Consult the relevant section of the standard library documentation for more details (TODO: LINK).
