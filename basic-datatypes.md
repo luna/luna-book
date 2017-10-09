@@ -12,12 +12,12 @@ The basic numeric types in Luna are `Int`, representing integers of arbitrary si
 >
 > Currently, the type of a numeric literal is decided based on the presence of decimal point. This means, that `1` has the type `Int`, while `1.0` has the type `Real`. In the future releases of Luna, the numeric literals will be polymorphic, allowing to write expressions like `1.7 + 2`.
 
-They support basic arithmetic operators and mathematical functions. Consult the relevant (TODO: LINK) part of Std docs for more details.
+They support basic arithmetic operators and mathematical functions. Consult the relevant (TODO: LINK) part of standard library docs for more details.
 
 Text
 ----
 
-The basic type for text processing in Luna is, unsurprisingly, `Text`. Luna also supports two kinds of text literals: interpreted and uninterpreted. The interpreted texts are wrapped in single quotes. They provide the capabilities to insert escaped character sequences such as `\n` etc. The uninterpreted strings are wrapped in double quotes and do not provide any such facilities. The only character that can be escaped in an uninterpreted text is `\"` itself.
+The basic type for text processing in Luna is, unsurprisingly, `Text`. Luna supports two kinds of text literals: interpreted and uninterpreted. The interpreted texts are wrapped in single quotes. They provide the capabilities to insert escaped character sequences such as `\n` etc. The uninterpreted strings are wrapped in double quotes and do not provide any such facilities. The only character that can be escaped in an uninterpreted text is `\"` itself.
 
 > **[info] Changes ahead!**
 >
@@ -26,7 +26,7 @@ The basic type for text processing in Luna is, unsurprisingly, `Text`. Luna also
 
 Booleans
 --------
-Logical values are represented using the `Bool` class. It has two constructors: `True` and `False`. They support basic logical combinators such as `&&`, `||` or `not`. The most common function used for branching is `if_then_else`. It can be used in this form (i.e. `if_then_else condintion valueWhenTrue valueWhenFalse`) or, more elegantly, in its _mixfix_ form:
+Logical values are represented using the `Bool` class. It has two constructors: `True` and `False`. They support basic logical combinators such as `&&`, `||` or `not`. The most common function used for branching is `if_then_else`. It can be used in this form (i.e. `if_then_else condition valueWhenTrue valueWhenFalse`) or, more elegantly, in its _mixfix_ form:
 
 ```ruby
 if condition then valueWhenTrue else valueWhenFalse
@@ -47,7 +47,7 @@ Lists & Tuples
 
 The most basic container types in Luna are tuples and lists.
 
-Lists are arbitrary–length containers for same-type values. Some examples are `[3, 4, 5]` of type `[Int]` or `['first', 'second', 'third']` of type ``[Text]``. There are also some interesting functions and methods in the standard library, that return lists of desired shape. Some examples are:
+Lists are arbitrary–length containers for same-type values. Some examples are `[3, 4, 5]` of type `List Int` or `['first', 'second', 'third']` of type ``List Text``. There are also some interesting functions and methods in the standard library, that return lists of desired shape. Some examples are:
 
 ```ruby
 1.upto 5                       # => [1, 2, 3, 4, 5]
@@ -55,7 +55,7 @@ Lists are arbitrary–length containers for same-type values. Some examples are 
 [True, False] . cycle . take 5 # => [True, False, True, False, True]
 ```
 
-Tuples are like lists, but they can store elements of different types and they have a statically defined lengths. Some examples of tuples are:
+Tuples are like lists, but they can store elements of different types and they have statically defined lengths. Some examples are:
 
 ```ruby
 (1, "hello", False) :: (Int, Text, Bool)
