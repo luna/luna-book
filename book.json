@@ -1,1 +1,1 @@
-{ "plugins": ["alerts", "timeline", "-lunr", "-search", "search-pro", "image-captions", "adhoc"] }
+{ "plugins": ["theme-api", "alerts", "timeline", "-lunr", "-search", "search-pro", "image-captions", "adhoc"] }
