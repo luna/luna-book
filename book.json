@@ -2,9 +2,7 @@
   "pluginsConfig": {
     "download-pdf-link": {
       "base": "https://www.gitbook.com/book/luna-lang/docs/",
-      "label": {
-          "en": "Download PDF"
-      }
+      "label": "Download PDF"
     }
   }
 }
