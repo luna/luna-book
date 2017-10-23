@@ -1,1 +1,10 @@
-{ "plugins": ["theme-api", "alerts", "timeline", "-lunr", "-search", "search-pro", "image-captions", "adhoc", "dashing", "download-pdf-link"] }
+{ "plugins": ["theme-api", "alerts", "timeline", "-lunr", "-search", "search-pro", "image-captions", "adhoc", "dashing", "download-pdf-link"],
+  "pluginsConfig": {
+    "download-pdf-link": {
+      "base": "https://www.gitbook.com/book/luna-lang/docs/",
+      "label": {
+          "en": "Download PDF"
+      }
+    }
+  }
+}
