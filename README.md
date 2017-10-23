@@ -28,3 +28,7 @@ We love to receive your feedback. This will help us refine the language and deci
 
 ~~TODO OSS description + call for contribution~~
 
+> **[success] For danger**
+>
+> Use this for danger messages.
+
