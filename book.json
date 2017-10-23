@@ -1,1 +1,1 @@
-{ "plugins": ["theme-api", "alerts"] }
+{ "plugins": ["theme-api", "alerts", "last-modified"] }
