@@ -4,11 +4,11 @@ Welcome to the Luna documentation. Please mind that this document is a fusion of
 
 ### What is Luna?
 
-**Intuitively**, Luna is an [WYSIWYG](https://en.wikipedia.org/wiki/WYSIWYG) data processing environment. It focuses on improving the human-computer interaction, especially on how it is possible to define, understand and manipulate data. Luna is a growing consolidation of domain specific data manipulation tools, including \[...\] \(TODO: finish me\)
+**Intuitively**, Luna is an [WYSIWYG](https://en.wikipedia.org/wiki/WYSIWYG) data processing and visualization environment. Its goal is to redefine the way people are able to understand and manipulate data in domains like data science, bioinformatics, graphic design, architecture, IOT development or microservices integration. Each such domain requires a highly tailored data processing toolbox and Luna provides a solid foundation for building such toolboxes. Luna delivers a powerful, visual data-flow modeling environment and a growing library of domain specific data visualisers and manipulators. 
 
-**Formally**, Luna is an Integrated Development Environment \([IDE](https://en.wikipedia.org/wiki/Integrated_development_environment)\). a programming language and an extensive ecosystem of tools. It is intended to be a production language, not a research one, incorporating at the same time many recent innovations in programming language design. It is the world's first high performance, general purpose, hybrid visual-textual programming language. You can learn more about Luna core assumptions in the [Shortly about Luna](shortly_about_luna.md) chapter.
+**Formally**, Luna is a new programming language tighly integrated with its with double visual and textual syntax, and an ecosystem of tightly integrated tools, including a compiler and an [Integrated Development Environment](https://en.wikipedia.org/wiki/Integrated_development_environment). The environment provides a visual data-flow editor and extensible data visualisation and manipulation frameworks. For simplicity, we often refer to all these tools as "Luna"
 
-
+**Formally**, Luna is an Integrated Development Environment \([IDE](https://en.wikipedia.org/wiki/Integrated_development_environment)\), consisting of a new programming language, tightly integrated with a visual data-flow editor, and an extensive ecosystem of data processing and visualization tools. It is intended to be a production language, not a research one, incorporating at the same time many recent innovations in programming language design. It is the world's first high performance, general purpose, hybrid visual-textual programming language. You can learn more about Luna core assumptions in the [Shortly about Luna](shortly_about_luna.md) chapter.
 
 ### Current state of the art
 
@@ -18,13 +18,9 @@ This specification describes both the Luna specification, including syntactic an
 
 We love to receive your feedback. This will help us refine the language and decide on priorities of its evolution. You can use the official GitHub repository to report bugs, ideas and new language proposals.
 
-
-
 ### About this document
 
 This book covers the textual Luna representation and the official Luna compiler ecosystem. The visual representation can be used with the Luna Graphical Environment \(LGE\) and will be covered in a separate document. This documentation was written to describe and explain all the concepts in an easy and accessible way for wide range of people.
-
-
 
 Luna is a functional programming language with visual and textual representations for your programs. In this document, we'll guide you through the language basics – both in the visual and text forms.
 
