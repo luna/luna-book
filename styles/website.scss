@@ -15,12 +15,16 @@ p {
 
 .book.color-theme-2 .book-body .page-wrapper .page-inner section {
     background: transparent;
-}
+};
 
 .book.color-theme-2 .book-summary {
     background: lighten($dark-bg,4%);
-}
+};
 
 .book.font-family-1 {
     font-family: Quicksand, "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
+};
+
+.book.color-theme-2 .book-body .page-wrapper .page-inner section.normal {
+    color: rgba($white, 70%);
+};
