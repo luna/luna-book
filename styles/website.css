@@ -5,3 +5,7 @@ p {
 .book-summary ul.summary li.header {
     padding-top: 40px !important;
 };
+
+header {
+    padding-top: 70px !important;
+};
