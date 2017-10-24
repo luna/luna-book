@@ -17,6 +17,11 @@ Formally, Luna is a functional programming language with dual, visual and textua
 {% col 3 %} ![](/assets/screen1.png)
 {% endgrid %}
 
+xx
+
+![](/assets/screen1.png)
+
+
 ## Additional resources
 
 There are several additional resources that are particularly useful when learning Luna:
