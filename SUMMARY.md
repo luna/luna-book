@@ -3,7 +3,7 @@
 ## Starting out
 * [Introduction](README.md)
 * [Installation](dummy.md)
-* [Ready, set, go!](dummy.md)
+* [First steps](dummy.md)
 
 ## Luna Language
 * [Introduction](README.md)
