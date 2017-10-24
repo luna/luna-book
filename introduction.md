@@ -8,7 +8,7 @@ Welcome to the Luna book. Although it is far from being a proper book, the name 
 
 This book is aimed at people who work with data processing on a daily basis. It includes both software developers as well as domain experts, like data scientists, architects or even procedural graphic designers. Even if you have a significant programming experience and you are functional programming guru, you should find lot of interesting information here.
 
-Writing a good manual is hard. Anybody who have ever tried it, knows how insanely time consuming and exhaustive is to create clear, usable and concise document. If you feel that we can improve it in some way, feel free to contact us. If you feel that what we do is important, don't hesitate to [contribute](http://luna-lang.org/contributors)! 
+Writing a good manual is hard. Anybody who have ever tried it, knows how insanely time consuming and exhaustive is to create clear, usable and concise document. If you feel that we can improve it in some way, feel free to contact us. If you feel that what we do is important, don't hesitate to [join us and contribute](http://luna-lang.org/contributors)! 
 
 ## What is Luna?
 
@@ -20,6 +20,7 @@ Formally, Luna is a functional programming language with dual, visual and textua
 
 
 ## What you need to dive in
+
 
 
 ## Additional resources
