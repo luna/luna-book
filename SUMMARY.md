@@ -1,7 +1,9 @@
 # Summary
 
-## Luna Environment
+## Starting out
+* [Introduction](README.md)
 * [Installation](dummy.md)
+* [Ready, set, go!](dummy.md)
 
 ## Luna Language
 * [Introduction](README.md)
@@ -13,3 +15,6 @@
 * [Shame](shame.md)
 
 ## Luna Studio
+* [Visualizers](dummy.md)
+* [Parameters](dummy.md)
+
