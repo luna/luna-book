@@ -17,5 +17,5 @@ p {
 }
 
 .book.color-theme-2 .book-summary {
-    background: #ff0000;
+    background: lighten($dark-bg,4%);
 }
