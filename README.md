@@ -12,13 +12,6 @@ Luna is an open source, [WYSIWYG](https://en.wikipedia.org/wiki/WYSIWYG) data pr
 
 Formally, Luna is a functional programming language with dual, visual and textual syntax representation. It is tightly integrated with its graphical environment, the Luna Studio, providing dedicated visual syntax editor and data visualization and manipulation engines.
 
-{% grid %}
-{% col 3 %} ![](/assets/screen1.png)
-{% col 3 %} ![](/assets/screen1.png)
-{% endgrid %}
-
-xx
-
 ![](/assets/screen1.png)
 
 
