@@ -3,7 +3,13 @@
     "download-pdf-link": {
       "base": "https://www.gitbook.com/book/luna-lang/docs/",
       "label": "Download PDF"
+    },
+    "fontsettings": {
+      "theme": 'night', // 'sepia', 'night' or 'white',
+      "family": 'sans', // 'serif' or 'sans',
+      "size": 2         // 1 - 4
     }
+
   },
   "styles": {
     "website": "./styles/website.scss"
