@@ -1,3 +1,5 @@
+$dark-bg: #201E1A
+
 p {
     text-align: justify;
 };
@@ -7,7 +9,7 @@ p {
 };
 
 .book.color-theme-2 .book-body {
-    background: #201E1A;
+    background: $dark-bg;
 };
 
 .book.color-theme-2 .book-body .page-wrapper .page-inner section {
