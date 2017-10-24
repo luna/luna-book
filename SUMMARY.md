@@ -1,9 +1,11 @@
 # Summary
-
-## Starting out
 * [Introduction](README.md)
-* [Getting started](getting_started.md)
-* [First steps](dummy.md)
+
+
+## Luna user guide
+* [Starting out](dummy.md)
+    * [Running Luna](getting_started.md)
+    * [First steps](dummy.md)
 
 ## Luna Language
 * [Introduction](README.md)
