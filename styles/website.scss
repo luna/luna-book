@@ -10,38 +10,41 @@ p {
     padding-top: 40px;
 };
 
-.book.color-theme-2 .book-body {
-    background: $dark-bg;
-};
-
-.book.color-theme-2 .book-body .page-wrapper .page-inner section {
-    background: transparent;
-};
-
-.book.color-theme-2 .book-summary {
-    background: $dark-bg; // lighten($dark-bg,4%);
-};
-
 .book.font-family-1 {
     font-family: Quicksand, "Helvetica Neue", Helvetica, Arial, sans-serif;
 };
 
-.book.color-theme-2 .book-body .page-wrapper .page-inner section.normal {
-    color: rgba($white, 0.6);
-    h1, h2, h3, h4, h5 {
-        color: rgba($white, 0.7);
+
+.book.color-theme-2 {
+    .book-body {
+        background: $dark-bg;
+    };
+    
+    .book-body .page-wrapper .page-inner section {
+        background: transparent;
+    };
+    
+    .book-summary {
+        background: $dark-bg; // lighten($dark-bg,4%);
+    };
+    
+    .book-body .page-wrapper .page-inner section.normal {
+        color: rgba($white, 0.6);
+        h1, h2, h3, h4, h5 {
+            color: rgba($white, 0.7);
+        }
     }
-}
-
-.book-summary {
-    border-right: 2px solid $divider-color;
-}
-
-
-// info, warning, error cards
-.markdown-section blockquote {
-    padding: 15px;
-    border: 0;
-    border-radius: 15px;
-    background: #345e6f;
+    
+    .book-summary {
+        border-right: 2px solid $divider-color;
+    }
+    
+    
+    // info, warning, error cards
+    .markdown-section blockquote {
+        padding: 15px;
+        border: 0;
+        border-radius: 15px;
+        background: #345e6f;
+    }
 }
