@@ -1,16 +1,8 @@
-{ "plugins": ["theme-api", "alerts", "timeline", "-lunr", "-search", "search-pro", "image-captions", "adhoc", "dashing", "download-pdf-link", "collapsible-menu", "sectionx", "anchorjs", "github-buttons"],
+{ "plugins": ["theme-api", "alerts", "timeline", "-lunr", "-search", "search-pro", "image-captions", "adhoc", "dashing", "download-pdf-link", "collapsible-menu", "sectionx", "anchorjs"],
   "pluginsConfig": {
     "download-pdf-link": {
       "base": "https://www.gitbook.com/book/luna-lang/docs/",
       "label": "Download PDF"
-    },
-    "github-buttons": {
-      "repo": "luna/luna",
-      "types": [
-        "star",
-        "watch"
-      ],
-      "size": "small"
     }
   }
 }
