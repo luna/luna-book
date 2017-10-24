@@ -5,9 +5,9 @@
       "label": "Download PDF"
     },
     "fontsettings": {
-      "theme": 'night', // 'sepia', 'night' or 'white',
-      "family": 'sans', // 'serif' or 'sans',
-      "size": 2         // 1 - 4
+      "theme": "night",
+      "family": "sans",
+      "size": 2        
     }
 
   },
