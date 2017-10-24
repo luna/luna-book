@@ -1,6 +1,4 @@
 # Summary
-* [Introduction](README.md)
-
 
 ## Luna user guide
 * [Introduction](introduction.md)
