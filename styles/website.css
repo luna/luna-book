@@ -1,21 +1,17 @@
-{
-    
-    
-    p {
-        text-align: justify;
-    };
-    
-    h2 {
-        margin-top: 100px;
-    };
+p {
+    text-align: justify;
+};
 
-    
-    .book-summary ul.summary li.header {
-        padding-top: 40px !important;
-    };
-    
-    .header {
-        padding-top: 70px !important;
-        padding: 80px !important;
-    };
-}
+h2 {
+    margin-top: 100px;
+};
+
+
+.book-summary ul.summary li.header {
+    padding-top: 40px !important;
+};
+
+.header {
+    padding-top: 70px !important;
+    padding: 80px !important;
+};
