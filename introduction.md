@@ -37,6 +37,13 @@ After running the installer you can choose whether you want Luna to be installed
 > Local installation has many advantages over system-wide one – it does not require the administrator password, is more modular and you can literally remove the installation directory to completely uninstall Luna or move it to other machine keeping all your settings. We recommend it for everyone, unless you've got important reasons to install it globally. A good reason is when the system is shared among many users and you want to minimize the amount of used disk space.
 
 
+## Contribute
+
+We love to receive your feedback. This will help us refine the language and decide on priorities of its evolution. You can use the official GitHub repository to report bugs, ideas and new language proposals.
+
+~~TODO OSS description + call for contribution~~
+
+
 ## Additional resources
 
 There are several additional resources that are particularly useful when learning Luna:
@@ -47,11 +54,6 @@ There are several additional resources that are particularly useful when learnin
 * Official video tutorials
 * Luna website
 
-## Contribute
-
-We love to receive your feedback. This will help us refine the language and decide on priorities of its evolution. You can use the official GitHub repository to report bugs, ideas and new language proposals.
-
-~~TODO OSS description + call for contribution~~
 
 
 
