@@ -1,3 +1,7 @@
+h2 {
+    margin-top: 100px;
+};
+
 p {
     text-align: justify;
 };
@@ -11,6 +15,3 @@ p {
     padding: 80px !important;
 };
 
-h2 {
-    margin-top: 100px;
-};
