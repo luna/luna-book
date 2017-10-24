@@ -1,5 +1,6 @@
 # Summary
 
+## The Luna language
 * [Introduction](README.md)
 * [Double representation](double_rep.md)
 * [Basic datatypes](basic-datatypes.md)
