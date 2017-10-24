@@ -1,4 +1,5 @@
 $dark-bg: #201E1A;
+$divider-color: black;
 $white: #FFFFFF;
 
 p {
@@ -30,4 +31,8 @@ p {
     h1, h2, h3, h4, h5 {
         color: rgba($white, 0.7);
     }
+}
+
+.book-summary {
+    border-right: 2px solid $divider-color;
 }
