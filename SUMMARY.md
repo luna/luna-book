@@ -1,9 +1,9 @@
 # Summary
 
-## Luna environment
+## Luna Environment
 * [Installation](dummy.md)
 
-## Luna language
+## Luna Language
 * [Introduction](README.md)
 * [Double representation](double_rep.md)
 * [Basic datatypes](basic-datatypes.md)
