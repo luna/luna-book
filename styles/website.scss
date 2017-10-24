@@ -36,3 +36,9 @@ p {
 .book-summary {
     border-right: 2px solid $divider-color;
 }
+
+
+// info, warning, error cards
+.markdown-section blockquote {
+    padding: 15px;
+}
