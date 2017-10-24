@@ -1,4 +1,4 @@
-{ "plugins": ["theme-api", "alerts", "timeline", "-lunr", "-search", "search-pro", "image-captions", "adhoc", "dashing", "download-pdf-link", "collapsible-menu", "sectionx", "anchorjs", "infinitescroll", "multipart", "styles-sass"],
+{ "plugins": ["theme-api", "alerts", "timeline", "-lunr", "-search", "search-pro", "image-captions", "adhoc", "dashing", "download-pdf-link", "collapsible-menu", "sectionx", "anchorjs", "infinitescroll", "multipart", "styles-sass", "grid"],
   "pluginsConfig": {
     "download-pdf-link": {
       "base": "https://www.gitbook.com/book/luna-lang/docs/",
