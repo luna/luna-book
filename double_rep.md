@@ -4,9 +4,6 @@
 
 Each node in a Luna graph corresponds to a line of Luna code. For example:
 
-{% method %}
-### 
-
 ```python
 a = 1
 b = 2
@@ -14,11 +11,7 @@ c = a + b
 c.succ
 ```
 
-{% common %}
-
 ![](ex1.png)
-
-{% endmethod %}
 
 Let's break this graph down:
 
