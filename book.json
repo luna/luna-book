@@ -5,5 +5,7 @@
       "label": "Download PDF"
     }
   },
-  "styles": "./styles/website.sass"
+  "styles": {
+    "website": "./styles/website.sass"
+  }
 }
