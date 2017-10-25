@@ -1,4 +1,4 @@
-$dark-bg: #201E1A;
+$dark-bg: darken(#201E1A,10%);
 $layer-color: lighten($dark-bg, 4%);
 $layer-hovered-color: lighten($dark-bg, 6%);
 $divider-color: black;
