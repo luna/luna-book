@@ -7,6 +7,7 @@ $white: #FFFFFF;
 $text-color: rgba($white, 0.6);
 $header-color: rgba($white, 0.7);
 $accent-color: #B4812C;
+$link-color: #5199B1;
 
 $nav-color: rgba($white, 0.2);
 $nav-hover-color: rgba($white, 0.4);
@@ -53,6 +54,12 @@ p {
             p,ul{&:not(.has-comments-open) { opacity: 0.3; }}
             h1, h2, h3, h4, h5, h6         { opacity: 0.3; }
         }
+    }
+    
+    // search
+    #book-search-input {
+        border: 0;
+        margin: 0;
     }
     
     // menu
@@ -111,7 +118,7 @@ p {
     
     // links
     .book-body .page-wrapper .page-inner section.normal a {
-        color: $accent-color;
+        color: $link-color;
     }
     
     // comments
