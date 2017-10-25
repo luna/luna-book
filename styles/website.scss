@@ -71,6 +71,13 @@ p {
         margin: 0;
     }
     
+    // search results
+    #book-search-results .search-results .has-results .search-results-item a {
+        font-size: 40px;
+        font-weight: 100;
+        color: $header-color;        
+    }
+    
     // menu
     .book-summary {
         border-right: 2px solid $divider-color;
