@@ -11,7 +11,7 @@
     },
     "prism": {
       "python": [
-        "prismjs/themes/prism-solarizedlight.css"
+        "prismjs/themes/prism-tomorrow.css"
       ]
     }
   },
