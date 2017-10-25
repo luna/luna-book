@@ -1,4 +1,4 @@
-{ "plugins": ["alerts", "timeline", "-lunr", "-search", "search-pro", "image-captions", "adhoc", "dashing", "download-pdf-link", "collapsible-menu", "sectionx", "anchorjs", "infinitescroll", "multipart", "styles-sass", "grid", "-highlight", "prism"],
+{ "plugins": ["alerts", "timeline", "-lunr", "-search", "search-pro", "image-captions", "adhoc", "dashing", "download-pdf-link", "collapsible-menu", "sectionx", "anchorjs", "infinitescroll", "multipart", "styles-sass", "grid"],
   "pluginsConfig": {
     "download-pdf-link": {
       "base": "https://www.gitbook.com/book/luna-lang/docs/",
@@ -8,11 +8,6 @@
       "theme": "night",
       "family": "sans",
       "size": 1       
-    },
-    "prism": {
-      "css": [
-        "syntax-highlighting/assets/css/prism/prism-base16-google.light.css"
-      ]
     }
   },
   
