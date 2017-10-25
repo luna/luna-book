@@ -36,23 +36,19 @@ p {
     
     .book-body .page-wrapper {
         .page-inner section.normal {
-            transition: color 0.2s;
+            p, h1, h2, h3, h4, h5 {
+                transition: color 0.2s;
+            }
         }
 
         .page-inner section.normal {
-            color: $text-color;
-            h1, h2, h3, h4, h5 {
-                color: $header-color;
-            }
+            p                  { color: $text-color;   }
+            h1, h2, h3, h4, h5 { color: $header-color; }
         }
         &.comments-open .page-inner section.normal {
-            color: fade-out($text-color,0.2);
-            h1, h2, h3, h4, h5 {
-                color: fade-out($header-color,0.2);
-            }
-            p.has-comments-open {
-                color: $text-color;
-            }
+            p:not(.has-comments-open) { color: fade-out($text-color,0.2);  }
+            h1, h2, h3, h4, h5        { color: fade-out($header-color,0.2);}
+            
         }
         
 
