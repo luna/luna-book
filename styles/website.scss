@@ -56,7 +56,7 @@ p {
     }
     
     // menu
-    .book-summary, &.is-loading .book-summary {
+    .book-summary {
         border-right: 2px solid $divider-color;
         ul.summary li { 
             a,span {
@@ -67,13 +67,13 @@ p {
             }
             &.active > a, a:hover {
                 background: transparent;
-                color: $header-color;
+                color: $header-color !important;
                 text-decoration: none;
                 font-weight: normal;
             }
             a,span {
                 font-weight: normal;
-                color: rgba($white, 0.2);
+                color: rgba($white, 0.2) !important;
             }
         }
     }
