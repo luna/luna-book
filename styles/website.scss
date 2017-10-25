@@ -54,8 +54,14 @@ p {
         }
     }
     
+    // menu
     .book-summary {
         border-right: 2px solid $divider-color;
+        ul.summary li { 
+            a,span {
+                font-weight: normal;
+            }
+        }
     }
     
     // top bar
