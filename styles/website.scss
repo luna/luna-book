@@ -76,6 +76,10 @@ p {
                 color: rgba($white, 0.2) !important;
             }
         }
+        ul.summary:last-child {
+            position: absolute;
+            bottom: 0;
+        }
     }
     
     // top bar
