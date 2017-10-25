@@ -47,6 +47,7 @@ p {
                 color: fade-out($header-color,0.2);
             }
         }
+        transition: color 2s;
 
     }
     
@@ -85,12 +86,20 @@ p {
     }
     
     // comments
-    .book-body .page-wrapper .page-inner .comments-section .comments-icon .marker {
-        background: $layer-color;
-        color: $dark-bg;
-        font-weight: 900;
-        &:hover {
-            background: $layer-hovered-color;
+    .book-body .page-wrapper .page-inner .comments-section { 
+        // removing text highlight
+        &.has-comments-open {
+            background: none;
+        }
+
+        // comment add icon
+        .comments-icon .marker {
+            background: $layer-color;
+            color: $dark-bg;
+            font-weight: 900;
+            &:hover {
+                background: $layer-hovered-color;
+            }
         }
     }
     
