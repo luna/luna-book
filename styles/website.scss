@@ -56,7 +56,7 @@ p {
     }
     
     // menu
-    .book-summary {
+    .book-summary, &.is-loading .book-summary {
         border-right: 2px solid $divider-color;
         ul.summary li { 
             a,span {
