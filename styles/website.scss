@@ -213,4 +213,11 @@ p {
         &:hover { color: $nav-hover-color !important; }
         text-decoration: none;
     }
+    
+    
+    // code
+    .book-body .page-wrapper .page-inner section.normal { pre, code {
+        background: $dark-bg;
+        
+    }}
 }
