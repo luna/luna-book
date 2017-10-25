@@ -4,6 +4,7 @@ $white: #FFFFFF;
 
 $text-color: rgba($white, 0.6);
 $header-color: rgba($white, 0.7);
+$accent-color: #B4812C;
 
 p {
     text-align: justify;
@@ -45,6 +46,11 @@ p {
     // top bar
     .book-header .btn { 
         color: rgba($white, 0.3);
+    }
+    
+    // links
+    .book-body .page-wrapper .page-inner section.normal a {
+        color: $accent-color;
     }
     
     // info, warning, error cards
