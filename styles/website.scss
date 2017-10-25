@@ -59,10 +59,14 @@ p {
     .book-summary {
         border-right: 2px solid $divider-color;
         ul.summary li { 
+            a,span {
+                transition: color 0.2s;
+            }
             &.active > a, a:hover {
                 background: transparent;
                 color: $header-color;
                 text-decoration: none;
+                font-weight: normal;
             }
             a,span {
                 font-weight: normal;
