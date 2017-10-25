@@ -122,6 +122,7 @@ p {
     
     // anchors
     .anchorjs-link { 
+        transition: color 0.2s, opacity 0.2s;
         color: $nav-color !important;
         &:hover { color: $nav-hover-color !important; }
         text-decoration: none;
