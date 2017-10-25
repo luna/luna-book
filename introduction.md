@@ -1,7 +1,5 @@
 # The Luna Book
 
-###### for Luna 1.0 Beta
-
 ## About this book
 
 Welcome to the Luna book. Although it is far from being a proper book, the name refers to what we want it to evolve into – an intuitive, easy to follow, yet complete Luna introduction. We strongly believe that tutorials are easier to read and understand than adequate formal documents, therefore the used style is fusion of both, often relying on examples and intuitive explanation.
