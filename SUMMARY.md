@@ -8,6 +8,7 @@
     * [Troubleshooting](introduction.md#troubleshooting)
     * [How to contribute](introduction.md#how-to-contribute)
     * [Additional resources](introduction.md#additional-resources)
+* [Starting Out](starting.md)
 * [Luna Language](dummy.md)
     * [Introduction](README.md)
     * [Syntax representations](double_rep.md)
