@@ -1,5 +1,6 @@
 $dark-bg: #201E1A;
 $layer-color: lighten($dark-bg, 4%);
+$layer-hovered-color: lighten($dark-bg, 6%);
 $divider-color: black;
 $white: #FFFFFF;
 
@@ -78,6 +79,9 @@ p {
     .book-body .page-wrapper .page-inner .comments-section .comments-icon .marker {
         background: $layer-color;
         color: $text-color;
+        &:hover {
+            background: $layer-hovered-color;
+        }
     }
     
     // info, warning, error cards
