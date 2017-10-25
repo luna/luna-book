@@ -2,6 +2,9 @@ $dark-bg: #201E1A;
 $divider-color: black;
 $white: #FFFFFF;
 
+$text-color: rgba($white, 0.6);
+$header-color: rgba($white, 0.7);
+
 p {
     text-align: justify;
 };
@@ -29,9 +32,9 @@ p {
     };
     
     .book-body .page-wrapper .page-inner section.normal {
-        color: rgba($white, 0.6);
+        color: $text-color;
         h1, h2, h3, h4, h5 {
-            color: rgba($white, 0.7);
+            color: $header-color;
         }
     }
     
@@ -46,5 +49,6 @@ p {
         border: 0;
         border-radius: 15px;
         background: #345e6f !important;
+        color: $text-color;
     }
 }
