@@ -103,7 +103,7 @@ p {
         // comment add icon
         .comments-icon .marker {
             background: $layer-color;
-            color: $dark-bg;
+            color: rgba(white,0.1);
             font-weight: 900;
             &:hover {
                 background: $layer-hovered-color;
