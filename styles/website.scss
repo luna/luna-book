@@ -78,7 +78,8 @@ p {
         .search-results-title {
             color: $header-color;
             font-weight: 100;
-            
+            opacity: 1;
+            margin-bottom: 50px;
         }
 
         .has-results .search-results-item {
