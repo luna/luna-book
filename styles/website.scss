@@ -220,4 +220,12 @@ p {
         background: $dark-bg;
         
     }}
+    
+    .uiref {
+        display: inline-block;
+        width: 24px;
+        border-radius: 24px;
+        text-align: center;
+        background: rgba(255,255,255,0.1);
+    }
 }
