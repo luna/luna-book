@@ -61,6 +61,8 @@ p {
         ul.summary li { 
             &.active > a, a:hover {
                 background: transparent;
+                color: $header-color;
+                text-decoration: none;
             }
             a,span {
                 font-weight: normal;
@@ -68,6 +70,8 @@ p {
             }
         }
     }
+    
+    .book.color-theme-2 .book-summary ul.summary li.active > a, .book.color-theme-2 .book-summary ul.summary li a:hover
     
     // top bar
     .book-header {
