@@ -50,6 +50,10 @@ p {
         &:hover { 
             color: rgba($white, 0.4);
         }
+        h1 {
+            opacity: 1;
+            color: #ff0000;
+        }
     }
     
     // drop-downs
