@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700');
+
 $dark-bg: #201E1A;
 $layer-color: lighten($dark-bg, 4%);
 $layer-hovered-color: lighten($dark-bg, 6%);
@@ -73,6 +75,12 @@ p {
     
     // search results
     #book-search-results .search-results {
+        .search-results-title {
+            color: $header-color;
+            font-weight: 100;
+            
+        }
+
         .has-results .search-results-item {
             color: $text-color;
             a {
