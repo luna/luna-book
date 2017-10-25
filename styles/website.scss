@@ -76,7 +76,7 @@ p {
                 color: rgba($white, 0.2) !important;
             }
         }
-        ul.summary > :first-child { display: none; } // hide link to gitbook book page
+        ul.summary > :first-child { display: none !important; } // Hide link to gitbook book page. Without important it shows after reload.
         
         // TODO: how to make "published with gitbook" on the bottom even when scroll is up?
         // TODO: nice scroll
