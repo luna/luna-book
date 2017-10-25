@@ -1,4 +1,5 @@
 $dark-bg: #201E1A;
+$layer-color: lighten($dark-bg, 4%);
 $divider-color: black;
 $white: #FFFFFF;
 
@@ -49,6 +50,12 @@ p {
         &:hover { 
             color: rgba($white, 0.4);
         }
+    }
+    
+    // drop-downs
+    .dropdown-menu {
+        border: 0;
+        background-color: $layer-color; 
     }
     
     // links
