@@ -8,12 +8,7 @@
       "theme": "night",
       "family": "sans",
       "size": 1       
-    },
-    "prism": {
-      "python": [
-        "prismjs/themes/prism-tomorrow.css"
-      ]
-    }
+    }x
   },
   
   "styles": {
