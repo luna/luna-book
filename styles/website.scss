@@ -124,5 +124,6 @@ p {
     .anchorjs-link { 
         color: $nav-color !important;
         &:hover { color: $nav-hover-color !important; }
+        text-decoration: none;
     }
 }
