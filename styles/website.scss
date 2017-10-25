@@ -45,7 +45,10 @@ p {
     
     // top bar
     .book-header .btn { 
-        color: rgba($white, 0.3);
+        color: rgba($white, 0.2);
+        &:hover { 
+            color: rgba($white, 0.4);
+        }
     }
     
     // links
