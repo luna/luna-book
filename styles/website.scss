@@ -76,6 +76,8 @@ p {
                 color: rgba($white, 0.2) !important;
             }
         }
+        ul.summary > :first-child { display: none; } // hide link to gitbook book page
+        
         // TODO: how to make "published with gitbook" on the bottom even when scroll is up?
         // TODO: nice scroll
     }
