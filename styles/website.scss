@@ -40,10 +40,11 @@ p {
         }
 
         .page-inner section.normal {
+            &, &.has-comments-open {
             color: $text-color;
             h1, h2, h3, h4, h5 {
                 color: $header-color;
-            }
+            }}
         }
         &.comments-open .page-inner section.normal {
             color: fade-out($text-color,0.2);
