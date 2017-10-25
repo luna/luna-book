@@ -47,10 +47,11 @@ p {
         .page-inner section.normal {
             p, ul              { color: $text-color  ; opacity: 1; }
             h1, h2, h3, h4, h5 { color: $header-color; opacity: 1; }
+            h6                 { color: rgba(white,0.2); opacity: 1;}
         }
         &.comments-open .page-inner section.normal {
             p,ul{&:not(.has-comments-open) { opacity: 0.3; }}
-            h1, h2, h3, h4, h5             { opacity: 0.3; }
+            h1, h2, h3, h4, h5, h6         { opacity: 0.3; }
         }
     }
     
