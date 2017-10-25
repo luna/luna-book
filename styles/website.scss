@@ -59,6 +59,9 @@ p {
     .book-summary {
         border-right: 2px solid $divider-color;
         ul.summary li { 
+            &.active > a, a:hover {
+                background: transparent;
+            }
             a,span {
                 font-weight: normal;
                 color: rgba($white, 0.2);
