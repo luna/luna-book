@@ -2,6 +2,7 @@
 
 ## Luna user guide
 * [Introduction](introduction.md)
+    *[About this book](introduction.md#about-this-book)
 * [Luna Language](dummy.md)
     * [Introduction](README.md)
     * [Syntax representations](double_rep.md)

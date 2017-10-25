@@ -34,7 +34,7 @@ After running the installer you can choose whether you want Luna to be installed
 >
 > Local installation has many advantages over system-wide one – it does not require the administrator password, is more modular and you can literally remove the installation directory to completely uninstall Luna or move it to other machine keeping all your settings. We recommend it for everyone, unless you've got important reasons to install it globally. A good reason is when the system is shared among many users and you want to minimize the amount of used disk space.
 
-After the successful installation you should be able to execute Luna Studio using your system application manager (like Mac OS Spotlight, Gnome Shell or Windows Start menu) or run it manually from the installation path ($HOME/.luna in case of local installation).
+After the successful installation you should be able to execute Luna Studio using your system application manager (like Mac OS Spotlight, Gnome Shell or Windows Start menu) or run it manually from the installation path (`$HOME/.luna` in case of local installation).
 
 ## Troubleshooting
 If you encounter any problem either with the installation process or with Luna itself, please refer to our [Troubleshooting Guide](http://luna-lang.org/troubleshooting) and feel free to [contact us](http://luna-lang.org/contact). We will do what we can to find the solution as fast as possible.
