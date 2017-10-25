@@ -69,6 +69,7 @@ p {
     
     // left / right arrows
     .book-body .navigation {
+        transition: color 0.2s;
         color: $nav-color;
         &:hover { color : $nav-hover-color; }
     }
