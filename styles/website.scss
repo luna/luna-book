@@ -41,16 +41,16 @@ p {
     .book-body .page-wrapper {
         .page-inner section.normal {
             p, h1, h2, h3, h4, h5 {
-                transition: color 0.2s;
+                transition: opacity 0.2s;
             }
         }
         .page-inner section.normal {
-            p                  { color: $text-color;   }
-            h1, h2, h3, h4, h5 { color: $header-color; }
+            p                  { color: $text-color  ; opacity: 1; }
+            h1, h2, h3, h4, h5 { color: $header-color; opacity: 1; }
         }
         &.comments-open .page-inner section.normal {
-            p:not(.has-comments-open) { color: fade-out($text-color,0.4);  }
-            h1, h2, h3, h4, h5        { color: fade-out($header-color,0.4);}
+            p:not(.has-comments-open) { opacity: 0.3; }
+            h1, h2, h3, h4, h5        { opacity: 0.3; }
             
         }
     }
