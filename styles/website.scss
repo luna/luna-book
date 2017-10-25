@@ -73,9 +73,12 @@ p {
     
     // search results
     #book-search-results .search-results .has-results .search-results-item a {
-        font-size: 40px;
+        font-size: 30px;
         font-weight: 100;
-        color: $header-color;        
+        color: $header-color;  
+        &:hover { 
+            text-decoration: none;
+        }      
     }
     
     // menu
