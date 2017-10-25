@@ -11,7 +11,7 @@
     },
     "prism": {
       "css": [
-        "prismjs/themes/prism-dark.css"
+        "prismjs/themes/prism-tomorrow.css"
       ]
     }
   },
