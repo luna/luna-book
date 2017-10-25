@@ -62,7 +62,12 @@ p {
     // drop-downs
     .dropdown-menu {
         border: 0;
-        background-color: $layer-color; 
+        background-color: $layer-color;
+         
+        // the triangle
+        .dropdown-caret .caret-inner {
+            border-bottom-color: $layer-color;
+        }
     }
     
     // links
