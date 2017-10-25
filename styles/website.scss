@@ -98,12 +98,15 @@ p {
         }
 
         // comment add icon
-        .comments-icon .marker {
-            background: $layer-color;
-            color: $dark-bg;
-            font-weight: 900;
-            &:hover {
-                background: $layer-hovered-color;
+        .comments-icon {
+            display: block;
+            .marker {
+                background: $layer-color;
+                color: $dark-bg;
+                font-weight: 900;
+                &:hover {
+                    background: $layer-hovered-color;
+                }
             }
         }
     }
