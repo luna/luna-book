@@ -76,7 +76,7 @@ p {
                 color: rgba($white, 0.2) !important;
             }
         }
-        ul.summary:last-child {
+        ul.summary :last-child {
             position: absolute;
             bottom: 0;
         }
