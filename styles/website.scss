@@ -36,6 +36,10 @@ p {
     
     .book-body .page-wrapper {
         .page-inner section.normal {
+            transition: color 2s;
+        }
+
+        .page-inner section.normal {
             color: $text-color;
             h1, h2, h3, h4, h5 {
                 color: $header-color;
@@ -47,7 +51,7 @@ p {
                 color: fade-out($header-color,0.2);
             }
         }
-        transition: color 2s;
+        
 
     }
     
