@@ -72,19 +72,32 @@ p {
     }
     
     // search results
-    #book-search-results .search-results .has-results .search-results-item {
-        color: $text-color;
-        a {
-            font-size: 30px;
-            font-weight: 100;
-            color: $header-color;  
-            &:hover { 
-                text-decoration: none;
-            }  
-        }    
+    #book-search-results .search-results {
+        .has-results .search-results-item {
+            color: $text-color;
+            a {
+                font-size: 30px;
+                font-weight: 100;
+                color: $header-color;  
+                &:hover { 
+                    text-decoration: none;
+                }  
+            }
+            h3 {
+                margin-bottom: 10px;
+            }
+        }
+        
+        ul.search-results-list li {
+            margin-bottom: 30px;
+        }
+
     }
     
-            
+    #book-search-results span.search-highlight-keyword {
+        background: $accent-color;
+    }
+                        
     // menu
     .book-summary {
         border-right: 2px solid $divider-color;
