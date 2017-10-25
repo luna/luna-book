@@ -118,7 +118,9 @@ p {
         color: $text-color !important;
     }
     
+    // anchors
     .anchorjs-link { 
-        color: #ff0000;
+        color: $nav-color !important;
+        &:hover { color: $nav-hover-color !important; }
     }
 }
