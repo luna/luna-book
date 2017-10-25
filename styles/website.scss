@@ -8,6 +8,10 @@ $text-color: rgba($white, 0.6);
 $header-color: rgba($white, 0.7);
 $accent-color: #B4812C;
 
+$nav-color: rgba($white, 0.2);
+$nav-hover-color: rgba($white, 0.4);
+
+
 p {
     text-align: justify;
 };
@@ -57,15 +61,15 @@ p {
     
     // top bar
     .book-header {
-        .btn { 
-            color: rgba($white, 0.2);
-            &:hover { 
-                color: rgba($white, 0.4);
-            }
+        .btn {        color: $nav-color;
+            &:hover { color: $nav-hover-color; }
         }
-        h1 {
-            display: none;
-        }
+        h1 { display: none; }
+    }
+    
+    // left - right arrows
+    .book-body .navigation {
+        color: $nav-color;
     }
     
     
