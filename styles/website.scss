@@ -63,7 +63,7 @@ p {
                 transition: color 0.2s;
             }
             &.divider { 
-                display: none;
+                display: none !important; // without important it shows after reload
             }
             &.active > a, a:hover {
                 background: transparent;
@@ -76,10 +76,8 @@ p {
                 color: rgba($white, 0.2) !important;
             }
         }
-        ul.summary > :last-child {
-            position: absolute;
-            bottom: 0;
-        }
+        // TODO: how to make "published with gitbook" on the bottom even when scroll is up?
+        // TODO: nice scroll
     }
     
     // top bar
