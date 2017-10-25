@@ -87,7 +87,8 @@ p {
     // comments
     .book-body .page-wrapper .page-inner .comments-section .comments-icon .marker {
         background: $layer-color;
-        color: $text-color;
+        color: $dark-bg;
+        font-weight: 900;
         &:hover {
             background: $layer-hovered-color;
         }
