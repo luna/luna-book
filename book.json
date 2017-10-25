@@ -14,9 +14,8 @@
         "prismjs/themes/prism-solarizedlight.css"
       ]
     }
-  }
-
   },
+  
   "styles": {
     "website": "./styles/website.scss"
   }
