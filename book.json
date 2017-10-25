@@ -11,7 +11,7 @@
     },
     "prism": {
       "css": [
-        "prismjs/themes/prism-tomorrow.css"
+        "syntax-highlighting/assets/css/prism/prism-base16-google.light.css"
       ]
     }
   },
