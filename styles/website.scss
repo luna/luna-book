@@ -72,15 +72,19 @@ p {
     }
     
     // search results
-    #book-search-results .search-results .has-results .search-results-item a {
-        font-size: 30px;
-        font-weight: 100;
-        color: $header-color;  
-        &:hover { 
-            text-decoration: none;
-        }      
+    #book-search-results .search-results .has-results .search-results-item {
+        color: $text-color;
+        a {
+            font-size: 30px;
+            font-weight: 100;
+            color: $header-color;  
+            &:hover { 
+                text-decoration: none;
+            }  
+        }    
     }
     
+            
     // menu
     .book-summary {
         border-right: 2px solid $divider-color;
