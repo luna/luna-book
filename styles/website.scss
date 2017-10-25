@@ -42,6 +42,10 @@ p {
         border-right: 2px solid $divider-color;
     }
     
+    // top bar
+    .book-header .btn { 
+        color: rgba($white, 0.3);
+    }
     
     // info, warning, error cards
     .markdown-section blockquote {
