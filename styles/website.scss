@@ -40,20 +40,17 @@ p {
     
     .book-body .page-wrapper {
         .page-inner section.normal {
-            p, h1, h2, h3, h4, h5, ul {
+            p, ul, h1, h2, h3, h4, h5 {
                 transition: opacity 0.2s;
             }
         }
         .page-inner section.normal {
-            p                  { color: $text-color  ; opacity: 1; }
+            p, ul              { color: $text-color  ; opacity: 1; }
             h1, h2, h3, h4, h5 { color: $header-color; opacity: 1; }
-            ul                 { opacity: 1; }
         }
         &.comments-open .page-inner section.normal {
-            p:not(.has-comments-open) { opacity: 0.3; }
-            h1, h2, h3, h4, h5        { opacity: 0.3; }
-            ul                        { opacity: 0.3; }
-            
+            p,ul{&:not(.has-comments-open) { opacity: 0.3; }}
+            h1, h2, h3, h4, h5             { opacity: 0.3; }
         }
     }
     
