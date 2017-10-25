@@ -73,7 +73,7 @@ p {
     .book-body .navigation {
         transition: color 0.2s;
         color: rgba($white,0);
-        &:hover { color : $nav-hover-color; }
+        &:hover { color : $nav-color; }
     }
     
     
