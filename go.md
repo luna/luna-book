@@ -8,7 +8,6 @@ Place your mouse over the Luna Visual Editor and press the <kbd>tab</kbd> key. A
 
 ![](/assets/placeholder.jpg)
 
----
 
 #### Creating nodes 
 
@@ -16,7 +15,6 @@ Type `7` or any other lucky number and press <kbd>enter</kbd> to confirm your ch
 
 ![](/assets/placeholder.jpg)
 
----
 
 #### Connecting nodes
 
@@ -26,7 +24,6 @@ Select the node with lucky number and press the <kbd>tab</kbd> key again. If a n
 
 ![](/assets/placeholder.jpg)
 
----
 
 #### Updating parameters
 
