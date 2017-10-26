@@ -32,3 +32,5 @@ As you can see, each node displays it's results below it's visual representation
 >Keep in mind that it affects only the interactive UI performance, not the graph performance in general. For example, if your graph is already created and receives thousands of objects from a web socket, they will be processed without performance overhead, because the graph will be type checked and optimized upfront.
 >
 >We are preparing new release, which will solve this issue and allow both value change as well as graph modification to perform almost instantly.
+
+![](/assets/placeholder.jpg)
