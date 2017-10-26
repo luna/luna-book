@@ -25,3 +25,10 @@ Select the node with lucky number and press the <kbd>tab</kbd> key again. If a n
 As you can see, each node displays it's results below it's visual representation 
 <span class="uiref">1</span>. An important thing to note here is that Luna works in a reactive way, so keeps all results always up to date. Let's click on the lucky number node and press <kbd>enter</kbd> key. The node will expand from its minimal representation to a full one <span class="uiref">2</span> giving you access to interactive controls - a number slider in this example. Change the slider and observe how the results update on the fly!
 
+> **[info] Improvements ahead!**
+>
+> Currently the way Luna updates the results is sub-optimal. After changing the value or creating a new node, Luna checks the whole program from scratch, including polymorphic type resolution and performing optimizations on the low level graph representation. You can observe it when using the slider. 
+>
+>Keep in mind that it affects only the interactive UI performance, not the graph performance in general. For example, if your graph is already created and receives thousands of objects from a web socket, they will be processed without performance overhead, because the graph will be type checked and optimized upfront.
+>
+>We are preparing new release, which will solve this issue and allow both value change as well as graph modification to perform almost instantly.
