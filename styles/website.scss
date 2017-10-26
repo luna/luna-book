@@ -208,6 +208,15 @@ p {
         border-radius: 15px;
         background: #245C88 !important;
         color: $text-color !important;
+        .comments-section {
+            strong {
+                color: $header-color;
+                font-size: 18px;
+            }
+            i { 
+                vertical-align: text-top;
+            }
+        }
     }
     
     // anchors
