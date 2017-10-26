@@ -2,4 +2,10 @@
 
 It's time to make our hands dirty with Luna! The first thing we're going to do is to create a simple data flow graph, which will create two numbers and then add them together!
 
-Place your mouse over the Luna Visual Editor and press the <kbd>shift</kbd> + <kbd>command</kbd> + <kbd>3</kbd>
+Place your mouse over the Luna Visual Editor and press the <kbd>tab</kbd> key. A Node Searcher should appear on the screen <span class="uiref">1</span>. It allows you to filter available functions and libraries by their names. Type `7`, or any other lucky number!
+
+![](/assets/placeholder.jpg)
+
+Press <kbd>enter</kbd> key to confirm your choice. A circle appears on the screen <span class="uiref">1</span>. It is called a node. You will learn more about both the Node Searcher and nodes in the following chapters. For now just remember that node is a function, that you feed with data from the left side and outputs result from the right side. Simple, isn't it?
+
+![](/assets/placeholder.jpg)
