@@ -214,6 +214,10 @@ p {
             }
             i { 
                 vertical-align: text-top;
+                &::before {
+                    margin-right: 10px;
+                    font-size: 24px;
+                }
             }
         }
         &.info { background: #245C88 !important; }
