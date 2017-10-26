@@ -14,4 +14,10 @@ Type `7` or any other lucky number and press <kbd>enter</kbd> to confirm your ch
 
 ---
 
-Nextd
+Next press the <kbd>tab</kbd> key again and type `13` or any other unlucky number. Press the <kbd>enter</kbd> key. You should see 2 circles on the screen. You can press and drag them to arrange them freely in the space. Let's arrange them vertically! 
+
+Select one of the nodes and press the <kbd>tab</kbd> key again. If a node is selected when Node Searcher opens, it tries to search for associated functions first. As you can see, a lot of mathematical functions are displayed now. Type `+` and press <kbd>enter</kbd>. A new node appears <span class="uiref">1</span>. This time however, it is connected to the node you have selected just a moment ago. The connection <span class="uiref">2</span> indicates the flow of data.
+
+
+
+If you would not deselect the node before opening the Node Searcher, it will try to search for 
