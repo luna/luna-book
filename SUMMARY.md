@@ -4,6 +4,7 @@
 * [Introduction](introduction.md)
 * [Starting Out](interface.md)
     * [Interface](interface.md)
+    * [Ready, set, go!](go.md)
     
 * [Luna Language](dummy.md)
     * [Introduction](README.md)
