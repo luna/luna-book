@@ -7,7 +7,7 @@
     * [Ready, set, go!](go.md)
     
 * [Luna Language](dummy.md)
-    * [Introduction](README.md)
+    * [Introduction](dummy.md)
     * [Syntax representations](double_rep.md)
     * [The node searcher](dummy.md)
     * [Basic datatypes](basic-datatypes.md)
