@@ -21,4 +21,7 @@ Dashboard allows you to:
 
 Luna is like a toolbox. The Workspace is a way to arrange the tools for your convenience. The Workspace is divided into panels, two dimensional, non-overlapping rectangles on your screen. <span class="uiref">1</span>. Each panel is able to display tabs. Each tab is a separate tool from the toolbox. The most important tools are described below.
 
-#### Luna Visual Editor
+#### <span class="uiref">2</span> Luna Visual Editor
+Luna Visual Editor is the most important tool from our toolbox. It allows you to visually edit the data using whiteboard like interface. Moreover, it has the ability to use other tools when needed. For example, the Visual Editor is able to display interactive results visualizations next to nodes, making it much more accessible for fast preview than using a separate window.
+
+#### <span class="uiref">3</span> Code Editor
