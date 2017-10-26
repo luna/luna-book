@@ -19,7 +19,9 @@ Formally, Luna is a functional programming language with dual, visual and textua
 
 ## What you need to dive in
 
-Luna is available as a stand-alone application for Mac OS, Linux and Windows. The Luna interface bases mostly on web technologies, so its possible to run a slightly limited version in a web-browser as well. Currently only the desktop distribution is supported, however, you are welcome to play and contribute to the web version. To learn more, please refer to the [Luna architecture description](architecture.md).
+Luna is available as a stand-alone application for Mac OS, Linux and Windows. All its core graphical tools are based on web technologies, so it is possible to run them in a web browser. However, Luna desktop distribution was tightly integrated with the Atom code editor, in order to provide decent code editing capabilities. Currently only the desktop distribution is supported, however, you are welcome to play and contribute to the web version. To learn more, please refer to the [Luna architecture description](architecture.md).
+
+
 
 #### Luna Manager
 The Luna Manager is a tool for managing your Luna environment. It allows installing and uninstalling different Luna versions side by side, switching between them, managing the development environment, building Luna packages and much more. It is bundled with a simple graphical interface for everyday use, like installing or updating Luna. 
