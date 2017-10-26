@@ -1,8 +1,13 @@
 # Starting out
 
+We are ready to get started! If you're the kind of person who just skips introductions, you might want to read it anyway because it explains what you need to follow this chapter.
+
+
 ## Dashboard
 
-We are ready to get started! If you're the kind of person who just skips introductions, you might want to read it anyway because it explains what you need to follow this chapter. Alright, you've got Luna Studio installed on your computer. After launching it you will be greeted with your Dashboard <span class="uiref">1</span>. Think about it like about a mix of a "hello screen" and a place gathering all common quick start actions. Dashboard is always accessible simply by pressing the Luna logo on the left toolbar <span class="uiref">2</span> (or by selecting it from menu `View → Dashboard`).
+![](/assets/placeholder.jpg)
+
+Alright, you've got Luna Studio installed on your computer. After launch you will be greeted with your Dashboard <span class="uiref">1</span>. Think about it like about a mix of a "hello screen" and a place gathering all common quick start actions. You can always access the dashboard simply by pressing the Luna logo on the left toolbar <span class="uiref">2</span> (or by selecting it from menu `View → Dashboard`).
 
 Moreover, if this is your first Luna Studio execution, you will be facing an interactive welcome tutorial. You can always start it again right from your dashboard <span class="uiref">3</span>.
 
@@ -14,10 +19,11 @@ Dashboard allows you to:
   * <span class="uiref">8</span> load one of community projects;
   * <span class="uiref">9</span> create a new community project. 
 
-![](/assets/placeholder.jpg)
 
 
 ## Workspace
+
+![](/assets/placeholder.jpg)
 
 Luna is like a toolbox. The Workspace is a way to arrange the tools for your convenience. The Workspace is divided into panels, two dimensional, non-overlapping rectangles on your screen <span class="uiref">1</span>. Each panel is able to display tabs. Each tab is a separate tool from the toolbox. The most important tools are described below.
 
@@ -26,3 +32,10 @@ Luna Visual Editor <span class="uiref">2</span> is the most important tool from 
 
 #### Code Editor
 Code Editor <span class="uiref">3</span> is a powerful text editor. It allows you to edit the textual Luna representation and source code of other languages. It is integrated with the Visual Editor – whenever you modify the code, the data flow graph updates. It works the other way around too – every graph modification updates the code.
+
+#### Data View
+Data View <span class="uiref">4</span> is a data visualization and manipulation toolkit. It provides processing utilities highly tailored for a particular data type. You can switch between available visualizations and manipulators or [define your own](dummy.md).
+
+#### Tree View
+TODO 
+
