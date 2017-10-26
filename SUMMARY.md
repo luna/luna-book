@@ -1,7 +1,9 @@
 # Summary
 
 ## Luna user guide
+* [Foo](dummy.md)
 * [Introduction](introduction.md)
+* [Bar](dummy.md)
 * [Starting Out](interface.md)
     * [Interface](interface.md)
     * [Ready, set, go!](go.md)
