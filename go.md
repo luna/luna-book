@@ -28,7 +28,9 @@ Select the node with lucky number and press the <kbd>tab</kbd> key again. If a n
 #### Updating parameters
 
 As you can see, each node displays it's results below it's visual representation 
-<span class="uiref">1</span>. An important thing to note here is that Luna works in a reactive way, so keeps all results always up to date. Let's click on the lucky number node and press <kbd>enter</kbd> key. The node will expand from its minimal representation to a full one <span class="uiref">2</span> giving you access to interactive controls - a number slider in this example. Change the slider and observe how the results update on the fly!
+<span class="uiref">1</span>. An important thing to note here is that Luna works in a reactive way, so keeps all results always up to date. Let's click on the lucky number node and press <kbd>enter</kbd> key. The node will expand from its minimal representation to a full one <span class="uiref">2</span> giving you access to interactive controls - a number slider in this example. Change the slider and observe how the results update on the fly! 
+
+We strongly encourage you to play with it now. Try 
 
 > **[info] Improvements ahead!**
 >
