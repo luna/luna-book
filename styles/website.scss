@@ -206,7 +206,6 @@ p {
         padding: 15px;
         border: 0;
         border-radius: 15px;
-        background: #245C88 !important;
         color: $text-color !important;
         .comments-section {
             strong {
@@ -217,6 +216,7 @@ p {
                 vertical-align: text-top;
             }
         }
+        &.info { background: #245C88 !important; }
     }
     
     // anchors
