@@ -7,7 +7,6 @@
 * [Starting Out](interface.md)
     * [Interface](interface.md)
     * [Ready, set, go!](go.md)
-    
 * [Luna Language](dummy.md)
     * [Introduction](dummy.md)
     * [Syntax representations](double_rep.md)
