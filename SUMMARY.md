@@ -6,7 +6,7 @@
     * [Interface](interface.md)
     * [Ready, set, go!](go.md)
 * [Luna Language](dummy.md)
-    * [Syntax](dummy.md)
+    * [About](about-luna.md)
     * [Introduction](dummy.md)
     * [Syntax representations](double_rep.md)
     * [The node searcher](dummy.md)
