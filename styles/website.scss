@@ -264,4 +264,22 @@ p img {
         
     }
     
+    // citations
+    blockquote {
+        &::before {
+            color:       $text-color;
+            content:     open-quote;
+            font-size:   63px;
+            font-weight: 100;
+            position:    absolute;
+            top:         79px;
+        }
+        p {
+            margin-left: 30px;
+        }
+        strong {
+            font-weight: 100;s
+        }
+    }
+    
 }
