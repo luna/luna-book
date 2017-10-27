@@ -4,3 +4,5 @@
 
 
 
+A language is a foundation of communication. It gives us powers to express our thoughts. 
+
