@@ -6,47 +6,43 @@ Welcome to the Luna book. Although it is far from being a proper book, the name 
 
 This book is aimed at people who work with data processing on a daily basis. It includes both software developers as well as domain experts, like data scientists, architects or even procedural graphic designers. Even if you have a significant programming experience and you are functional programming guru, you should find lot of interesting information here.
 
-Writing a good manual is hard. Anybody who have ever tried it, knows how insanely time consuming and exhaustive is to create clear, usable and concise document. If you feel that we can improve it in some way, feel free to contact us. If you feel that what we do is important, don't hesitate to [join us and contribute](http://luna-lang.org/contributors)! 
+Writing a good manual is hard. Anybody who have ever tried it, knows how insanely time consuming and exhaustive is to create clear, usable and concise document. If you feel that we can improve it in some way, feel free to contact us. If you feel that what we do is important, don't hesitate to [join us and contribute](http://luna-lang.org/contributors)!
 
 ## What is Luna?
 
-Luna is an open source, [WYSIWYG](https://en.wikipedia.org/wiki/WYSIWYG) data processing and visualization environment. Its goal is to redefine the way people are able to gather, understand and manipulate data. Luna targets domains where data processing is the primary focus, including data science, bioinformatics, graphic design, architecture, IOT development, machine learning or microservices integration. Each such domain requires a highly tailored data processing toolbox. Luna provides both a solid foundation for building such toolboxes as well as growing library of existing ones. At its core, Luna delivers a powerful, visual data-flow modeling language, called the Luna Language and an extensive data visualization and manipulation framework.
-
-Formally, Luna is a functional programming language with dual, visual and textual syntax representation. It is tightly integrated with its graphical environment, the Luna Studio, providing dedicated visual syntax editor and data visualization and manipulation engines.
+Luna is an open source, [WYSIWYG](https://en.wikipedia.org/wiki/WYSIWYG) data processing and visualization environment. Its goal is to redefine the way people are able to gather, understand and manipulate data. Luna targets domains where data processing is the primary focus, including data science, bioinformatics, graphic design, architecture, IOT development, machine learning or microservices integration. Each such domain requires a highly tailored data processing toolbox. Luna provides both a solid foundation for building such toolboxes as well as growing library of existing ones. At its core, Luna delivers a powerful, data-flow modeling language, called the Luna Language and an extensive data visualization and manipulation framework, called the Luna Studio.
 
 ![](/assets/screen1.png)
 
-
 ## What you need to dive in
 
-Luna is available as a stand-alone application for Mac OS, Linux and Windows. All its core graphical tools are based on web technologies, so it is possible to run them in a web browser. However, Luna desktop distribution was tightly integrated with the Atom code editor, in order to provide decent code editing capabilities. Currently only the desktop distribution is supported, however, you are welcome to play and contribute to the web version. To learn more, please refer to the [Luna architecture description](architecture.md).
-
-
+Luna Studio is available as a stand-alone application for Mac OS, Linux and Windows. All its core graphical tools are based on web technologies, so it is possible to run them in a web browser. However, Luna Studio desktop distribution was tightly integrated with the Atom code editor, in order to provide decent code editing capabilities. Currently only the desktop distribution is supported, however, you are welcome to play and contribute to the web version. To learn more, please refer to the [Luna architecture description](architecture.md).
 
 #### Luna Manager
-The Luna Manager is a tool for managing your Luna environment. It allows installing and uninstalling different Luna versions side by side, switching between them, managing the development environment, building Luna packages and much more. It is bundled with a simple graphical interface for everyday use, like installing or updating Luna. 
+
+The Luna Manager is a tool for managing your Luna environment. It allows installing and uninstalling different Luna versions side by side, switching between them, managing the development environment, building Luna packages and much more. It is bundled with a simple graphical interface for everyday use, like installing or updating Luna.
 
 For your convenience we distribute it as a binary, so you can download it and literally "double click" to start the installation process. You can download it from our [website](http://luna-lang.org) or build it from [source](http://github.com/luna/luna-manager).
 
 ![](/assets/placeholder.jpg)
 
-After running the installer you can choose whether you want Luna to be installed locally (recommended option) or system-wide. If you need more fine grained control over the installation process, please use download and use the Luna Manager command line utility from our [website](http://luna-lang.org) instead.
+After running the installer you can choose whether you want Luna to be installed locally \(recommended option\) or system-wide. If you need more fine grained control over the installation process, please download and use the Luna Command Line Manager from our [website](http://luna-lang.org) instead.
 
-> **[info] Local or system-wide installation?**
+> **\[info\] Local or system-wide installation?**
 >
 > Local installation has many advantages over system-wide one – it does not require the administrator password, is more modular and you can literally remove the installation directory to completely uninstall Luna or move it to other machine keeping all your settings. We recommend it for everyone, unless you've got important reasons to install it globally. A good reason is when the system is shared among many users and you want to minimize the amount of used disk space.
 
-After the successful installation you should be able to execute Luna Studio using your system application manager (like Mac OS Spotlight, Gnome Shell or Windows Start menu) or run it manually from the installation path (`$HOME/.luna` in case of local installation).
+After the successful installation you should be able to execute Luna Studio using your system application manager \(like Mac OS Spotlight, Gnome Shell or Windows Start menu\) or run it manually from the installation path \(`$HOME/.luna` in case of local installation\).
 
 ## Troubleshooting
+
 If you encounter any problem either with the installation process or with Luna itself, please refer to our [Troubleshooting Guide](http://luna-lang.org/troubleshooting) and feel free to [contact us](http://luna-lang.org/contact). We will do what we can to find the solution as fast as possible.
 
 ## How to contribute
 
-We love to receive your feedback. This will help us refine the language and decide on priorities of its evolution. You can use the official GitHub repository to report bugs, ideas and new language proposals.
+We love to receive your feedback. This will help us refine the language and decide on priorities of its evolution. You can use the official [GitHub repository](http://github.com/luna) to report bugs, ideas and new features proposals.
 
 ~~TODO OSS description + call for contribution~~
-
 
 ## Additional resources
 
@@ -57,7 +53,6 @@ There are several additional resources that are particularly useful when learnin
 * Luna users chat
 * Official video tutorials
 * Luna website
-
 
 
 
