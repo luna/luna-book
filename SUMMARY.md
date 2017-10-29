@@ -2,7 +2,7 @@
 
 ## Luna user guide
 
-* [Introduction](README.md)
+* [Preface](README.md)
 * [Introduction](introduction.md)
 * [Starting Out](interface.md)
   * [Installation](installation.md)
