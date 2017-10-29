@@ -16,11 +16,10 @@ The language design depends heavily on the available medium as well. The most co
 So what is a good language? What are the principles it has to follow to become the ultimate communication tool in a particular domain? We believe there are two basic principles, every domain specific language has to follow.
 
 * **People need an immediate connection to what they are making**
-This principle was first publicly introduced by Brett Victor, a human-computer interaction visonary, during his talk [Inventing on Principle](https://vimeo.com/36579366). You should definitively see it to better understand this book. Any violation leads [..]
+This principle was first publicly introduced by Brett Victor, a human-computer interaction visonary, during his talk [Inventing on Principle](https://vimeo.com/36579366). You should definitively see it to better understand this book. Any violation of this principle leads to alienation the user from the actual problems he is trying to solve, which consequently increases the number of mistakes and decreases the understanding. 
 
 * **People cannot be limited by the language they are using**
 People tend to reject any language which obviously limits their expressiveness. This is the exact reason why so many WYSIWYG solutions never catch up. Website creators, game creators or visual programming languages provide their users with a limited set of predefined, high level components. Even if these components can be extended by writing code, the approach feels incomplete and broken by design. 
-
 
 Violation of any of these rules always leads to a sub-optimal solution. Let's consider the graphic design again. Is using Photoshop always better than writing HTML, Sass and JavaScript code? Arguably. These solutions violate the first and the second principle respectively. Photoshop provides a WYSIWYG digital canvas with predefined, hardly extendable set of tools. HTML, Sass and JavaScript on the other hand, provide a text interface and thus alienate the user from its real creation, but do not set tight restriction on the expressiveness. Let's consider two use cases:
 
@@ -28,7 +27,17 @@ Violation of any of these rules always leads to a sub-optimal solution. Let's co
 
 * An artistic painting. Using HTML, SVG and Sass within a text editor to express an artistic vision would hardly be possible. The more creative and discoverable the process is, the more important the instant feedback loop is. 
 
-So would it be possible to invent a better design language than Photoshop or combination of CSS, SVG nd HTML? Definitely.
+An important question emerges – would it be possible to fuse both approaches? It's not only possible, there are already solutions heading in the right direction. Think about Sketch, which has become the ultimate design toolkit for Mac OS. Why so many people prefer it over Photoshop? The answer is surprisingly simple – Sketch limits it's user expressiveness less then Photoshop. It allows you to create reusable design elements and then bulk-update their parameters, just like Sass, but in a WYSIWYG environment. There are however many ways to improve the designers toolbox nowadays. Watch another talk from Brett Victors [Drawing Dynamic Visualizations](https://vimeo.com/66085662) for further inspiration.
+
+
+## Luna language
+
+Luna was designed to be the ultimate backbone for any domain specific WYSIWYG languages.
+
+Luna was build on top of principles described above – "instant feedback loop" and "no limits".
+
+
+
 
 
 
