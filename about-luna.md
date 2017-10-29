@@ -7,23 +7,40 @@
 Communication is a process of exchanging information. It requires a language to formulate the information and a medium to store and transfer it. A well designed language should empower people with the ability to both express their thoughts in a rapid and concise way as well as understand the feedback response easily. It is especially important with research, because it directly affects how fast you can iterate – test new ideas and understand intermediate results. Fast iterations make it possible to test wider range of parameters including those that should not work at first glance, allowing you to much better understand the domain you are investigating. Thus the language design directly affects not only the total time needed to solve a problem in a non-linear way, it often is the key to find the solution at all. No matter if you are examining drug effects while searching for a new treatment, designing a complex building shape or developing new IOT device, the speed of testing new ideas is the crucial factor for your success.
 
 
-#### Domain specific languages
+#### Language design principles
 
 There is no silver bullet language. Every domain is characterized by a set of distinct assumptions and requires highly tailored communication language. Such language often does not even remind a spoken one. English is great for everyday conversations. However, it would be a horrible choice as music or mathematical notations replacement. 
 
 The language design depends heavily on the available medium as well. The most common communication language for designers nowadays is a digital canvas and an associated toolbox of layers, brushes, shapes, filters, etc. It allows expressing thoughts in a much more flexible and universal way than pen and paper, providing the same level of interactivity and instant feedback loop.
 
+So what is a good language? What are the principles it has to follow to become the ultimate communication tool in a particular domain? We believe there are two basic principles, every domain specific language has to follow.
+
+* **People need an immediate connection to what they are making**
+This principle was first formulated by Brett Victor, a human-computer interaction visonary. Any violation leads [..]
+
+* **People cannot be limited by the language they are using**
+People tend to reject any language which obviously limits their expressiveness. This is the exact reason why so many WYSIWYG solutions never catch up. Website creators, game creators or visual programming languages provide their users with a limited set of predefined, high level components. Even if these components could be extended by writing code, the approach feels incomplete and broken by design. 
+
+While choosing the technology stack, developers are afraid of any closed technology, because it will cause their headache sooner than later.
+
+Any violation of this rule leads to a solution, which 
+
+
+   They drastically lower the learning curve,  despite they boost they are very limited in comparison to programming languages
+
+
+
+---
+
+
+
+
+
   But, is it always better than writing code? Is it more expressive? Arguably. While digital canvas, like Photoshop, allows manipulating elements in a WYSIWYG way, it lacks a parametric expressivity delivered for example by HTML, SVG and CSS. Let's think about a website design. There are five, evenly arranged items in the menu bar. If you want to add a new item and change the color palette of the website, all you have to do is to change a single line in HTML and a color declaration in CSS. No matter how complex the website is, every element will update automatically. Doing the same in Photoshop requires an order of magnitude more time – create a new menu item, use an alignment tool to arrange the elements, manually change the colors and probably re-apply some filters in more complex website areas. However, using HTML, SVG and CSS within a text editor to express an artistic vision would hardly be possible because it alienates you from your real creation and breaks the instant feedback loop. So would it be possible to invent a better design language than Photoshop or combination of CSS, SVG nd HTML? Definitely.
 
 #### Language principles
 
-What is a good language? What are the principles it has to follow to become the ultimate communication tool in a particular domain? We believe there are two basic principles, every domain specific language has to follow.
-
-* **People need an immediate connection to what they are making.**
-This principle was first formulated by Brett Victor, a human-computer interaction visonary. Any violation leads [..]
-
-* **People cannot be limited by the language they are using**
-People tend to reject any language which obviously limits their expressiveness. This is the exact reason why so many WYSIWYG solutions never catch up. Website creators, visual programming languages or data visualization tools – provide their users with a limited set of predefined, high level components. They drastically lower the learning curve,  despite they boost they are very limited in comparison to programming languages
+What is a good language? What are the principles it has to follow to become the ultimate communication tool in a particular domain? 
 
 A good example are visual programming languages, allowing processing data by connecting high level, visual components together. People feel limited regarding what they are able to create by connecting predefined, high-level components. Even if these components could be extended by writing code, the approach feels incomplete and broken by design. Developers prefer generic solutions, while domain experts often cannot write code at all.
 
