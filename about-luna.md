@@ -16,13 +16,19 @@ The language design depends heavily on the available medium as well. The most co
 So what is a good language? What are the principles it has to follow to become the ultimate communication tool in a particular domain? We believe there are two basic principles, every domain specific language has to follow.
 
 * **People need an immediate connection to what they are making**
-This principle was first formulated by Brett Victor, a human-computer interaction visonary. Any violation leads [..]
+This principle was first publicly introduced by Brett Victor, a human-computer interaction visonary, during his talk [Inventing on Principle](https://vimeo.com/36579366). You should definitively see it to better understand this book. Any violation leads [..]
 
 * **People cannot be limited by the language they are using**
 People tend to reject any language which obviously limits their expressiveness. This is the exact reason why so many WYSIWYG solutions never catch up. Website creators, game creators or visual programming languages provide their users with a limited set of predefined, high level components. Even if these components can be extended by writing code, the approach feels incomplete and broken by design. 
 
 
-Violation of any of these rules always leads to a sub-optimal solution. Let's consider the graphic design again. Is Photoshop, a WYSIWYG canvas with predefined set of tools, always better than writing HTML and CSS code? Arguably. While digital canvas, like Photoshop, allows manipulating elements in a WYSIWYG way, it lacks a parametric expressivity delivered for example by HTML, SVG and CSS. Let's think about a website design. There are five, evenly arranged items in the menu bar. If you want to add a new item and change the color palette of the website, all you have to do is to change a single line in HTML and a color declaration in CSS. No matter how complex the website is, every element will update automatically. Doing the same in Photoshop requires an order of magnitude more time – create a new menu item, use an alignment tool to arrange the elements, manually change the colors and probably re-apply some filters in more complex website areas. However, using HTML, SVG and CSS within a text editor to express an artistic vision would hardly be possible because it alienates you from your real creation and breaks the instant feedback loop. So would it be possible to invent a better design language than Photoshop or combination of CSS, SVG nd HTML? Definitely.
+Violation of any of these rules always leads to a sub-optimal solution. Let's consider the graphic design again. Is using Photoshop always better than writing HTML, Sass and JavaScript code? Arguably. These solutions violate the first and the second principle respectively. Photoshop provides a WYSIWYG digital canvas with predefined, hardly extendable set of tools. HTML, Sass and JavaScript on the other hand, provide a text interface and thus alienate the user from its real creation, but do not set tight restriction on the expressiveness. Let's consider two use cases:
+
+* A website design. There are five, evenly arranged items in the menu bar. If you want to add a new item and change the color palette of the website, all you have to do is to modify a single line in HTML and a color variable in Sass. No matter how complex the website is, every element will update automatically. Doing the same in Photoshop requires an order of magnitude more time – create a new menu item, use an alignment tool to arrange the elements, manually change the colors and probably re-apply some transformations and filters in more complex website areas. 
+
+* An artistic painting. Using HTML, SVG and Sass within a text editor to express an artistic vision would hardly be possible. The more creative and discoverable the process is, the more important the instant feedback loop is. 
+
+So would it be possible to invent a better design language than Photoshop or combination of CSS, SVG nd HTML? Definitely.
 
 
 
