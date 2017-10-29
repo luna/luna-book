@@ -8,7 +8,6 @@
   * [Installation](installation.md)
   * [Interface](interface.md)
   * [Ready, set, go!](go.md)
-  * [Installation](installation.md)
 * [Luna Language](dummy.md)
   * [About](about-luna.md)
   * [Introduction](dummy.md)
