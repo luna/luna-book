@@ -1,4 +1,4 @@
-#About Luna Language
+#About Luna
 
 > **The limits of my language are the limits of my world.**
 
@@ -30,7 +30,14 @@ Violation of any of these rules always leads to a sub-optimal solution. Let's co
 An important question emerges – would it be possible to fuse both approaches? It's not only possible, there are already solutions heading in the right direction. Think about Sketch, which has become the ultimate design toolkit for Mac OS. Why so many people prefer it over Photoshop? The answer is surprisingly simple – Sketch limits it's user expressiveness less then Photoshop. It allows you to create reusable design elements and then bulk-update their parameters, just like Sass, but in a WYSIWYG environment. There are however many ways to improve the designers toolbox nowadays. Watch another talk from Brett Victors [Drawing Dynamic Visualizations](https://vimeo.com/66085662) for further inspiration.
 
 
-## Luna language
+## Luna
+
+Luna Language is
+ an open source, WYSIWYG data processing language. It was 
+
+Luna is an open source, WYSIWYG data processing and visualization environment. Its goal is to redefine the way people are able to gather, understand and manipulate data. Luna targets domains where data processing is the primary focus, including data science, bioinformatics, graphic design, architecture, IOT development, machine learning or microservices integration. Each such domain requires a highly tailored data processing toolbox. Luna provides both a solid foundation for building such toolboxes as well as growing library of existing ones. At its core, Luna delivers a powerful, data-flow modeling language, called the Luna Language and an extensive data visualization and manipulation framework, called the Luna Studio.
+
+
 
 Luna was designed to be the ultimate backbone for any domain specific WYSIWYG languages.
 
