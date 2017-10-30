@@ -23,12 +23,12 @@ Communication is a process of exchanging information. It requires a language to 
 
 There is no silver bullet language. Every domain is characterized by a set of distinct assumptions and requires highly tailored communication language. Such language often does not even remind a spoken one. English is great for everyday conversations. However, it would be a horrible choice as music or mathematical notations replacement. 
 
-The language design depends heavily on the available medium as well. The most common communication language for designers nowadays is a digital canvas and an associated toolbox of layers, brushes, shapes, filters, etc. It allows expressing thoughts in a much more flexible and universal way than pen and paper, providing the same level of interactivity and instant feedback loop.
+The language design depends heavily on the available medium as well. The most common language used by designers nowadays is a digital canvas and an associated toolbox of layers, brushes, shapes, filters, etc. It allows expressing thoughts in a much more flexible and universal way than pen and paper, providing the same level of interactivity and instant feedback loop.
 
 So what is a good language? What are the principles it has to follow to become the ultimate communication tool in a particular domain? We believe there are two basic principles, every domain specific language has to follow.
 
 * **People need an immediate connection to what they are making**
-This principle was first publicly introduced by Brett Victor, a human-computer interaction visonary, during his talk [Inventing on Principle](https://vimeo.com/36579366). You should definitively see it to better understand this book. Any violation of this principle leads to alienation the user from the actual problems he is trying to solve, which consequently increases the number of mistakes and decreases the understanding. 
+This principle was first publicly introduced by Brett Victor, a human-computer interaction visonary, during his talk [Inventing on Principle](https://vimeo.com/36579366). You should definitively see it to better understand concepts behind Luna. Any violation of this principle leads to alienation the user from the actual problems he is trying to solve, which consequently increases the number of mistakes and decreases the understanding. 
 
 * **People cannot be limited by the language they are using**
 People tend to reject any language which obviously limits their expressiveness. This is the exact reason why so many WYSIWYG solutions never catch up. Website creators, game creators or visual programming languages provide their users with a limited set of predefined, high level components. Even if these components can be extended by writing code, the approach feels incomplete and broken by design. 
