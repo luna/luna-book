@@ -14,6 +14,8 @@ Luna targets domains where data processing is the primary focus, including data 
 
 > **The limits of my language are the limits of my world.**
 
+What does it mean that Luna is a language? Is it like English? Is it like a programming language? I would say neither. It's something with a much broader concept. 
+ 
 Communication is a process of exchanging information. It requires a language to formulate the information and a medium to store and transfer it. A well designed language should empower people with the ability to both express their thoughts in a rapid and concise way as well as understand the feedback response easily. It is especially important with research, because it directly affects how fast you can iterate – test new ideas and understand intermediate results. Fast iterations make it possible to test wider range of parameters including those that should not work at first glance, allowing you to much better understand the domain you are investigating. Thus the language design directly affects not only the total time needed to solve a problem in a non-linear way, it often is the key to find the solution at all. No matter if you are examining drug effects while searching for a new treatment, designing a complex building shape or developing new IOT device, the speed of testing new ideas is the crucial factor for your success.
 
 
