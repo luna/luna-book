@@ -59,6 +59,10 @@ There are appear to be two main reasons among various domains. First, we are con
 Luna was build on top of principles described above – "instant feedback loop" and "no limits".
 
 
+Luna provides 3 basic representations:
+* **Code**
+  You can write code in Luna just like in a regular programming language. In fact, formally Luna is a programming language with its own compiler, typechecker and runtime environment.
+
 Luna was designed to be the ultimate backbone for any modern domain specific language. You can think about it like about a meta-language. Luna is a language itself, but it is easily extendable 
 
 meta-language, a language that can easily 
