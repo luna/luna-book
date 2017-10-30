@@ -48,6 +48,11 @@ An important question emerges – would it be possible to fuse both approaches? 
 
 If we know the very basic principles for a perfect domain specific language, why the available tools for graphics, architecture, electronic design, music creation or software building are not yet there? Why are we not living in a WYSIWYG world, having the same powers developers currently do and using them in an instant ? The answer turns out to be simple as well. Creating a language that follows these principles is a very complex and time consuming process. Each domain is different. There is no universal guide how a language should look like, so designing and testing new tools, visualizations or interaction ideas is the only way to get the perfect combination. Moreover, every idea requires a significant development time before it could be tested, so either you or your team need a solid software development background. 
 
+
+TODO below this line
+= = = = = = = = = = = = = = = = = = = =
+
+
 You cannot borrow an animation editor from your favorite video editing software and just paste it into your new graphic design application. Even if you find libraries that implement such functionality, an enormous amount of work has to be done before it will the "no limits" principle. Your users should be able to create custom animation curves, parametrize them with with earlier computed values  
 
 Let's imagine a simple example. You want to add an animation editor to your graphic design application, so your users could not only create shapes but also see them moving. You cannot borrow it from your favorite graphic software so you have to either develop it from scratch or use some library that implements it.
@@ -62,6 +67,9 @@ Luna was build on top of principles described above – "instant feedback loop" 
 Luna provides 3 basic representations:
 * **Code**
   You can write code in Luna just like in a regular programming language. In fact, formally Luna is a programming language with its own compiler, typechecker and runtime environment.
+  
+* **Data flow graph**
+  Luna provides a whiteboard-like data-flow interface, where you can literally draw what it  
 
 Luna was designed to be the ultimate backbone for any modern domain specific language. You can think about it like about a meta-language. Luna is a language itself, but it is easily extendable 
 
