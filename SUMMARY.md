@@ -10,7 +10,7 @@
   * [Ready, set, go!](go.md)
 * [Working with Luna](dummy.md)
   * [Luna assistant](assistant.md)
-  * [Syntax](double_rep.md)
+  * [Syntax](syntax.md)
   * [Basic datatypes](basic-datatypes.md)
   * [Functions](functions.md)
   * [Classes & Objects](classes.md)
