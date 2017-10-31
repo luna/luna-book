@@ -2,12 +2,9 @@
 
 # What is Luna?
 
+Luna is an open source, [WYSIWYG](https://en.wikipedia.org/wiki/WYSIWYG) data flow modeling language. Its goal is to revolutionize the way people are able to gather, understand and manipulate data. 
 
-Luna is an open source, [WYSIWYG](https://en.wikipedia.org/wiki/WYSIWYG) data flow modeling language. Its goal is to redefine the way people are able to gather, understand and manipulate data. 
-
-Luna targets domains where data processing is the primary focus, including data science, bioinformatics, graphic design, architecture, IOT development, machine learning or microservices integration. Each such domain requires a highly tailored data processing toolbox. Luna provides both a solid foundation for building such toolboxes as well as growing library of existing ones. At its core Luna delivers a powerful, visual data-flow editor and an extensive data visualization and manipulation framework.
-
-Let's start with a question. What does it mean that Luna is a "language"? Is it like English? Is it like a programming language? I would say neither. It's something with a much broader concept. In this chapter I will try to guide you trough Luna foundations and show you the full picture of what Luna was designed for.
+Luna targets domains where data processing is the primary focus, including data science, machine learning, IOT, bioinformatics, computer graphics or architecture. Each domain requires a highly tailored data processing toolbox and Luna provides both a solid foundation for building such toolboxes as well as growing library of existing ones. At its core Luna delivers a powerful, visual data-flow editor and an extensive data visualization and manipulation framework.
 
 ![](/assets/screen1.png)
 
@@ -16,6 +13,10 @@ Let's start with a question. What does it mean that Luna is a "language"? Is it 
 
 > **The limits of my language are the limits of my world.**
  
+Let's start with a question. What does it mean that Luna is a "language"? Is it like English? Is it like a programming language? I would say neither. It's something with a much broader concept. In this chapter I will try to guide you trough Luna foundations and show you the full picture of what Luna was designed for.
+
+Let's start with an important question. What does it mean that Luna is a language? Is it like English? Is it like a programming language? It's something in between. 
+
 Communication is a process of exchanging information. It requires a language to formulate the information and a medium to store and transfer it. A well designed language should empower people with the ability to both express their thoughts in a rapid and concise way as well as understand the feedback response easily. It is especially important with research, because it directly affects how fast you can iterate – test new ideas and understand intermediate results. Fast iterations make it possible to test wider range of parameters including those that should not work at first glance, allowing you to much better understand the domain you are investigating. Thus the language design directly affects not only the total time needed to solve a problem in a non-linear way, it often is the key to find the solution at all. No matter if you are examining drug effects while searching for a new treatment, designing a complex building shape or developing new IOT device, the speed of testing new ideas is the crucial factor for your success.
 
 
@@ -64,12 +65,22 @@ There are appear to be two main reasons among various domains. First, we are con
 Luna was build on top of principles described above – "instant feedback loop" and "no limits".
 
 
-Luna provides 3 basic representations:
+It is very important to understand, that logically there is no difference between drawing a rectangle in a graphic
+
+{domain...} = data flow = software creation
+
+You can think about Luna from three perspectives:
+
 * **Code**
-  You can write code in Luna just like in a regular programming language. In fact, formally Luna is a programming language with its own compiler, typechecker and runtime environment.
+  From the most low-level perspective, Luna is a well designed, functional programming language with its own textual syntax representation. You can write Luna code and compile it to executables just like in any other programming language.
   
 * **Data flow graph**
-  Luna provides a whiteboard-like data-flow interface, where you can literally draw what it  
+  From the higher perspective, Luna is a data flow modelling language with a whiteboard-like interface. You can literally draw how data flows between components.
+  
+* **Data visualization and manipulation environment**
+  From the highest perspective Luna allows you to display and manipulate data in a WYSIWYG fashion.  
+
+It's completely extensible, so supporting new data is as simple as creating 
 
 Luna was designed to be the ultimate backbone for any modern domain specific language. You can think about it like about a meta-language. Luna is a language itself, but it is easily extendable 
 
