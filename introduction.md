@@ -3,7 +3,7 @@
 
 Luna is an open source, [WYSIWYG](https://en.wikipedia.org/wiki/WYSIWYG) data processing language. Its goal is to revolutionize the way people are able to gather, understand and manipulate data.
 
-Luna targets domains where data processing is the primary focus, including data science, machine learning, IOT, bioinformatics, computer graphics or architecture. Each domain requires a highly tailored data manipulation and visualization toolbox and Luna provides both a solid foundation for building such toolboxes as well as growing library of existing ones. At its core, Luna delivers a powerful data flow modeling environment and an extensive data visualization and manipulation framework.
+Luna targets domains where data processing is the primary focus, including data science, machine learning, IoT, bioinformatics, computer graphics or architecture. Each domain requires a highly tailored data processing toolbox and Luna provides both an unified foundation for building such toolboxes as well as growing library of existing ones. At its core, Luna delivers a powerful data flow modeling environment and an extensive data visualization and manipulation framework.
 
 ![](/assets/screen1.png)
 
@@ -12,33 +12,32 @@ Luna targets domains where data processing is the primary focus, including data 
 
 > **The limits of my language are the limits of my world.**
 
+It's all about a language. Language is the backbone for sharing ideas among team members, programming computers to perform specific actions, receiving results, recording conclusions and even thinking. 
 
-Communication is a process of exchanging information. It requires a language to formulate the information and a medium to store and transfer it. Often, a domain specific language does not even remind a spoken or written one. The most common language used by graphic designers nowadays is a digital canvas and an associated toolbox of layers, brushes, shapes, filters, etc. It allows expressing thoughts in a much more flexible and universal way than pen and paper, providing the same level of interactivity.
+A language is a very generic term. Any form of communication, including data visualization and manipulation is a language as well. Often, a domain specific language does not even remind a spoken or written one. A good example is the most common language used by graphic designers nowadays – a digital canvas with an associated toolbox of layers, brushes, shapes, filters, etc.
 
 
 #### Language design principles
 
-There is no silver bullet language. Every domain is characterized by a set of distinct assumptions and requires a highly tailored language. English is great for everyday conversations, however, it would be a horrible choice as music or mathematical notations replacement. A well-designed language empowers people with the ability to both express their thoughts in a rapid and concise way as well as understand the feedback response easily. It is especially important to research because it directly affects how fast you can iterate – test new ideas and understand intermediate results. Fast iterations make it possible to test a wider range of parameters including those that should not work at first glance, allowing you to much better understand the domain you are investigating. Thus the language design directly affects not only the total time needed to solve a problem in a non-linear way, it often is the key to find the solution at all. No matter if you are examining drug effects while searching for a new treatment, designing a complex building shape or developing new IoT device, the speed of testing new ideas is the crucial factor for your success.
+The variety of domain specific requirements make it impossible to design a single, silver bullet language. English is great for everyday conversations, however, it would be a horrible choice as music or mathematical notations replacement. A well-designed language empowers people with the ability to both express their thoughts in a rapid and concise way as well as understand the feedback response easily. It is especially important to research because it directly affects how fast you can iterate – test new ideas and understand intermediate results. Fast iterations make it possible to test a wider range of parameters including those that should not work at first glance, allowing you to much better understand the domain you are investigating. Thus the language design directly affects not only the total time needed to solve a problem in a non-linear way, it often is the key to find the solution at all. 
 
-The language design depends heavily on the available medium as well. The most common language used by designers nowadays is a digital canvas and an associated toolbox of layers, brushes, shapes, filters, etc. It allows expressing thoughts in a much more flexible and universal way than pen and paper, providing the same level of interactivity and instant feedback loop.
-
-So what is a good language? What are the principles it has to follow to become the ultimate communication tool in a particular domain? We believe there are two basic principles, every domain specific language has to follow.
+An important question emerges – what is a good language? Are there any guidelines every domain specific language should follow? We believe there are two basic principles:
 
 * **People need an immediate connection to what they are making**
-This principle was first publicly introduced by Brett Victor, a human-computer interaction visionary, during his talk [Inventing on Principle](https://vimeo.com/36579366). You should definitively see it to better understand the concepts behind Luna. Any violation of this principle alienates the user from the actual problems he is trying to solve, which consequently decreases the understanding and increases the number of mistakes.
+This principle was first publicly introduced by Brett Victor, a human-computer interaction visionary, during his talk [Inventing on Principle](https://vimeo.com/36579366). Any violation of this principle alienates the user from the actual problems he is trying to solve, which consequently decreases the understanding and increases the number of mistakes.
 
 * **People cannot be limited by the language they are using**
 People tend to reject any language which obviously limits their expressiveness. This is the exact reason why so many WYSIWYG solutions never catch up. Website creators, game creators or visual programming languages provide their users with a limited set of predefined, high-level components. Even if these components can be extended by writing code, the need to resort to some underlying programming language spoils the design and makes it unusable for a less technical audience.
 
 #### Principle violation
 
-Violation of any of these rules always leads to a sub-optimal solution. Let's consider the graphic design again. Is using Photoshop always better than writing HTML, Sass and JavaScript code? Arguably. These solutions violate the first and the second principle respectively. Photoshop provides a WYSIWYG digital canvas with predefined, hardly extendable set of tools. HTML, Sass and JavaScript, on the other hand, provide a text interface and thus alienate the user from its real creation, but do not set a tight restriction on the expressiveness. Let's consider two use cases:
+Violation of any of these principles always leads to a sub-optimal solution. Let's consider the graphic design again. Is using Photoshop always better than writing HTML, Sass and JavaScript code? Arguably. These solutions violate the first and the second principle respectively. Photoshop provides a WYSIWYG digital canvas with predefined, hardly extendable set of tools. HTML, Sass and JavaScript, on the other hand, provide a text interface and thus alienate the user from its real creation, but do not set a tight restriction on the expressiveness. Let's consider two use cases:
 
 * A website design. There are five, evenly arranged items in the menu bar. If you want to add a new item and change the color palette of the website, all you have to do is to modify a single line in HTML and a color variable in Sass. No matter how complex the website is, every element will update automatically. Doing the same in Photoshop requires an order of magnitude more time – create a new menu item, use an alignment tool to arrange the elements, manually change the colors and probably re-apply some transformations and filters in more complex website areas.
 
-* An artistic painting. Using HTML, SVG and Sass within a text editor to express an artistic vision would hardly be possible. The more creative and discoverable the process is, the more important the instant feedback loop becomes.
+* An artistic painting. Using HTML, SVG and Sass within a text editor to express an artistic vision would hardly be possible. The more creative and discoverable the process is, the more important the WYSIWYG toolset and instant feedback loop become.
 
-An important question emerges – would it be possible to fuse both approaches? It's not only possible. There are already solutions heading in the right direction. Think about Sketch, which has become the ultimate design toolkit for Mac OS. Why so many people prefer it over Photoshop? The answer is surprisingly simple – Sketch limits it's user expressiveness less than Photoshop. It allows you to create reusable design elements and then bulk-update their parameters, just like Sass, but in a WYSIWYG environment. There are however many ways to further improve the designer's toolbox. Watch another talk from Brett Victors [Drawing Dynamic Visualizations](https://vimeo.com/66085662) for further inspiration.
+Would it be possible to fuse both approaches? It's not only possible, there are already solutions heading in the right direction. Think about Sketch, which has become the ultimate design toolkit for Mac OS. Why so many people prefer it over Photoshop? The answer is surprisingly simple – Sketch limits it's user expressiveness less than Photoshop. It allows you to create reusable design elements and then bulk-update their parameters, just like Sass, but in an interactive, WYSIWYG environment. There are many other ways to further improve the designer's experience. Watch another talk from Brett Victor, [Drawing Dynamic Visualizations](https://vimeo.com/66085662), for further inspiration.
 
 
 ## Luna, the language
@@ -82,6 +81,20 @@ meta-language, a language that can easily
 Luna unifies the domains, tools
 
 
+
+
+## Additional resources
+
+There are several articles and videos which would help you better understand the core concepts behind Luna. We strongly encourage you to read and watch them:
+
+* [Inventing on Principle](https://vimeo.com/36579366)
+* [Drawing Dynamic Visualizations by Brett Victor](https://vimeo.com/66085662)
+* [The Coming Software Apocalypse](https://www.theatlantic.com/technology/archive/2017/09/saving-the-world-from-code/540393/)
+
+
+
+
+xxxxxx
 
 
 When working on
