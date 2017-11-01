@@ -38,7 +38,11 @@ Violation of any of these principles always leads to a sub-optimal solution. Let
 Would it be possible to fuse both approaches? It's not only possible, there are already solutions heading in the right direction. Think about Sketch, which has become the ultimate design toolkit for Mac OS. Why so many people prefer it over Photoshop? The answer is surprisingly simple – Sketch limits it's user expressiveness less than Photoshop. It allows you to create reusable design elements and then bulk-update their parameters, just like Sass, but in an interactive, WYSIWYG environment. There are many other ways to further improve the designer's experience. Watch another talk from Brett Victor, [Drawing Dynamic Visualizations](https://vimeo.com/66085662), for further inspiration.
 
 
-## The 
+## The curse of DSLs
+
+While DSLs provide highly specialized tools for 
+and effectively are helping us much, they are often accidentaly spoil the design in a longer perspective
+no communication between dsls etc
 
 ## Luna, the language
 
