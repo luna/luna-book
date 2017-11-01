@@ -4,7 +4,7 @@
 
 Luna is an open source, [WYSIWYG](https://en.wikipedia.org/wiki/WYSIWYG) data processing language. Its goal is to revolutionize the way people are able to gather, understand and manipulate data. 
 
-Luna targets domains where data processing is the primary focus, including data science, machine learning, IOT, bioinformatics, computer graphics or architecture. Each domain requires a highly tailored data processing toolbox and Luna provides both a solid foundation for building such toolboxes as well as growing library of existing ones. At its core Luna delivers a powerful, visual data flow modelling environment and an extensive data visualization and manipulation framework.
+Luna targets domains where data processing is the primary focus, including data science, machine learning, IOT, bioinformatics, computer graphics or architecture. Each domain requires a highly tailored data manipulation and visualization toolbox and Luna provides both a solid foundation for building such toolboxes as well as growing library of existing ones. At its core Luna delivers a powerful data flow modelling environment and an extensive data visualization and manipulation framework.
 
 ![](/assets/screen1.png)
 
@@ -12,20 +12,14 @@ Luna targets domains where data processing is the primary focus, including data 
 ## Language, the foundation of communication.
 
 > **The limits of my language are the limits of my world.**
- 
-Let's start with a question. What does it mean that Luna is a "language"? Is it like English? Is it like a programming language? I would say neither. It's something with a much broader concept. In this chapter I will try to guide you trough Luna foundations and show you the full picture of what Luna was designed for.
 
-Let's start with an important question. What does it mean that Luna is a language? Is it like English? Is it like a programming language? Something in between. Think of a language like about a way to express your thoughts. According to this definition, we can call Photoshop a designers language or 
 
-Let's start with an important question. What does it mean that Luna is a language? If you are thinking now of language examples like English or a programming language, stop. Think broader.
- 
-
-Communication is a process of exchanging information. It requires a language to formulate the information and a medium to store and transfer it. A well designed language should empower people with the ability to both express their thoughts in a rapid and concise way as well as understand the feedback response easily. It is especially important with research, because it directly affects how fast you can iterate – test new ideas and understand intermediate results. Fast iterations make it possible to test wider range of parameters including those that should not work at first glance, allowing you to much better understand the domain you are investigating. Thus the language design directly affects not only the total time needed to solve a problem in a non-linear way, it often is the key to find the solution at all. No matter if you are examining drug effects while searching for a new treatment, designing a complex building shape or developing new IOT device, the speed of testing new ideas is the crucial factor for your success.
+Communication is a process of exchanging information. It requires a language to formulate the information and a medium to store and transfer it. A domain specific language often does not even remind a spoken or written one. The most common language used by graphic designers nowadays is a digital canvas and an associated toolbox of layers, brushes, shapes, filters, etc. It allows expressing thoughts in a much more flexible and universal way than pen and paper, providing the same level of interactivity.
 
 
 #### Language design principles
 
-There is no silver bullet language. Every domain is characterized by a set of distinct assumptions and requires highly tailored communication language. Such language often does not even remind a spoken one. English is great for everyday conversations. However, it would be a horrible choice as music or mathematical notations replacement. 
+There is no silver bullet language. Every domain is characterized by a set of distinct assumptions and requires a highly tailored language. English is great for everyday conversations, however, it would be a horrible choice as music or mathematical notations replacement. A well designed language empowers people with the ability to both express their thoughts in a rapid and concise way as well as understand the feedback response easily. It is especially important with research, because it directly affects how fast you can iterate – test new ideas and understand intermediate results. Fast iterations make it possible to test wider range of parameters including those that should not work at first glance, allowing you to much better understand the domain you are investigating. Thus the language design directly affects not only the total time needed to solve a problem in a non-linear way, it often is the key to find the solution at all. No matter if you are examining drug effects while searching for a new treatment, designing a complex building shape or developing new IOT device, the speed of testing new ideas is the crucial factor for your success.
 
 The language design depends heavily on the available medium as well. The most common language used by designers nowadays is a digital canvas and an associated toolbox of layers, brushes, shapes, filters, etc. It allows expressing thoughts in a much more flexible and universal way than pen and paper, providing the same level of interactivity and instant feedback loop.
 
