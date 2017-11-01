@@ -8,49 +8,52 @@ Luna targets domains where data processing is the primary focus, including data 
 ![](/assets/screen1.png)
 
 
-## Language, the foundation of communication.
-
+## The rise and fall of DSL
 > **The limits of my language are the limits of my world.**
 
-It's all about a language. Language is the backbone for sharing ideas among team members, programming computers to perform specific actions, receiving results, recording conclusions and even thinking. 
-
-A language is a very generic term. Any form of communication, including data visualization and manipulation is a language as well. Often, a domain specific language does not even remind a spoken or written one. A good example is the most common language used by graphic designers nowadays – a digital canvas with an associated toolbox of layers, brushes, shapes, filters, etc.
+The variety of domain specific requirements contributed significantly to the rise of [Domain Specific Languages (DSLs)](https://en.wikipedia.org/wiki/Domain-specific_language). If you are a software developer and you are familiar with this term, you probably recognize DSLs with their most popular form, a highly specialized subset of textual programming languages. However, the definition of a DSL is much broader than that. Any system which provides even very limited syntax for domain specific communication is a DSL. The syntax do not need to be textual – visual solution like an UML diagramming, interactive plotting or music processing can be considered as syntax as well. A good example is the most common DSL used by graphic designers nowadays – a digital canvas with an associated toolbox of layers, brushes, shapes, filters, etc.
 
 
 #### Language design principles
 
-The variety of domain specific requirements make it impossible to design a single, silver bullet language. English is great for everyday conversations, however, it would be a horrible choice as music or mathematical notations replacement. A well-designed language empowers people with the ability to both express their thoughts in a rapid and concise way as well as understand the feedback response easily. It is especially important to research because it directly affects how fast you can iterate – test new ideas and understand intermediate results. Fast iterations make it possible to test a wider range of parameters including those that should not work at first glance, allowing you to much better understand the domain you are investigating. Thus the language design directly affects not only the total time needed to solve a problem in a non-linear way, it often is the key to find the solution at all. 
+A well-designed language empowers people with the ability to both express their thoughts in a rapid and concise way as well as understand the feedback response easily. It is especially important to research because it directly affects how fast you can iterate – test new ideas and understand intermediate results. Fast iterations make it possible to test a wider range of parameters including those that should not work at first glance, allowing you to much better understand the domain you are investigating. Thus the language design directly affects not only the total time needed to solve a problem in a non-linear way, it often is the key to find the solution at all. 
 
-An important question emerges – what is a good language? Are there any guidelines every domain specific language should follow? We believe there are two basic principles:
+An important question emerges – what is a good language? Are there any guidelines every Domain Specific Language should follow? We believe there are two basic principles:
 
 * **People need an immediate connection to what they are making**
 This principle was first publicly introduced by Brett Victor, a human-computer interaction visionary, during his talk [Inventing on Principle](https://vimeo.com/36579366). Any violation of this principle alienates the user from the actual problems he is trying to solve, which consequently decreases the understanding and increases the number of mistakes.
 
 * **People cannot be limited by the tool they are using**
-People tend to reject any tool which obviously limits their expressiveness. This is the exact reason why so many WYSIWYG solutions, like website creators, game creators or visual programming languages never catch up. Any tool more complex than a WYSIWYG text editor can easily violate this principle by providing its users with a too limited set of predefined, high-level components. Even if these components can be extended by writing code, the need to resort to some underlying programming language spoils the design and makes it unusable for a less technical audience.
+People tend to reject any tool which obviously limits their expressiveness. This is the exact reason why so many WYSIWYG solutions, like website creators, game creators or visual programming languages never catch up. Any DSL more complex than a WYSIWYG text editor can easily violate this principle by providing its users with a too limited set of predefined, high-level components. Even if these components can be extended by writing code, the need to resort to some underlying programming language spoils the design and makes it unusable for a less technical audience.
 
 
 #### Principle violation
 
 Violation of any of these principles always leads to a sub-optimal solution. Let's consider the graphic design again. Is using Photoshop always better than writing HTML, Sass and JavaScript code? Arguably. These solutions violate the first and the second principle respectively. Photoshop provides a WYSIWYG digital canvas with predefined, hardly extendable set of tools. HTML, Sass and JavaScript, on the other hand, provide a text interface and thus alienate the user from its real creation, but do not set a tight restriction on the expressiveness. Let's consider two use cases:
 
-* A website design. There are five, evenly arranged items in the menu bar. If you want to add a new item and change the color palette of the website, all you have to do is to modify a single line in HTML and a color variable in Sass. No matter how complex the website is, every element will update automatically. Doing the same in Photoshop requires an order of magnitude more time – create a new menu item, use an alignment tool to arrange the elements, manually change the colors and probably re-apply some transformations and filters in more complex website areas.
+* A website design. There are five, evenly arranged items in the menu bar. If you want to add a new item and change the color palette of the website, all you have to do is to modify a single line in HTML and a color variable in Sass. No matter how complex the website is, every element will update automatically. Doing the same in Photoshop requires several orders of magnitude more time – create a new menu item, use an alignment tool to arrange the elements, manually change the colors and probably re-apply some transformations and filters in more complex website areas.
 
 * An artistic painting. Using HTML, SVG and Sass within a text editor to express an artistic vision would hardly be possible. The more creative and discoverable the process is, the more important the WYSIWYG toolset and instant feedback loop become.
 
 Would it be possible to fuse both approaches? It's not only possible, there are already solutions heading in the right direction. Think about Sketch, which has become the ultimate design toolkit for Mac OS. Why so many people prefer it over Photoshop? The answer is surprisingly simple – Sketch limits it's user expressiveness less than Photoshop. It allows you to create reusable design elements and then bulk-update their parameters, just like Sass, but in an interactive, WYSIWYG environment. There are many other ways to further improve the designer's experience. Watch another talk from Brett Victor, [Drawing Dynamic Visualizations](https://vimeo.com/66085662), for further inspiration.
 
 
+## The 
+
 ## Luna, the language
 
-If we know the very basic principles for a perfect domain specific language, why the available domain specific tools not yet there? Why are we not living in an unlimited WYSIWYG world? The answer turns out to be obvious. Creating a language that follows these principles is a very complex and time-consuming process. Each domain is different. There is no universal guide how a language should look like, so designing and testing new tools, visualizations or interaction ideas is the only way to get the perfect combination. Moreover, every idea requires a significant development time before it could be tested, so either you or your team need a solid software development background.
+If we know the very basic principles for a perfect domain specific language, why the available domain specific tools not yet there? Why are we not living in an unlimited WYSIWYG world? The answer is obvious. Creating a language that follows these principles is a very complex and time-consuming process. Each domain is different. There is no universal guide how a language should look like, so designing and testing new tools, visualizations or interaction ideas is the only way to get the perfect combination. Moreover, every idea requires a significant development time before it could be tested, so either you or your team need a solid software development background.
 
 
+
+Luna was designed to make it easy to create any embedded DSL with a rich syntax in it.
 
 
   having the same powers developers currently do and using them in an instant? The answer turns out to be simple as well. Creating a language that follows these principles is a very complex and time-consuming process. Each domain is different. There is no universal guide how a language should look like, so designing and testing new tools, visualizations or interaction ideas is the only way to get the perfect combination. Moreover, every idea requires a significant development time before it could be tested, so either you or your team need a solid software development background.
 
 
+We are living in a world of hundreds of small, very limited, domain specific languages. They are hardly extendable and cannot speak with each other easily. 
+  
 TODO below this line
 = = = = = = = = = = = = = = = = = = = =
 
