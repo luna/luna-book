@@ -26,8 +26,9 @@ An important question emerges – what is a good language? Are there any guideli
 * **People need an immediate connection to what they are making**
 This principle was first publicly introduced by Brett Victor, a human-computer interaction visionary, during his talk [Inventing on Principle](https://vimeo.com/36579366). Any violation of this principle alienates the user from the actual problems he is trying to solve, which consequently decreases the understanding and increases the number of mistakes.
 
-* **People cannot be limited by the language they are using**
-People tend to reject any language which obviously limits their expressiveness. This is the exact reason why so many WYSIWYG solutions never catch up. Website creators, game creators or visual programming languages provide their users with a limited set of predefined, high-level components. Even if these components can be extended by writing code, the need to resort to some underlying programming language spoils the design and makes it unusable for a less technical audience.
+* **People cannot be limited by the tool they are using**
+People tend to reject any tool which obviously limits their expressiveness. This is the exact reason why so many WYSIWYG solutions, like website creators, game creators or visual programming languages never catch up. Any tool more complex than a WYSIWYG text editor can easily violate this principle by providing its user with a limited set of predefined, high-level components. Even if these components can be extended by writing code, the need to resort to some underlying programming language spoils the design and makes it unusable for a less technical audience.
+
 
 #### Principle violation
 
@@ -42,7 +43,7 @@ Would it be possible to fuse both approaches? It's not only possible, there are 
 
 ## Luna, the language
 
-If we know the very basic principles for a perfect domain specific language, why the available tools for graphics, architecture, electronic design, music creation or software building are not yet there? Why are we not living in a WYSIWYG world, having the same powers developers currently do and using them in an instant? The answer turns out to be simple as well. Creating a language that follows these principles is a very complex and time-consuming process. Each domain is different. There is no universal guide how a language should look like, so designing and testing new tools, visualizations or interaction ideas is the only way to get the perfect combination. Moreover, every idea requires a significant development time before it could be tested, so either you or your team need a solid software development background.
+If we know the very basic principles for a perfect domain specific language, why the available tools for data science, machine learning, IoT, bioinformatics, computer graphics or architecture are not yet there? Why are we not living in a WYSIWYG world, having the same powers developers currently do and using them in an instant? The answer turns out to be simple as well. Creating a language that follows these principles is a very complex and time-consuming process. Each domain is different. There is no universal guide how a language should look like, so designing and testing new tools, visualizations or interaction ideas is the only way to get the perfect combination. Moreover, every idea requires a significant development time before it could be tested, so either you or your team need a solid software development background.
 
 
 TODO below this line
