@@ -43,15 +43,30 @@ Would it be possible to fuse both approaches? It's not only possible, there are 
 
 If we know the very basic principles for a perfect domain specific language, why the available domain specific tools not yet there? Why are we not living in an unlimited WYSIWYG world?
 
-While domain specific languages deliver an unparalleled way to manipulate and understand data, they quietly smuggle spoiled software design patterns. The existence of many, small DSLs which cannot speak with each other leads to a dysfunctional, fragmented software world in a long perspective.
+While domain specific languages deliver an unparalleled way to manipulate and understand data, they also quietly smuggle spoiled software design patterns. The existence of many, small DSLs which cannot speak with each other leads in a long perspective to a dysfunctional, fragmented software world.
 
 In real world, there is a constant cooperation between domains. Image manipulation is often used for the needs of machine learning and bioinformatics, which in turn increasingly become an important tool for architecture and vehicle design. The rapid IoT development results in smaller and more autonomous devices, which opens a new world for early disease detection, health monitoring systems or intelligent cities.
 
 However there is hardly any cooperation in the software world. Software developers are writing the same code over and over again, which leads to high development costs and innovation stagnation. You cannot just take a shape editor from your favorite graphics software, fine tune it for your needs, glue with machine learning tools and create an AI-assisted 3D modelling tool for the needs of 3D printing. Instead of hours you currently need days or months to accomplish such task. Even if you find libraries that implement similar functionality, an enormous amount of work has to be done before it will follow the "no limits" principle and provide a truly flexible environment, so your users could fine tune how the model is build. As a result, instead of improving existing components or inventing new ways of manipulating data, developers re-implements known solutions from scratch in every new application. 
 
 
-unparalleled
 ## Luna, the language
+
+Luna was designed as an unified environment for building and hosting visually rich domain specific languages, according to the principles. 
+
+In order to deliver an instant feedback loop, an immediate connection between people and their creation, domain specific languages need to combine rich data visualization and intuitive data manipulation in a single, smooth experience.  
+
+
+While domain specific languages are the only way of delivering highly tailored  
+
+Luna was designed to deliver the develop
+
+It is impossible to create domain specific languages
+
+In order to allow domain specific languages to be 
+
+
+Luna was designed as an unified environment for building and hosting visually rich domain specific languages.
 
 
 
