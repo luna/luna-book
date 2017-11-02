@@ -17,9 +17,9 @@ The variety of domain specific requirements contributed significantly to the ris
 
 #### Language design principles
 
-A well-designed language empowers people with the ability to both express their thoughts in a rapid and concise way as well as understand the feedback response easily. It is especially important to research because it directly affects how fast you can iterate – test new ideas and understand intermediate results. Fast iterations make it possible to test a wider range of parameters including those that should not work at first glance, allowing you to much better understand the domain you are investigating. Thus the language design directly affects not only the total time needed to solve a problem in a non-linear way, it often is the key to find the solution at all. 
+A well-designed domain specific language, or a language in general, empowers people with the ability to both express their thoughts in a rapid and concise way as well as understand the feedback response easily. It is especially important to research because it directly affects how fast you can iterate – test new ideas and understand intermediate results. Fast iterations make it possible to test a wider range of parameters including those that should not work at first glance, allowing you to much better understand the domain you are investigating. Thus the language design directly affects not only the total time needed to solve a problem in a non-linear way, it often is the key to find the solution at all. 
 
-An important question emerges – what is a good language? Are there any guidelines every Domain Specific Language should follow? We believe there are two basic principles:
+An important question emerges – what is a good language? Are there any guidelines every domain specific language should follow? We believe there are two basic principles:
 
 * **People need an immediate connection to what they are making**
 This principle was first publicly introduced by Brett Victor, a human-computer interaction visionary, during his talk [Inventing on Principle](https://vimeo.com/36579366). Any violation of this principle alienates the user from the actual problems he is trying to solve, which consequently decreases the understanding and increases the number of mistakes.
