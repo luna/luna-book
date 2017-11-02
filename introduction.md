@@ -30,7 +30,7 @@ People tend to reject any tool which obviously limits their expressiveness. This
 
 #### Principle violation
 
-Violation of any of these principles always leads to a sub-optimal solution. Let's consider the graphic design again. Is using Photoshop always better than writing HTML, Sass and JavaScript code? Arguably. These solutions violate the first and the second principle respectively. Photoshop provides a WYSIWYG digital canvas with predefined, hardly extendable set of tools. HTML, Sass and JavaScript, on the other hand, provide a text interface and thus alienate the user from its real creation, but do not set a tight restriction on the expressiveness. Let's consider two use cases:
+Violation of any of these principles always leads to a sub-optimal solution. Let's consider the graphic design again. Is using Photoshop always better than writing HTML, Sass and JavaScript code? Arguably. These solutions violate the first and the second principle respectively. Photoshop provides a WYSIWYG digital canvas with a limited set of predefined, hardly extendable tools. HTML, Sass and JavaScript, on the other hand, provide a text interface and thus alienate the user from its real creation, but do not set a tight restriction on the expressiveness. Let's consider two use cases:
 
 * A website design. There are five, evenly arranged items in the menu bar. If you want to add a new item and change the color palette of the website, all you have to do is to modify a single line in HTML and a color variable in Sass. No matter how complex the website is, every element will update automatically. Doing the same in Photoshop requires several orders of magnitude more time – create a new menu item, use an alignment tool to arrange the elements, manually change the colors and probably re-apply some transformations and filters in more complex website areas.
 
@@ -41,10 +41,17 @@ Would it be possible to fuse both approaches? It's not only possible, there are 
 
 ## The curse of DSLs
 
-While DSLs provide highly specialized tools for 
-and effectively are helping us much, they are often accidentaly spoil the design in a longer perspective
-no communication between dsls etc
+While domain specific languages deliver an unparalleled way to manipulate and understand data, they quietly smuggle spoiled software design patterns. The existence of many, small DSLs which cannot speak with each other leads to a dysfunctional, fragmented software world in a long perspective.
 
+In real world, there is a constant cooperation between domains. Image manipulation is often used for the needs of machine learning and bioinformatics, which in turn increasingly become an important tool for architecture and vehicle design. The rapid IoT development results in smaller and more autonomous devices, which opens a new world for early disease detection, health monitoring systems or intelligent cities.
+
+However there is hardly any cooperation in the software world. Software developers are writing the same code over and over again, which leads to high development costs and innovation stagnation. You cannot just take or buy an animation editor from your favorite video editing software and use it into your new graphic design application. Even if you find libraries that implement such functionality, an enormous amount of work has to be done before it will follow the "no limits" principle and provide your users with a great expressiveness freedom. As a result, instead of improving existing tools or inventing new ways of data processing, developers re-implements known solutions from scratch in every new application. 
+
+  Your users should be able to create custom animation curves, parametrize them with earlier computed values
+
+
+
+unparalleled
 ## Luna, the language
 
 If we know the very basic principles for a perfect domain specific language, why the available domain specific tools not yet there? Why are we not living in an unlimited WYSIWYG world? The answer is obvious. Creating a language that follows these principles is a very complex and time-consuming process. Each domain is different. There is no universal guide how a language should look like, so designing and testing new tools, visualizations or interaction ideas is the only way to get the perfect combination. Moreover, every idea requires a significant development time before it could be tested, so either you or your team need a solid software development background.
