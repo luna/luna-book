@@ -8,10 +8,11 @@ Luna targets domains where data processing is the primary focus, including data 
 ![](/assets/screen1.png)
 
 
-## The rise and fall of DSL
+## The rise and fall of DSLs
 > **The limits of my language are the limits of my world.**
 
-The variety of domain specific requirements contributed significantly to the rise of [Domain Specific Languages (DSLs)](https://en.wikipedia.org/wiki/Domain-specific_language). If you are a software developer and you are familiar with this term, you probably recognize DSLs with their most popular form, a highly specialized subset of textual programming languages. However, the definition of a DSL is much broader than that. Any system which provides even very limited syntax for domain specific communication is a DSL. The syntax do not need to be textual – visual solution like an UML diagramming, interactive plotting or music processing can be considered as syntax as well. A good example is the most common DSL used by graphic designers nowadays – a digital canvas with an associated toolbox of layers, brushes, shapes, filters, etc.
+
+The variety of domain specific requirements contributed significantly to the rise of [Domain Specific Languages (DSLs)](https://en.wikipedia.org/wiki/Domain-specific_language). If you are a software developer, you probably recognize DSLs with their most popular form, a highly specialized subset of textual programming languages. However, the definition of a DSL is much broader than that. Domain specific language is a highly tailored textual or visual interface for manipulating data in a particular domain. Rich graphical user interfaces designed to work with domain specific data like UML diagramming, interactive plotting or music processing should be considered DSLs too. A good example is the most common DSL used by graphic designers nowadays – a digital canvas with an associated toolbox of layers, brushes, shapes, filters, etc.
 
 
 #### Language design principles
@@ -48,6 +49,8 @@ no communication between dsls etc
 
 If we know the very basic principles for a perfect domain specific language, why the available domain specific tools not yet there? Why are we not living in an unlimited WYSIWYG world? The answer is obvious. Creating a language that follows these principles is a very complex and time-consuming process. Each domain is different. There is no universal guide how a language should look like, so designing and testing new tools, visualizations or interaction ideas is the only way to get the perfect combination. Moreover, every idea requires a significant development time before it could be tested, so either you or your team need a solid software development background.
 
+
+Luna was designed to 
 
 
 Luna was designed to make it easy to create any embedded DSL with a rich syntax in it.
