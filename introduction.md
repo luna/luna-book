@@ -54,9 +54,11 @@ However there is hardly any cooperation in the software world. Software develope
 
 
 
-In order to deliver an immediate connection between people and their creation, an instant feedback loop, domain specific languages need to combine rich data visualization and intuitive data manipulation in a single, smooth experience. 
+In order to deliver the an instant feedback loop, the immediate connection between people and their creation, domain specific languages need to combine rich data visualization and intuitive data manipulation in a single, smooth experience. 
 
-Following the second principle, however, is more tricky. How can we design languages to be sure they do not limit people's expressiveness? The idea is to allow the user to incrementally change the perspective. Instead of resorting to an underlying programming language, we can allow to literally dive into every component and use the same (or very similar) language to describe how the sub-components communicate. Diving into sub-components and their sub-sub-components allows users to gradually lower the perspective and focus on more fine grained elements on demand.
+Following the second principle, however, is more tricky. How can we design languages to be sure they do not limit people's expressiveness? How can we allow users to fine tune every component to their needs (nie wymagajac od nich by byli programistami)
+
+The idea is to allow the user to incrementally change the perspective. Instead of resorting to an underlying programming language, we can allow to literally dive into every component and use the same (or very similar) language to describe how the sub-components communicate. Diving into sub-components and their sub-sub-components allows users to gradually lower the perspective and focus on more fine grained elements on demand.
 
 
 This is exactly what Luna does. Luna was designed as an unified environment for building and hosting visually rich domain specific languages.
