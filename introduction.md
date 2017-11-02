@@ -52,11 +52,55 @@ However there is hardly any cooperation in the software world. Software develope
 
 ## Luna, the language
 
-Luna was designed as an unified environment for building and hosting visually rich domain specific languages, according to the principles. 
+
 
 In order to deliver an immediate connection between people and their creation, an instant feedback loop, domain specific languages need to combine rich data visualization and intuitive data manipulation in a single, smooth experience. 
 
-Following the second principle however is more tricky. How can we design languages to be sure they do not limit people's expressiveness?
+Following the second principle, however, is more tricky. How can we design languages to be sure they do not limit people's expressiveness? The idea is to allow the user to incrementally change the perspective. Instead of resorting to an underlying programming language, we can allow to literally dive into every component and use the same (or very similar) language to describe how the sub-components communicate. Diving into sub-components and their sub-sub-components allows users to gradually lower the perspective and focus on more fine grained elements on demand.
+
+
+This is exactly what Luna does. Luna was designed as an unified environment for building and hosting visually rich domain specific languages.
+
+
+
+
+
+How can we design languages to be sure they do not limit people's expressiveness? Until the user does not have control over every aspect of the system, there are always limits that would cause pain sooner than later. 
+
+It seems however, that there is a solution. 
+
+The idea is to allow the user to incrementally dive into the details. Instead of resorting to an underlying programming language, we can allow to literally dive into every component and see how it is working in the same or very similar language. Moreover, if we can dive further to any sub-component as deep as we need, we get a system where user can 
+
+
+The idea is to allow the user to incrementally change the perspective. Instead of resorting to an underlying programming language, we can allow to literally dive into every component and observe how more fine grained components communicate. 
+ it is working in the same or very similar language. Moreover, if we can dive further to any sub-component as deep as we need, we get a system where user can 
+
+
+The idea is to allow the user to incrementally change the perspective. Instead of resorting to an underlying programming language, we can allow to literally dive into every component and observe how more fine grained components communicate. 
+it is working in the same or very similar language. Moreover, if we can dive further to any sub-component as deep as we need, we get a system where user can
+
+The idea is to allow the user to incrementally change the perspective. Instead of resorting to an underlying programming language, we can allow to literally dive into every component and use the same (or very similar) language to describe how the sub-components communicate. Diving into sub-components and their sub-sub-components allows users to gradually lower the perspective and focus on more fine grained elements on demand.
+ 
+it is working in the same or very similar language. Moreover, if we can dive further to any sub-component as deep as we need, we get a system where user can
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  from high level to lower level level demand. Instead of resorting to an underlying programming language, we can allow to literally dive into every component and see how it is working in the same or very similar language. Moreover, if we can dive further to any sub-component as deep as we need, we get a system where user can 
+
+
+
 In order to provide the 
 
 
