@@ -21,10 +21,10 @@ A well-designed domain specific language, or a language in general, empowers peo
 An important question emerges – what is a good language? Are there any guidelines every domain specific language should follow? We believe there are two basic principles:
 
 * **People need an immediate connection to what they are making**
-This principle was first publicly introduced by Brett Victor, a human-computer interaction visionary, during his talk [Inventing on Principle](https://vimeo.com/36579366). Any violation of this principle alienates the user from the actual problems he is trying to solve, which consequently decreases the understanding and increases the number of mistakes.
+  This principle was first publicly introduced by Brett Victor, a human-computer interaction visionary, during his talk [Inventing on Principle](https://vimeo.com/36579366). Any violation of this principle alienates the user from the actual problems he is trying to solve, which consequently decreases the understanding and increases the number of mistakes.
 
 * **People cannot be limited by the tool they are using**
-People tend to reject any tool which obviously limits their expressiveness. This is the exact reason why so many WYSIWYG solutions, like website creators, game creators or visual programming languages never catch up. Any DSL more complex than a WYSIWYG text editor can easily violate this principle by providing its users with a too limited set of predefined, high-level components. Even if these components can be extended by writing code, the need to resort to some underlying programming language spoils the design and makes it unusable for a less technical audience.
+  People tend to reject any tool which obviously limits their expressiveness. This is the exact reason why so many WYSIWYG solutions, like website creators, game creators or visual programming languages never catch up. Any DSL more complex than a WYSIWYG text editor can easily violate this principle by providing its users with a too limited set of predefined, high-level components. Even if these components can be extended by writing code, the need to resort to some underlying programming language spoils the design and makes it unusable for a less technical audience.
 
 
 #### Principle violation
@@ -59,13 +59,13 @@ This is exactly what Luna does. It was built upon three main concepts:
 
 
 * <span class="uiref">1</span> **Data visualization and manipulation environment**
-   From the highest perspective, Luna allows you to visualize and manipulate data using interactive and extensible WYSIWYG components. Moreover, Luna provides a way to easily define new components, modify existing ones and share them with the community.
+  From the highest perspective, Luna allows you to visualize and manipulate data using interactive and extensible WYSIWYG components. Moreover, Luna provides a way to easily define new components, modify existing ones and share them with the community.
 
 * <span class="uiref">2</span> **Data flow graph**
-   You can literally zoom out to see how the high-level components are wired together forming a data flow graph. You can rewire them or insert new components to redefine how the graph works. Luna delivers components which spread over all levels of abstraction, from high to low. From painting canvas over statistical functions to bitwise operators
+  You can literally zoom out to see how the high-level components are wired together forming a data flow graph. You can rewire them or insert new components to redefine how the graph works. Luna delivers components which spread over all levels of abstraction, from high to low. From painting canvas over statistical functions to bitwise operators
 
 * <span class="uiref">3</span> **Nested data flow graphs and code representation** 
-   Every component in Luna is built out of other components, without exception. You can always dive all the way down to the desired level of abstraction and fine tune it to your needs. You can also collapse several connected components into new, more powerful one and share it with others. Moreover, Luna provides it's users with a very unique capability to switch between representations – from the data flow graph to code and vice versa. It implies a very important truth – the graph is as powerful as the code.
+  Every component in Luna is built out of other components, without exception. You can always dive all the way down to the desired level of abstraction and fine tune it to your needs. You can also collapse several connected components into new, more powerful one and share it with others. Moreover, Luna provides it's users with a very unique capability to switch between representations – from the data flow graph to code and vice versa. It implies a very important truth – the graph is as powerful as the code.
 
 ![](/assets/placeholder.jpg)
 
