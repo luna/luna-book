@@ -7,11 +7,9 @@ It's time to make our hands dirty with Luna! The first thing we're going to do i
 The Luna Explorer is a context-aware search engine and integrated expression editor. The Explorer is currently available only within the data flow editor.
 
 ###### Accessing the Luna Explorer
-In order to access Luna Explorer place your mouse over the data flow editor and press the <kbd>tab</kbd> key. It consists of four major components:
-  * <span class="uiref">1</span> Search input
-    The search input field allow
+In order to access the Luna Explorer place your mouse over the data flow editor and press the <kbd>tab</kbd> key. The Explorer consists of three panels – expression input field <span class="uiref">1</span>, result list <span class="uiref">2</span> and documentation view<span class="uiref">3</span>.  
 
-
+###### Searching for available 
 A Node Searcher should appear on the screen <span class="uiref">2</span>. It allows you to filter available functions and libraries by their names.
 
 ![](/assets/placeholder.jpg)
