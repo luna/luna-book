@@ -4,7 +4,7 @@
 
 * [Introduction](README.md)
 * [What is Luna?](introduction.md)
-* [Starting Out](interface.md)
+* [Starting Out](installation.md)
   * [Installation](installation.md)
   * [Interface](interface.md)
   * [Ready, set, go!](go.md)
