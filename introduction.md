@@ -70,8 +70,9 @@ This is exactly what Luna does. It was built upon three main concepts:
 ![](/assets/placeholder.jpg)
 
 
-Luna was designed as an unified environment for building and hosting visually rich domain specific languages. 
-    
+Luna was designed as an unified environment for building and hosting visually rich domain specific languages. It blurs the boundaries between domains, allowing tools from different fields to seamlessly communicate and coexist. 
+
+
 
 ## Additional resources
 
