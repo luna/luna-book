@@ -19,8 +19,7 @@ The default behavior of the Explorer is to search for functions and modules. Aft
 A Node Searcher should appear on the screen <span class="uiref">2</span>. It allows you to filter available functions and libraries by their names.
 
 ###### Searching for methods
-The Explorer would prefer searching for methods if:
-  * A node was selected before the Explorer was opened. or the expression ends with the access operator `.`. In the former case, a new node would automatically be connected to the selected one.
+The Explorer would prefer searching for methods if a node was selected before it was opened or the cursor is placed immediately after the access operator `.`. 
 
 ![](/assets/placeholder.jpg)
 
