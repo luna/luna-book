@@ -2,9 +2,9 @@
 
 It's time to make our hands dirty with Luna! The first thing we're going to do is to create a simple data flow graph, which will create two numbers and then add them together!
 
-#### Browsing nodes
+#### Luna Assistant
 
-Place your mouse over the Luna Visual Editor and press the <kbd>tab</kbd> key. A Node Searcher should appear on the screen <span class="uiref">1</span>. It allows you to filter available functions and libraries by their names.
+Place your mouse over the data flow editor <span class="uiref">1</span> and press the <kbd>tab</kbd> key. A Node Searcher should appear on the screen <span class="uiref">2</span>. It allows you to filter available functions and libraries by their names.
 
 ![](/assets/placeholder.jpg)
 
