@@ -4,15 +4,10 @@ It's time to make our hands dirty with Luna! The first thing we're going to do i
 
 #### Luna Explorer
 
-The Luna Explorer is a context-aware fuzzy search engine and integrated expression editor. It allows you to search for available methods, functions, modules, libraries, commands and more. The results are sorted according to achieved score
-
-  The Explorer is currently available only within the data flow editor.
+The Luna Explorer is a context-aware fuzzy search engine for methods, functions, modules, libraries, commands and more. The results are sorted by their score based on the current context and the match accuracy. The Explorer is currently available only within the data flow editor.
 
 ###### Accessing the Luna Explorer
-In order to access the Luna Explorer place your mouse over the data flow editor and press the <kbd>tab</kbd> key. The Explorer consists of three panels – expression input field <span class="uiref">1</span>, result list <span class="uiref">2</span> and documentation view<span class="uiref">3</span>. You can start typing as soon as the Explorer appears on your screen. The input field is always active and listens for your input until the Explorer is closed.
-
-###### The scoring system 
-The Luna Explorer bases on a scoring system. It displays results sorted by their score. The score depends on various factors, including the current context and the match accuracy.
+In order to access the Luna Explorer place your mouse over the data flow editor and press the <kbd>tab</kbd> key. You can close the explorer by pressing the <kbd>tab</kbd> key again if no input was provided or the <kbd>escape</kbd> key otherwise. The Explorer consists of three panels – input expression editor <span class="uiref">1</span>, result list <span class="uiref">2</span> and documentation view<span class="uiref">3</span>. You can start typing as soon as the Explorer appears on your screen. The input expression editor is always active and listens for your input until the Explorer is closed.
 
 ###### Searching for functions and modules
 
@@ -21,7 +16,7 @@ The default behavior of the Explorer is to search for functions and modules. Aft
 A Node Searcher should appear on the screen <span class="uiref">2</span>. It allows you to filter available functions and libraries by their names.
 
 ###### Searching for methods
-The Explorer would prefer searching for methods if a node was selected before it was opened or the cursor is placed immediately after the access operator `.`. 
+The Explorer would prefer methods if a node was selected before it was opened or the cursor is placed immediately after the access operator `.`. 
 
 ![](/assets/placeholder.jpg)
 
