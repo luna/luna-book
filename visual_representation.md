@@ -9,12 +9,12 @@ The Luna Explorer is a context-aware fuzzy search engine and interactive express
 ###### Result scoring
 The Luna Explorer uses sophisticated fuzzy search algorithm allowing searching for methods, functions, modules, libraries, commands and more. The results are sorted by their score based on the current context and the match accuracy. The algorithm details are beyond the scope of this book, however, there are few important rules you should know:
 
-  * Luna uses the [camel case naming convention](dummy.md) for it's identifiers. The Explorer splits the identifiers by upper case letters into separate words and prefers full-word matches over sub-string matches. 
-  Example: Typing `"iden"` will match `"superIdentifier"` better than `"evidence"`.
+  * Luna uses the [camel case naming convention](dummy.md) for it's identifiers. The Explorer splits the identifiers by upper case letters into separate words and prefers full-word matches over sub-string matches.
+    Example: Typing `"iden"` will match `"superIdentifier"` better than `"evidence"`.
   * The Explorer is both case and locale insensitive, however, it will score exact match a little better than misspelled one.
-  Example: Typing `"fooBar"` will match `"fooBar"` (exact match) better than `"foobar"`. 
+    Example: Typing `"fooBar"` will match `"fooBar"` (exact match) better than `"foobar"`. 
   * The Explorer will accept misspelled words with appropriate score penalty.
-  Example: typing `"sibdi"` will match `"subdivide"` with major score penalty.
+    Example: typing `"sibdi"` will match `"subdivide"` with major score penalty.
 
 
 ###### Accessing the Luna Explorer
