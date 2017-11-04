@@ -1,4 +1,3 @@
-
 # What is Luna?
 
 Luna is an open source, [WYSIWYG](https://en.wikipedia.org/wiki/WYSIWYG) data processing language. Its goal is to revolutionize the way people are able to gather, understand and manipulate data.
@@ -56,12 +55,8 @@ The guidelines for domain specific languages to follow the first principle are c
 
 Following the second principle, however, is more tricky. How can we design a language and be sure it does not limit people's expressiveness? How can we allow users to both create custom reusable components and deeply modify existing ones yet keep the interface simple and don't require them to be programmers? The idea is to allow the user to incrementally change the perspective. Instead of resorting to an underlying programming language, we can allow to literally dive into every component and use the same (or very similar) language to describe how the sub-components communicate. Diving further into nested components allows users to gradually proceed from high to low levels of abstraction on demand.
 
-This is exactly what Luna does. Luna was designed as an unified environment for building and hosting visually rich domain specific languages.
+This is exactly what Luna does. It was built upon three main concepts:
 
-Luna provides three main concepts regarding 
-Luna was built upon three main concepts:
-
-You can think of Luna from three perspectives:
 
 * <span class="uiref">1</span> **Data visualization and manipulation environment**
 From the highest perspective, Luna allows you to visualize and manipulate data using interactive and extensible WYSIWYG components. Moreover, Luna provides a way to easily define new components, modify existing ones and share them with the community.
@@ -69,8 +64,15 @@ From the highest perspective, Luna allows you to visualize and manipulate data u
 * <span class="uiref">2</span> **Data flow graph**
 You can literally zoom out to see how the high-level components are wired together forming a data flow graph. You can rewire them or insert new components to redefine how the graph works. Luna delivers components which spread over all levels of abstraction, from high to low. From painting canvas over statistical functions to bitwise operators
 
-* <span class="uiref">3</span> **Nested data flow graphs / code representation** 
+* <span class="uiref">3</span> **Nested data flow graphs and code representation** 
 Every component in Luna is built out of other components, without exception. You can always dive all the way down to the desired level of abstraction and fine tune it to your needs. You can also collapse several connected components into new, more powerful one and share it with others. Moreover, Luna provides it's users with a very unique capability to switch between representations – from the data flow graph to code and vice versa. It implies a very important truth – the graph is as powerful as the code.
+
+![](/assets/placeholder.jpg)
+
+
+Luna was designed as an unified environment for building and hosting visually rich domain specific languages.
+
+
 
 
 You can think of Luna like a 
