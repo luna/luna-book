@@ -59,6 +59,39 @@ Following the second principle, however, is more tricky. How can we design a lan
 This is exactly what Luna does. Luna was designed as an unified environment for building and hosting visually rich domain specific languages.
 
 
+You can think of Luna from three perspectives:
+
+* **Data visualization and manipulation environment**
+From the highest perspective, Luna allows you to visualize and manipulate data using interactive and extensible WYSIWYG components. Moreover, Luna provides a way to easily define new components, modify existing ones and share them with the community.
+
+* **Data flow graph**
+All the high level components are placed on a whiteboard and wired with data flow connections.
+
+
+From the highest perspective, Luna is a whiteboard allowing 
+It allows you to visualize and manipulate data using interactive, WYSIWYG components.
+
+
+
+* **Code**
+From the most low-level perspective, Luna is a well designed, functional programming language with its own textual syntax representation. You can write Luna code and compile it to executables just like in any other programming language.
+* **Data flow graph**
+From the higher perspective, Luna is a data flow modeling language with a whiteboard-like interface. You can literally draw how data flows between components.
+* **Data visualization and manipulation environment**
+From the highest perspective, Luna allows you to display and manipulate data in a WYSIWYG fashion.
+
+It's completely extensible, so supporting new data is as simple as creating
+
+Luna was designed to be the ultimate backbone for any modern domain specific language. You can think about it like about a meta-language. Luna is a language itself, but it is easily extendable
+
+meta-language, a language that can easily
+Luna unifies the domains, tools
+
+
+
+
+
+
 
 
 
