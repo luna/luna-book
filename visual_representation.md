@@ -4,17 +4,26 @@ It's time to make our hands dirty with Luna! The first thing we're going to do i
 
 # Luna Explorer
 
-The Luna Explorer is a context-aware fuzzy search engine for methods, functions, modules, libraries, commands and more. The results are sorted by their score based on the current context and the match accuracy. The Explorer is currently available only within the data flow editor.
+The Luna Explorer is a context-aware fuzzy search engine and interactive expression editor. The Explorer is currently available only within the data flow editor.
 
-## Searching
+###### Result scoring
+The Luna Explorer uses sophisticated fuzzy search algorithm allowing searching for methods, functions, modules, libraries, commands and more. The results are sorted by their score based on the current context and the match accuracy. The algorithm details are beyond the scope of this book, however, there are few important rules you should know:
+
+  * Luna uses the [camel case naming convention](dummy.md) for it's identifiers. The Explorer splits the identifiers by upper case letters into separate words and prefers full-word matches over sub-string matches. 
+  Example: Typing `"iden"` will match `"superIdentifier"` better than `"evidence"`.
+  * The Explorer is both case and locale insensitive, however, it will score exact match a little better than misspelled one.
+  Example: Typing `"fooBar"` will match `"fooBar"` (exact match) better than `"foobar"`. 
+  * The Explorer will accept misspelled words with appropriate score penalty.
+  Example: typing `"sibdi"` will match `"subdivide"` with major score penalty.
+
 
 ###### Accessing the Luna Explorer
-In order to access the Luna Explorer place your mouse over the data flow editor and press the <kbd>tab</kbd> key. You can close the explorer by pressing the <kbd>tab</kbd> key again if no input was provided or the <kbd>escape</kbd> key otherwise. The Explorer consists of three panels – input expression editor <span class="uiref">1</span>, result list <span class="uiref">2</span> and documentation view<span class="uiref">3</span>. You can start typing as soon as the Explorer appears on your screen. The input expression editor is always active and listens for your input until the Explorer is closed.
+In order to access the Luna Explorer place your mouse over the data flow editor and press the <kbd>tab</kbd> key. You can close the Explorer by pressing the <kbd>tab</kbd> key again if no input was provided or the <kbd>escape</kbd> key otherwise. The Explorer consists of three panels – input expression editor <span class="uiref">1</span>, result list <span class="uiref">2</span> and documentation view<span class="uiref">3</span>. You can start typing as soon as the Explorer appears on your screen. The input expression editor is always active and listens for your input until the Explorer is closed.
 
 
 ###### Searching for functions and modules
 
-The default behavior of the Explorer is to search for functions and modules. After opening the explorer you can type the desired name. The results will update on 
+The default behavior of the Explorer is to search for functions and modules.  After opening the explorer you can type the desired name. The results will update on 
 
 A Node Searcher should appear on the screen <span class="uiref">2</span>. It allows you to filter available functions and libraries by their names.
 
