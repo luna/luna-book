@@ -65,7 +65,15 @@ You can think of Luna from three perspectives:
 From the highest perspective, Luna allows you to visualize and manipulate data using interactive and extensible WYSIWYG components. Moreover, Luna provides a way to easily define new components, modify existing ones and share them with the community.
 
 * **Data flow graph**
-All the high level components are placed on a whiteboard and wired with data flow connections.
+You can literally zoom out to see how the high-level components are wired together forming a data flow graph. You can rewire them or insert new components to redefine how the graph works. Luna delivers components which spread over all levels of abstraction, from high to low. From painting canvas over statistical functions to bitwise operators
+
+* **Nested data flow graphs / code representation** 
+Every component in Luna is built out of other components. There are no exceptions to this rule. You can always dive all the way down to the desired level of abstraction. You can also collapse several connected components into new, more powerful one and share it with others. Moreover, every graph in 
+
+You can always double click a component to dive into its internal representation. You can also collapse several components in order to form a new, more powerful one. Moreover, 
+
+You can literally zoom out to see how the high-level components are placed on a whiteboard and wired together forming a data flow graph. The data flow graph is a very powerful tool. 
+
 
 
 From the highest perspective, Luna is a whiteboard allowing 
