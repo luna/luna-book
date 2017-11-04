@@ -68,7 +68,7 @@ From the highest perspective, Luna allows you to visualize and manipulate data u
 You can literally zoom out to see how the high-level components are wired together forming a data flow graph. You can rewire them or insert new components to redefine how the graph works. Luna delivers components which spread over all levels of abstraction, from high to low. From painting canvas over statistical functions to bitwise operators
 
 * **Nested data flow graphs / code representation** 
-Every component in Luna is built out of other components. There are no exceptions to this rule. You can always dive all the way down to the desired level of abstraction and fine tune any component to your needs. You can also collapse several connected components into new, more powerful one and share it with others. Moreover, Luna provides it's users with a very unique capability to switch between representations – from the data flow graph to code and vice versa. 
+Every component in Luna is built out of other components, without exceptions. You can always dive all the way down to the desired level of abstraction and fine tune it to your needs. You can also collapse several connected components into new, more powerful one and share it with others. Moreover, Luna provides it's users with a very unique capability to switch between representations – from the data flow graph to code and vice versa. 
 
     
 every component's definition can be view both as a graph as well as code. Luna provides
