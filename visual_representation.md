@@ -10,7 +10,7 @@ The Luna Explorer is a context-aware fuzzy search engine and integrated expressi
 In order to access the Luna Explorer place your mouse over the data flow editor and press the <kbd>tab</kbd> key. The Explorer consists of three panels – expression input field <span class="uiref">1</span>, result list <span class="uiref">2</span> and documentation view<span class="uiref">3</span>. You can start typing as soon as the Explorer appears on your screen. The input field is always active and listens for your input until the Explorer is closed.
 
 ###### The scoring system 
-The Luna Explorer bases on a scoring system. It displays results sorted by their score. The score depends on many factors, including the match accuracy, 
+The Luna Explorer bases on a scoring system. It displays results sorted by their score. The score depends on various factors, including the current context and the match accuracy.
 
 ###### Searching for functions and modules
 
@@ -19,7 +19,8 @@ The default behavior of the Explorer is to search for functions and modules. Aft
 A Node Searcher should appear on the screen <span class="uiref">2</span>. It allows you to filter available functions and libraries by their names.
 
 ###### Searching for methods
-The explorer would search for methods if either a node was selected before it was opened, or the expression ends with the access operator `.`. When using this method, a new node would automatically be connected to the selected one.
+The Explorer would prefer searching for methods if:
+  * A node was selected before the Explorer was opened. or the expression ends with the access operator `.`. In the former case, a new node would automatically be connected to the selected one.
 
 ![](/assets/placeholder.jpg)
 
