@@ -4,7 +4,9 @@ It's time to make our hands dirty with Luna! The first thing we're going to do i
 
 #### Luna Explorer
 
-The Luna Explorer is a context-aware fuzzy search engine and integrated expression editor. It allows you to search for available methods, functions, modules, libraries, commands and more. The Explorer is currently available only within the data flow editor.
+The Luna Explorer is a context-aware fuzzy search engine and integrated expression editor. It allows you to search for available methods, functions, modules, libraries, commands and more. The results are sorted according to achieved score
+
+  The Explorer is currently available only within the data flow editor.
 
 ###### Accessing the Luna Explorer
 In order to access the Luna Explorer place your mouse over the data flow editor and press the <kbd>tab</kbd> key. The Explorer consists of three panels – expression input field <span class="uiref">1</span>, result list <span class="uiref">2</span> and documentation view<span class="uiref">3</span>. You can start typing as soon as the Explorer appears on your screen. The input field is always active and listens for your input until the Explorer is closed.
