@@ -4,10 +4,10 @@ It's time to make our hands dirty with Luna! The first thing we're going to do i
 
 # Luna Explorer
 
-The Luna Explorer is a context-aware fuzzy search engine and interactive expression editor. The Explorer is currently available only within the data flow editor.
+The Luna Explorer is a context-aware fuzzy search engine for methods, functions, modules, libraries, commands, documentation, types and more. The Explorer is currently available only within the data flow editor.
 
 ###### Result scoring
-The Luna Explorer uses sophisticated fuzzy search algorithm allowing searching for methods, functions, modules, libraries, commands and more. The results are scored based on the current context and the match accuracy. The algorithm details are beyond the scope of this book, however, there are few important rules you should know to use the Explorer more efficiently:
+The suggestions are scored based on the current context and the match accuracy. The algorithm details are beyond the scope of this book, however, there are few important rules you should know to use the Explorer more efficiently:
 
 
 * Luna uses the [camel case naming convention](dummy.md) for it's identifiers. The Explorer splits the known identifiers by upper case letters into separate words and prefers full-word matches over sub-string matches.
