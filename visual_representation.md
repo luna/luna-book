@@ -11,7 +11,7 @@ The Luna Explorer uses sophisticated fuzzy search algorithm allowing searching f
 
   * Luna uses the [camel case naming convention](dummy.md) for it's identifiers. The Explorer splits the identifiers by upper case letters into separate words and prefers full-word matches over sub-string matches.
     Example: Typing `"iden"` will match `"superIdentifier"` better than `"evidence"`.
-  * The Explorer is both case and locale insensitive, however, it will score exact match a little better than misspelled one.
+  * The Explorer is both case and accent insensitive, however, it will score exact match a little better than misspelled one.
     Example: Typing `"fooBar"` will match `"fooBar"` (exact match) better than `"foobar"`. 
   * The Explorer will accept misspelled words with appropriate score penalty.
     Example: typing `"sibdi"` will match `"subdivide"` with major score penalty.
