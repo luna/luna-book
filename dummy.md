@@ -16,7 +16,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 * hello  
   uh
 
-* <b>hii!</b>  
+* hii! 
   dd
 
 * **hi!**  
