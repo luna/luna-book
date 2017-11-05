@@ -20,15 +20,11 @@ The Luna Explorer uses sophisticated fuzzy search algorithm allowing searching f
 ###### Accessing the Luna Explorer
 In order to access the Luna Explorer place your mouse over the data flow editor and press the <kbd>tab</kbd> key. You can close the Explorer by pressing the <kbd>tab</kbd> key again if no input was provided or the <kbd>escape</kbd> key otherwise. The Explorer consists of three panels – input expression editor <span class="uiref">1</span>, result list <span class="uiref">2</span> and documentation view<span class="uiref">3</span>. You can start typing as soon as the Explorer appears on your screen. The input expression editor is always active and listens for your input until the Explorer is closed.
 
-
 ###### Searching for functions and modules
-
-The default behavior of the Explorer is to search for functions and modules.  After opening the explorer you can type the desired name. The results will update on 
-
-A Node Searcher should appear on the screen <span class="uiref">2</span>. It allows you to filter available functions and libraries by their names.
+The default behavior of the Explorer is to search for functions and modules. Module names always start with a capital letter, so in order to guide the Explorer, you can start with upper case letter too.
 
 ###### Searching for methods
-The Explorer would score methods better if a node was selected before it was opened or the expression being currently edited is preceded by the access operator `.`. Only methods of the result <...> would match here. 
+The Explorer would score methods better if either a node was selected before it was opened or you are currently editing a method name in the expression editor. Only methods of the result <...> would match here. 
 
 ![](/assets/placeholder.jpg)
 

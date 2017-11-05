@@ -5,33 +5,28 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 * x
 
-* **hello**
+* **hello**  
   morelo
 
 * x
 
-
-
-
-
-* hi!
+* hi!  
   oh
 
 * hello  
   uh
 
-* hii!  
+* <b>hii!</b>  
   dd
 
-
-
-
-* **hi!**
+* **hi!**  
   oh
 
-* **hi!**
+* **hi!**  
    uh
 
-* **hi!**
+* **hi!**  
     dd
+
+
 
