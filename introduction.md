@@ -20,6 +20,10 @@ A well-designed domain specific language, or a language in general, empowers peo
 
 An important question emerges – what is a good language? Are there any guidelines every domain specific language should follow? We believe there are two basic principles:
 
+* **hello**  
+  morelo
+
+
 * **People need an immediate connection to what they are making**
   This principle was first publicly introduced by Brett Victor, a human-computer interaction visionary, during his talk [Inventing on Principle](https://vimeo.com/36579366). Any violation of this principle alienates the user from the actual problems he is trying to solve, which consequently decreases the understanding and increases the number of mistakes.
 
