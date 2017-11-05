@@ -7,14 +7,15 @@ It's time to make our hands dirty with Luna! The first thing we're going to do i
 The Luna Explorer is a context-aware fuzzy search engine and interactive expression editor. The Explorer is currently available only within the data flow editor.
 
 ###### Result scoring
-The Luna Explorer uses sophisticated fuzzy search algorithm allowing searching for methods, functions, modules, libraries, commands and more. The results are sorted by their score based on the current context and the match accuracy. The algorithm details are beyond the scope of this book, however, there are few important rules you should know:
+The Luna Explorer uses sophisticated fuzzy search algorithm allowing searching for methods, functions, modules, libraries, commands and more. The results are sorted by their score based on the current context and the match accuracy. The algorithm details are beyond the scope of this book, however, there are few important rules you should know to use the Explorer more efficiently:
 
-  * Luna uses the [camel case naming convention](dummy.md) for it's identifiers. The Explorer splits the identifiers by upper case letters into separate words and prefers full-word matches over sub-string matches.
-    Example: Typing `"iden"` will match `"superIdentifier"` better than `"evidence"`.
-  * The Explorer is both case and accent insensitive, however, it will score exact match a little better than misspelled one.
-    Example: Typing `"fooBar"` will match `"fooBar"` (exact match) better than `"foobar"`. 
-  * The Explorer will accept misspelled words with appropriate score penalty.
-    Example: typing `"sibdi"` will match `"subdivide"` with major score penalty.
+
+* Luna uses the [camel case naming convention](dummy.md) for it's identifiers. The Explorer splits the known identifiers by upper case letters into separate words and prefers full-word matches over sub-string matches.
+  Example: Typing `"iden"` will match `"superIdentifier"` better than `"evidence"`.
+* The Explorer is both case and accent insensitive, however, it will score exact match a little better than misspelled one.
+  Example: Typing `"fooBar"` will match `"fooBar"` (exact match) better than `"foobar"`. 
+* The Explorer will accept misspelled words with appropriate score penalty.
+  Example: typing `"sibdi"` will match `"subdivide"` with major score penalty.
 
 
 ###### Accessing the Luna Explorer
