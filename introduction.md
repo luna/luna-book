@@ -20,7 +20,7 @@ A well-designed domain specific language, or a language in general, empowers peo
 
 An important question emerges – what is a good language? Are there any guidelines every domain specific language should follow? We believe there are two basic principles:
 
-* **hello**  
+* **People need an immediate connection to what they are making**  
   morelo
 
 
