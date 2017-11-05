@@ -9,13 +9,17 @@ In order to access the Explorer place your mouse over the data flow editor and p
 
 The Explorer consists of three panels – expression editor <span class="uiref">1</span>, suggestions list <span class="uiref">2</span> and documentation view<span class="uiref">3</span>. The expression editor is always active and listens for your input, so you can start typing as soon as the explorer appears on your screen.
 
+The circle below the Explorer is called a node. It is visualization of the component you are going to create. You will learn more about nodes in the following chapter.
+
 ![](/assets/placeholder.jpg)
 
 
 ### Searching
 
 ###### The current scope
-The default behavior of the Explorer is to lookup for available components. More precisely, the Explorer searches for constructors, functions and modules accessible within the scope. You will learn more about these constructions in the following chapters. 
+The default behavior of the Explorer is to lookup the available components by name. More precisely, the Explorer searches for modules, data constructors, and functions accessible within the scope. You will learn more about these terms in the following chapters, you don't need to understand what they are in Luna now.
+
+Luna is a case sensitive language. It means that upper and lower case letters are distinguishable. In particular, data constructor and module names start with upper case letter, while function names with lower case one. You can guide the Explorer into the right direction – if you start typing using the upper case letter, the Explorer will favor modules and data constructors in its search results. 
 
   You do not need to know what these things mean, it's ok for now to remember  and modules. In order to guide the Explorer that you are looking for a module, start your search with a capital letter. See the [Luna naming convention](dummy.md) for more details.
 
