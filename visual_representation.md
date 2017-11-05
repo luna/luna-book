@@ -1,11 +1,11 @@
 # Luna Explorer
 
-The Luna Explorer is a sophisticated fuzzy search engine integrated with an expression editor. It allows you to search for components, browse documentation and create new nodes in the data flow graph. The Explorer is context-aware, which means that it tries to predict your intention and adjust the results accordingly. 
+The Luna Explorer is a sophisticated fuzzy search engine integrated with an expression editor. It allows you to search for components, create them and browse their documentation. The Explorer is context-aware, which means that it tries to predict your intention and adjust the search results accordingly. 
 
 ### Accessing the Luna Explorer
 Note, that the Explorer is currently available only from within the data flow editor. 
 
-In order to access the Explorer place your mouse over the data flow editor and press the <kbd>tab</kbd> key. You can close the Explorer by pressing the <kbd>escape</kbd> key. Pressing the <kbd>tab</kbd> key again will also close the Explorer, but only if no input was provided so far. 
+In order to access the Explorer place your mouse over the data flow editor and press the <kbd>tab</kbd> key. You can close the Explorer by pressing either the <kbd>escape</kbd> key or the <kbd>tab</kbd> key again, however the later is allowed only if no input was provided so far. 
 
 The Explorer consists of three panels – expression editor <span class="uiref">1</span>, suggestions list <span class="uiref">2</span> and documentation view<span class="uiref">3</span>. The expression editor is always active and listens for your input, so you can start typing as soon as the explorer appears on your screen.
 
@@ -14,8 +14,10 @@ The Explorer consists of three panels – expression editor <span class="uiref">
 
 ### Searching
 
-###### 
-The default behavior of the Explorer is to search for functions and modules. In order to guide the Explorer that you are looking for a module, start your search with a capital letter. See the [Luna naming convention](dummy.md) for more details.
+###### The current scope
+The default behavior of the Explorer is to lookup for available components. More precisely, the Explorer searches for constructors, functions and modules accessible within the scope. You will learn more about these constructions in the following chapters. 
+
+  You do not need to know what these things mean, it's ok for now to remember  and modules. In order to guide the Explorer that you are looking for a module, start your search with a capital letter. See the [Luna naming convention](dummy.md) for more details.
 
 
 
