@@ -23,13 +23,7 @@ An important question emerges – what is a good language? Are there any guideli
 * **People need an immediate connection to what they are making**  
   This principle was first publicly introduced by Brett Victor, a human-computer interaction visionary, during his talk [Inventing on Principle](https://vimeo.com/36579366). Any violation of this principle alienates the user from the actual problems he is trying to solve, which consequently decreases the understanding and increases the number of mistakes.
 
-
-
-
-* **People need an immediate connection to what they are making**
-  This principle was first publicly introduced by Brett Victor, a human-computer interaction visionary, during his talk [Inventing on Principle](https://vimeo.com/36579366). Any violation of this principle alienates the user from the actual problems he is trying to solve, which consequently decreases the understanding and increases the number of mistakes.
-
-* **People cannot be limited by the tool they are using**
+* **People cannot be limited by the tool they are using**  
   People tend to reject any tool which obviously limits their expressiveness. This is the exact reason why so many WYSIWYG solutions, like website creators, game creators or visual programming languages never catch up. Any DSL more complex than a WYSIWYG text editor can easily violate this principle by providing its users with a too limited set of predefined, high-level components. Even if these components can be extended by writing code, the need to resort to some underlying programming language spoils the design and makes it unusable for a less technical audience.
 
 
