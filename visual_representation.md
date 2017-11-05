@@ -1,7 +1,3 @@
-# Ready, set, go!
-
-It's time to make our hands dirty with Luna! The first thing we're going to do is to create a simple data flow graph, which will create two numbers and then add them together!
-
 # Luna Explorer
 
 The Luna Explorer is a sophisticated fuzzy search engine integrated with an expression editor. It allows you to search for components, browse documentation and create new nodes in the data flow graph. The Explorer is context-aware, which means that it tries to predict your intention and adjust the results accordingly. 
@@ -17,6 +13,10 @@ The Explorer consists of three panels – expression editor <span class="uiref">
 
 
 ### Searching
+
+###### 
+The default behavior of the Explorer is to search for functions and modules. In order to guide the Explorer that you are looking for a module, start your search with a capital letter. See the [Luna naming convention](dummy.md) for more details.
+
 
 
 
