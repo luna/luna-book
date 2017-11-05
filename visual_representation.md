@@ -1,4 +1,4 @@
-# Luna Explorer
+# Say hello to the Luna Explorer
 
 The Luna Explorer is a sophisticated fuzzy search engine integrated with an expression editor. It allows you to search for components, create them and browse their documentation. The Explorer is context-aware, which means that it tries to predict your intention and adjust the search results accordingly. 
 
@@ -12,6 +12,30 @@ The Explorer consists of three panels – expression editor <span class="uiref">
 The circle below the Explorer is called a node. It is visualization of the component you are going to create. You will learn more about nodes in the following chapter.
 
 ![](/assets/placeholder.jpg)
+
+
+## Result scoring
+The suggestions are scored based on the current expression context and the match accuracy. The algorithm details are beyond the scope of this book, however, there are few important rules you should learn to use the Explorer more efficiently:
+
+* Luna uses the [camel case naming convention](dummy.md) for it's identifiers. The Explorer splits the known identifiers by upper case letters into separate words and prefers full-word matches over sub-string matches.
+Example: Typing `"iden"` will match `"superIdentifier"` better than `"evidence"`.
+* The Explorer is both case and accent insensitive, however, it will score exact match a little better than misspelled one.
+Example: Typing `"fooBar"` will match `"fooBar"` (exact match) better than `"foobar"`.
+* The Explorer will accept misspelled words with appropriate score penalty.
+Example: typing `"sibdi"` will match `"subdivide"` with major score penalty.
+
+
+## What's next?
+The Luna explorer is a very powerful tool. We will be introducing its features gradually in the following chapters. 
+
+
+
+
+ooooooooooooooooooooooooooooooooooooooooooooooooooo
+END
+
+
+
 
 
 ### Searching
@@ -37,17 +61,6 @@ The Luna Explorer is an interactive expression editor integrated with a context-
   for Luna libraries and documentation. It also facilitates creating new nodes in the visual data flow graph editor. 
 
 
-
-
-###### Result scoring
-The suggestions are scored based on the current expression context and the match accuracy. The algorithm details are beyond the scope of this book, however, there are few important rules you should learn to use the Explorer more efficiently:
-
-* Luna uses the [camel case naming convention](dummy.md) for it's identifiers. The Explorer splits the known identifiers by upper case letters into separate words and prefers full-word matches over sub-string matches.
-  Example: Typing `"iden"` will match `"superIdentifier"` better than `"evidence"`.
-* The Explorer is both case and accent insensitive, however, it will score exact match a little better than misspelled one.
-  Example: Typing `"fooBar"` will match `"fooBar"` (exact match) better than `"foobar"`. 
-* The Explorer will accept misspelled words with appropriate score penalty.
-  Example: typing `"sibdi"` will match `"subdivide"` with major score penalty.
 
 
 
