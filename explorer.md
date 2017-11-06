@@ -8,7 +8,7 @@ In order to access the Explorer place your mouse over the data flow editor and p
 
 The Explorer consists of three panels – expression editor <span class="uiref">1</span>, suggestions list <span class="uiref">2</span> and documentation view<span class="uiref">3</span>. The expression editor is always active and listens for your input, so you can start typing as soon as the explorer appears on your screen.
 
-The circle below the Explorer is called a node<span class="uiref">4</span>. It is visualization of the component you are going to create. You will learn more about nodes in the following chapter.
+The circle below the Explorer is called a node<span class="uiref">4</span>. It is a preview of the component you are going to create. You will learn more about nodes in the following chapter.
 
 > **[info] Improvements ahead!**
 >
@@ -25,7 +25,7 @@ However, there are sometimes situations when you want to create components that 
 
 
 ## Searching possibilities
-The Luna explorer provides several context-aware utilities. We will be introducing its possibilities gradually in the following chapters, however, don't hesitate to check them out now:
+The Luna explorer provides several context-aware searching utilities. We will be introducing its possibilities gradually in the following chapters, however, don't hesitate to check them out now:
 
 * [Searching by a method name](dummy.md)
 * [Searching by a type signature](dummy.md)
