@@ -14,7 +14,7 @@ class Vector a:
     x y z :: a
 ```
 
-With the current implementation, we can create vectors containing elements of any type, such as `Real`s, `Int`s, `Bool`s etc.
+Equipped with this definition, we can create vectors containing elements of any type, such as `Real`s, `Int`s, `Bool`s etc.
 
 ```haskell
 Vector "hello" "world" "!" :: Vector Text
