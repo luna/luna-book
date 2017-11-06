@@ -20,30 +20,33 @@ Another important property of objects in Luna is immutability. You may be used t
 >
 > Currently, there is no way to define classes and methods using the visual editor. All the mechanisms described in these sections are text-only, the support for visual workflow is coming soon.
 
-Classes in Luna are defined with the `class` keyword. It is followed by definitions of constructors and methods. Let's consider this part of `Bool` class definition from the Luna standard library to better understand its different parts.
+Classes in Luna are defined with the `class` keyword. It is followed by definitions of constructors and methods. Let's consider this definition of the `Shape` class to better understand its different parts.
 
 ```
-class Bool:
-    True
-    False
+class Shape:
+    Circle:
+        radius :: Real
+    Rectangle:
+        width  :: Real
+        height :: Real
     
-    def not: case self of
-        True: False
-        False: True
+    def perimeter: case self of
+        Circle r: 2.0 * pi * r
+        Rectangle w h: 2.0 * w + 2.0 * h
     
-    def and that: case (self, that) of
-        (True, True): True
-        _: False
+    def area: case self of
+        Circle r: pi * r * r
+        Rectangle w h: w * h
     
 ```
 
-The first section in this code snippet defines constructors. Constructors are different variants of a given object. So the first part of the definition says "a Bool object is either True or False". Then we define some methods. Methods are just like functions, but they have one implicit argument – `self`. They are called using the `.` operator and the object before `.` becomes the `self` inside method definition.
+The first section in this code snippet defines constructors. Constructors are different variants of a given object. So the first part of the definition says "a Shape is either a Circle or a Rectangle". Then we define some methods. Methods are just like functions, but they have one implicit argument – `self`. They are called using the `.` operator and the object before `.` becomes the `self` inside method definition.
 
 Both methods defined in the above snippet use pattern matching – the `case` construction, that allows to change the behavior based on the constructor of some object.
 
 We can use our newly defined `Bool` class as follows:
 
-```True . negate . and False```
+```Circle 2.0 . area```
 
 ## Constructors
 
