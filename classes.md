@@ -74,5 +74,3 @@ Finally, when there is only one constructor present, you may skip its name. In t
 class Vector:
     x y z :: Real
 ```
-
-```
