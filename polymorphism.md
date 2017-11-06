@@ -1,5 +1,7 @@
 # Parametric Polymorphism
 
+## Type parameters
+
 Classes in Luna can also take type parameters, making them polymorphic in some values. For an example, consider the previous definition of `Vector`:
 
 ```haskell
@@ -21,6 +23,7 @@ Vector "hello" "world" "!" :: Vector Text
 Vector 1 2 3 :: Vector Int
 Vector 1.0 2.0 3.0 :: Vector Real
 ```
+
 
 It is also possible to implement methods that assume some additional properties of the type `a` (such as supporting arithmetic operations, or having defined some other methods). For example:
 
