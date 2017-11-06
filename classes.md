@@ -4,7 +4,11 @@ Objects are the basic blocks for bindling data and behaviors together. Luna's ap
 
 ## Introduction
 
-Classes are defined in Luna with the `class` keyword. It is followed by definitions of constructors and methods. Let's consider this part of `Bool` class definition from the Luna standard library to better understand its different parts.
+
+
+## Class definition
+
+Classes in Luna are defined with the `class` keyword. It is followed by definitions of constructors and methods. Let's consider this part of `Bool` class definition from the Luna standard library to better understand its different parts.
 
 ```
 class Bool:
