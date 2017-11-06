@@ -7,7 +7,7 @@ class Vector:
     x y z :: Real
 ```
 
-What if we wanted a `Vector` of `Int`s? In the current approach, it would require us to create another class just for this purpose. We can, however add a type parameter to the `Vector` class:
+What if we needed a `Vector` of `Int`s? In the current approach, it would require us to create another class just for this purpose. We can, however add a type parameter to the `Vector` class:
 
 ```haskell
 class Vector a:
