@@ -12,6 +12,10 @@ Another important property of objects in Luna is immutability. You may be used t
 
 ## Class definition
 
+> **[info] Changes ahead!**
+>
+> Currently, there is no way to define classes and methods using the visual editor. All the mechanisms described in these sections are text-only, the support for visual workflow is coming soon.
+
 Classes in Luna are defined with the `class` keyword. It is followed by definitions of constructors and methods. Let's consider this part of `Bool` class definition from the Luna standard library to better understand its different parts.
 
 ```

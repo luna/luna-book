@@ -17,7 +17,7 @@
   * [What are types and why do they matter?](types_intro.md)
   * [Basic types](basic-datatypes.md)
 * [Functions](functions.md)
-* [Creating custom types](classes.md)
+* [Creating custom data types](classes.md)
   * [Algebraic classes](classes.md)
   * [Constructors and pattern matching](constructors.md)
   * [Type polymorphism](polymorphism.md)
