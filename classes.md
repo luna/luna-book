@@ -4,7 +4,8 @@ Objects are the basic blocks for bindling data and behaviors together. Luna's ap
 
 ## Introduction
 
-
+Luna's notion of a class differs from what is known in most languages. If you are familiar with objects from Java or Python, you're in for a surprise.
+First of all, Luna objects, beside having multiple fields, can have multiple, distinguishable constructors. This is known in functional programming as Algebraic Data Types and basically means that an object can have one of the many defined constructors and each of the constructors can contain different fields. Using this technique we can for example say that any `Bool` is either a `True` or a `False`. Given an object of type `Bool` you are always sure 
 
 ## Class definition
 
