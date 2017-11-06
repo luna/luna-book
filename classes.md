@@ -1,6 +1,6 @@
 # Classes & Objects
 
-Objects are the basic blocks for bindling data and behaviors together. Luna's approach combines the approach known from Object Oriented languages with purely functional techniques, such as Algebraic Data Types.
+Objects are the basic blocks for bundling data and behaviors together. Luna's approach combines the approach known from Object Oriented languages with purely functional techniques, such as Algebraic Data Types.
 
 ## Introduction
 
