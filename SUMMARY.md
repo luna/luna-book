@@ -16,7 +16,6 @@
 * [Types 101](types.md)
   * [What are types and why do they matter?](dummy.md)
   * [Basic types](basic-datatypes.md)
-  * [Algebraic data types](adts.md)
   * [Defining our own types](classes.md)
   * [Constructors and pattern matching](constructors.md)
   * [Type polymorphism](polymorphism.md)
