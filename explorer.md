@@ -19,7 +19,9 @@ The circle below the Explorer is called a node<span class="uiref">4</span>. It i
 
 
 ## Using the Explorer
-The Explorer will provide suggestions on the fly while you are typing. It will search Luna libraries for components that match your query. The component on the bottom on the list is selected by default. You can move the selection by using the up <kbd>up arrow</kbd> and <kbd>down arrow</kbd> keys. To confirm your choice and create the selected component, press the <kbd>enter</kbd> key.
+The Explorer will search Luna libraries for components that match your query. The provided query do not need to be precise – it is usually sufficient to provide only a part or several parts of the name you are looking for. You can even misspell it, the Explorer will try to get it right for you! 
+
+The Explorer will provide suggestions on the fly while you are typing. The best match will be displayed on the bottom of the list and will be selected by default. You can move the selection by using the up <kbd>up arrow</kbd> and <kbd>down arrow</kbd> keys. To confirm your choice and create the selected component, press the <kbd>enter</kbd> key.
 
 However, there are sometimes situations when you want to create components that are not available on the suggestion list. A good example is when you want to refer to a component that does not yet exist and you are going to create it soon. Another possibility is that Luna didn't get enough information to provide you with the complete components list, which could happen when you are working on polymorphic data. You will learn more about polymorphism later, for now just remember, that you can use the <kbd>down arrow</kbd> key to move the selection from the suggestions list onto the expression editor and press the <kbd>enter</kbd> key to create component named exactly as you have typed.
 
@@ -30,18 +32,3 @@ The Luna explorer provides several context-aware searching utilities. We will be
 * [Searching by a method name](dummy.md)
 * [Searching by a type signature](dummy.md)
 * [Browsing available libraries and modules](dummy.md)
-
-
-## Result scoring (advanced)
-The suggestions are scored based on the current expression context and the match accuracy. The algorithm details are beyond the scope of this book, however, there are few important rules you should learn to use the Explorer more efficiently:
-
-* Luna uses the [camel case naming convention](dummy.md) for it's identifiers. The Explorer splits the known identifiers by upper case letters into separate words and prefers full-word matches over sub-string matches.
-Example: Typing `"iden"` will match `"superIdentifier"` better than `"evidence"`.
-* The Explorer is both case and accent insensitive, however, it will score exact match a little better than misspelled one.
-Example: Typing `"fooBar"` will match `"fooBar"` (exact match) better than `"foobar"`.
-* The Explorer will accept misspelled words with appropriate score penalty.
-Example: typing `"sibdi"` will match `"subdivide"` with major score penalty.
-
-
-
-
