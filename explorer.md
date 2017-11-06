@@ -8,7 +8,7 @@ In order to access the Explorer place your mouse over the data flow editor and p
 
 The Explorer consists of three panels – expression editor <span class="uiref">1</span>, suggestions list <span class="uiref">2</span> and documentation view<span class="uiref">3</span>. The expression editor is always active and listens for your input, so you can start typing as soon as the explorer appears on your screen.
 
-The circle below the Explorer is called a node. It is visualization of the component you are going to create. You will learn more about nodes in the following chapter.
+The circle below the Explorer is called a node<span class="uiref">4</span>. It is visualization of the component you are going to create. You will learn more about nodes in the following chapter.
 
 > **[info] Improvements ahead!**
 >
@@ -16,6 +16,12 @@ The circle below the Explorer is called a node. It is visualization of the compo
 
 
 ![](/assets/placeholder.jpg)
+
+
+## Using the Explorer
+The Explorer will provide suggestions on the fly while you are typing. It will search Luna libraries for components that match your query. The component on the bottom on the list is selected by default. You can move the selection by using the up <kbd>up arrow</kbd> and <kbd>down arrow</kbd> keys. To confirm your choice and create the selected component, press the <kbd>enter</kbd> key.
+
+However, there are sometimes situations when you want to create components that are not available on the suggestion list. A good example is when you want to refer to a component that does not yet exist and you are going to create it soon. Another possibility is that Luna didn't get enough information to provide you with the complete components list, which could happen when you are working on polymorphic data. You will learn more about polymorphism later, for now just remember, that you can use the <kbd>down arrow</kbd> key to move the selection from the suggestions list onto the expression editor and press the <kbd>enter</kbd> key to create component named exactly as you have typed.
 
 
 ## Result scoring
