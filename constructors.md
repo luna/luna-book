@@ -22,7 +22,7 @@ Nothing :: Maybe a
 ![](just_constructor_applied_with_types.png)
 
 
-Notice that since the `Nothing` constructor has no fields, the corresponding function has no arguments – it can be regarded as a constant, that can assume the type `Maybe a` for any choice of `a`.
+Note that since the `Nothing` constructor has no fields, the corresponding function has no arguments – it can be regarded as a constant, that can assume the type `Maybe a` for any choice of `a`.
 
 ## Pattern matching
 
