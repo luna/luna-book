@@ -26,7 +26,10 @@ Vector 1.0 2.0 3.0 :: Vector Real
 
 ![](polymorphic_vectors.png)
 
-It is also possible to implement methods that assume some additional properties of the type `a` (such as supporting arithmetic operations, or having defined some other methods). For example:
+## Constrained methods
+
+It is also possible to implement methods that assume some additional properties of the type `a` (such as supporting arithmetic operations, or having defined some other methods). Once you use such properties, Luna typechecker automatically keeps track of them and checks whether they are satisfied. 
+For example:
 
 ```haskell
 class Vector a:
