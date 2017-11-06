@@ -58,13 +58,13 @@ Following the second principle, however, is more tricky. How can we design a lan
 This is exactly what Luna does. It was built upon three main concepts:
 
 
-* <span class="uiref">1</span> **Data visualization and manipulation environment**
+* <span class="uiref">1</span> **Data visualization and manipulation environment**  
   From the highest perspective, Luna allows you to visualize and manipulate data using interactive and extensible WYSIWYG components. Moreover, Luna provides a way to easily define new components, modify existing ones and share them with the community.
 
-* <span class="uiref">2</span> **Data flow graph**
+* <span class="uiref">2</span> **Data flow graph**  
   You can literally zoom out to see how the high-level components are wired together forming a data flow graph. You can rewire them or insert new components to redefine how the graph works. Luna delivers components which spread over all levels of abstraction, from high to low. From painting canvas over statistical functions to bitwise operators
 
-* <span class="uiref">3</span> **Nested data flow graphs and code representation** 
+* <span class="uiref">3</span> **Nested data flow graphs and code representation**  
   Every component in Luna is built out of other components, without exception. You can always dive all the way down to the desired level of abstraction and fine tune it to your needs. You can also collapse several connected components into new, more powerful one and share it with others. Moreover, Luna provides it's users with a very unique capability to switch between representations – from the data flow graph to code and vice versa. It implies a very important truth – the graph is as powerful as the code.
 
 ![](/assets/placeholder.jpg)
