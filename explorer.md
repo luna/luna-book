@@ -36,8 +36,11 @@ Example: typing `"sibdi"` will match `"subdivide"` with major score penalty.
 
 
 ## What's next?
-The Luna explorer is a very powerful tool. We will be introducing its features gradually in the following chapters. 
+The Luna explorer is a very powerful tool. We will be introducing its possibilities gradually in the following chapters, however if you want to learn more about it now, don't hesitate to check them out:
 
+* [Type based exploration](dummy.md)
+* [Method based exploration](dummy.md)
+* [Type based exploration](dummy.md)
 
 
 
