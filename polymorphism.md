@@ -4,14 +4,14 @@ Classes in Luna can also take type parameters, making them polymorphic in some v
 
 ```haskell
 class Vector:
-x y z :: Real
+    x y z :: Real
 ```
 
 What if we wanted a `Vector` of `Int`s? In the current approach, it would require us to create another class just for this purpose. We can, however pass a type parameter to the `Vector` class:
 
 ```haskell
 class Vector a:
-x y z :: a
+    x y z :: a
 ```
 
 With the current implementation, we can create vectors containing elements of any type, such as `Real`s, `Int`s, `Bool`s etc.
@@ -26,9 +26,9 @@ It is also possible to implement methods that assume some additional properties 
 
 ```haskell
 class Vector a:
-x y z :: a
-def dotProduct that:
-self.x * that.x + self.y * that.y + self.z * that.z
+    x y z :: a
+    def dotProduct that:
+        self.x * that.x + self.y * that.y + self.z * that.z
 ```
 
 The `dotProduct` method will work with any elements supporting addition and multiplication, so using it with `Int`s or `Real`s is fine, while using it with `Text` results in a type error.
