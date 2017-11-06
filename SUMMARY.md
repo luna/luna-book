@@ -14,7 +14,7 @@
   * [Textual representation](assistant.md)
   * [Switching between representations](assistant.md)
 * [Types 101](types.md)
-  * [What are types and why do they matter?](dummy.md)
+  * [What are types and why do they matter?](types_intro.md)
   * [Basic types](basic-datatypes.md)
   * [Defining our own types](classes.md)
   * [Constructors and pattern matching](constructors.md)
