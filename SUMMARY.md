@@ -15,7 +15,7 @@
   * [Switching between representations](assistant.md)
 * [Types 101](types.md)
   * [Basic types](basic-datatypes.md)
-  * [Types overview](types_intro.md)
+  * [Deeper dive into types](types_intro.md)
 * [Functions](functions.md)
 * [Creating custom data types](classes.md)
   * [Algebraic classes](classes.md)
