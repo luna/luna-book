@@ -1,5 +1,26 @@
-# What are types and why do they matter?
+# Classes and constructors
 
-Different values in our programs represent different things. A value may represent a velocity, a question asked by the user to our chatbot or a collection of all the users in the system. Some operations, such as multiplication, make sense only for numeric values, others like reversing a list will work with any list, with no regard to the values of individual elements. Yet others, like summing a list will work with any non-empty list containing arithmetic elements, but we don't really care for the exact structure of the elements inside: they may be integers, fractions or even matrices – the common theme is just having an addition operation defined.
+Each object created with a constructor automatically gets the type of the constructor's class. So for example:
 
-In this chapter we introduce types – Luna's facility to handle such descriptions. You'll learn how types are described, how to check a type of a given value and what happens when the expected properties are not satisfied by the values.
+```haskell
+Just 5 :: Maybe Int
+Left (Right "hello") :: Either (Either a Text) b
+```
+
+> **[info] Changes ahead!**
+>
+> In the future versions Luna will have a much deeper understanding of the structure of objects and will retain that information on type level. It will allow you to describe types using constructors, not only classes. That means all of the following will be valid:
+>
+> ```Just 5 :: Just 5```
+>
+> ```Just 5 :: Just Int```
+>
+> ```Just 5 :: Maybe Int```
+
+## Function types
+
+Since functions in Luna are first-class citizens, each of them also has a type. The type of functions taking an argument of type `A` and returning a value of type `B` is `A -> B`. Since functions in Luna are curried by default, a two argument function is just a function that takes and argument and returns another function. So a function taking `A` and `B` and returning `C` can be typed as `A -> (B -> C)`. We can also drop the trailing parentheses, thus leaving us with `A -> B -> C`. 
+
+## Type parameters
+
+You will often encounter types like `Maybe a` or `Either Text a`. The lowercase variables are type parameters – any other type can be substituted for them. So if you have an expression of type `Either Text a`, it can serve as `Either Text Int`, `Either Text (List Text)` or `Either Text (Maybe a)`. Note that this substitution happens once for all the occurrences of a variable, so `id :: a -> a` can become `id :: Int -> Int`, but not `id :: Double -> Int`.
