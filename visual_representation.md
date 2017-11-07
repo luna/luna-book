@@ -6,11 +6,24 @@ Luna is a data processing language and like every language Luna provides a synta
 
 A node is the most primitive entity, which connected with other nodes form the data flow graph. From the highest perspective, a node is a data processing function, which can generate data, modify it or store in a database. Nodes consist of several visual elements, however not all of them all always accessible.
 
-###### Node expression (the node name) 
-The node expression <span class="uiref">1</span>, sometimes referred to as the node name, is any valid Luna code, in particular a function name. For example, a node which adds together two objects is named `+`. 
+###### Node expression (the node name) <span class="uiref">1</span> 
+The node expression, sometimes referred to as the node name, is any valid Luna code, in particular a function name. For example, a node which adds together two objects is named `+`. 
 
-###### Input and output ports
-Ports are the data node's communication gates. Data flows into input ports on the left side <span class="uiref">2</span>, is processed according to the node expression and the result flows out from the output ports on the right side<span class="uiref">3</span>. 
+###### Input ports <span class="uiref">2</span> and output ports <span class="uiref">3</span>
+Ports are the data node's communication gates. Data flows into input ports on the left side, is processed according to the node expression and the result flows out from the output ports on the right side. Port colors indicate what type of data flows trough them. You will learn more about data types in the [Types 101](dummy.md) chapter.
+
+###### Self port<span class="uiref">4</span> 
+Luna is an object oriented language. It means that every data that flows between nodes is not just information, it can also respond to your commands. You can for example tell a car to stop, a dog to bark, a number to increase or a list to sort its items. If a data is connected to self port, then the node's expression tell it what to do. A rule of thumb is that if you want to process a data, connect it to the self port. You will learn in detail about it in the [Making our own type](dummy.md) chapter.
+
+
+
+## Reference nodes
+It is a very rare
+
+  for now just think of data flowing between nodes like objects capable to take action. If you connect data to the self port, the node expression tells it what to do. If you for example connect list of numbers to a self port of node `sort`   It means that every data is a combination of information and behavior. that flows between nodes does not only represent data, but also  , which means that you 
+In Luna every data is an object, which
+
+The self port<span class="uiref">4</span> is a special input port. Luna is an object oriented language, which means that you should think of data flowing between nodes like objects which could perform actions. If such an object flows into the self port, the nodes expression tells him what to do
 
 
 
