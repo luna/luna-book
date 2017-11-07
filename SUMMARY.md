@@ -28,5 +28,5 @@
   * [What is a context?](contexts_intro.md)
   * [Input and output](io.md)
 * [Modules and libraries](dummy.md)
-* [Advanced types](dummy.md)
+* [Advanced types](advanced_types.md)
 
