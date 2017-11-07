@@ -19,7 +19,7 @@ Just :: a -> Maybe a
 Nothing :: Maybe a
 ```
 
-![](just_constructor_applied_with_types.png)
+![](assets/just_constructor_applied_with_types.png)
 
 
 Note that since the `Nothing` constructor has no fields, it is not a function, it's a constant, that can assume the type `Maybe a` for any choice of `a`.
@@ -38,7 +38,7 @@ myVec = Vector 1.0 2.0 3.0
 Vector a b c = myVec
 bTimesOne = b * 1.0
 ```
-![](inline_pattern.png)
+![](assets/inline_pattern.png)
 
 You need to be careful with this construction though! It assumes that you have picked the right constructor and a mismatch will result in a runtime error. As a rule of thumb, you should use this form of pattern matching only on classes that have one constructor (thus making sure there is no possibility for an error).
 
