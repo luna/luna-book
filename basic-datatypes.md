@@ -1,10 +1,18 @@
-Basic datatypes
-===============
+# Basic datatypes
 
-In this section will go through the basic datatypes available in Luna. You'll encounter some of these in every Luna program.
+In this section will go through the basic data types available in Luna. You'll encounter some of these in every Luna program.
 
-Numeric types
--------------
+## Literal values
+
+Luna supports three kinds of literals – expressions of special form, denoting primitive types of data. Those types are `Text`, `Real` and `Int`. Creating literal nodes is as simple as opening the Explorer and typing in the desired value. `Int`s are just numbers without a decimal point, `Real`s are those numbers that do contain a decimal point. `Text`s are arbitrary series of characters, delimited by quotes.
+
+![](assets/literals.png)
+
+Remember that you can always press <kbd>tab</kbd> with a node of a specific type selected, to bring up the explorer and get a list of all operations supported by the type, together with their documentation.
+
+![](assets/explorer_with_docs.png)
+
+## Numeric types
 
 The basic numeric types in Luna are `Int`, representing integers of arbitrary size and `Real`, for floating point numbers.
 
@@ -12,10 +20,9 @@ The basic numeric types in Luna are `Int`, representing integers of arbitrary si
 >
 > Currently, the type of a numeric literal is decided based on the presence of decimal point. This means, that `1` has the type `Int`, while `1.0` has the type `Real`. In the future releases of Luna, the numeric literals will be polymorphic, allowing to write expressions like `1.7 + 2`.
 
-They support basic arithmetic operators and mathematical functions. Consult the relevant (TODO: LINK) part of standard library docs for more details.
+They support basic arithmetic operators and mathematical functions.
 
-Text
-----
+## Text
 
 The basic type for text processing in Luna is, unsurprisingly, `Text`. Luna supports two kinds of text literals: interpreted and uninterpreted. The interpreted texts are wrapped in single quotes. They provide the capabilities to insert escaped character sequences such as `\n` etc. The uninterpreted strings are wrapped in double quotes and do not provide any such facilities. The only character that can be escaped in an uninterpreted text is `\"` itself.
 
@@ -24,8 +31,8 @@ The basic type for text processing in Luna is, unsurprisingly, `Text`. Luna supp
 > In the future releases of Luna the interpreted texts will also allow to insert arbitrary expressions, results of which will be then inserted into the resulting text. For example ``'Adding 2 and 2 gives `2 + 2` in result'`` will be evaluated to `'Adding 2 and 2 gives 4 in result'`.
 
 
-Booleans
---------
+## Booleans
+
 Logical values are represented using the `Bool` class. It has two constructors: `True` and `False`. They support basic logical combinators such as `&&`, `||` or `not`. The most common function used for branching is `if_then_else`. It can be used in this form (i.e. `if_then_else condition valueWhenTrue valueWhenFalse`) or, more elegantly, in its _mixfix_ form:
 
 ```ruby
@@ -42,8 +49,7 @@ def reportRelationshipToSeven x:
 
 
 
-Lists & Tuples
---------------
+## Lists & Tuples
 
 The most basic container types in Luna are tuples and lists.
 
@@ -67,8 +73,7 @@ Tuples are like lists, but they can store elements of different types and they h
 > In the future versions of Luna, lists and tuples will be merged into one type – a list which fully understands its structure and allows to encode information about its length and different element types on type level. Thus you may expect code like ``["Hello", 32, False]`` to be valid Luna soon.
 
 
-Maybe
------
+## Maybe
 
 Luna, much like other functional languages, does not have a `null` value. That means, if you have a value of type `Int`, there will always be a number, there is no way to have an "invalid" number. If there is a possibility of a value not being there, it needs to be encoded in a type-safe manner. This is where `Maybe` enters the stage. A value of class `Maybe` can either be `Just value` or `None`. You can check which of the possibilities happened using pattern matching. Suppose you have a value `myNumber` of type `Maybe Int`. You can use it like so:
 
