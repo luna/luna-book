@@ -24,7 +24,7 @@ Vector 1 2 3 :: Vector Int
 Vector 1.0 2.0 3.0 :: Vector Real
 ```
 
-![](polymorphic_vectors.png)
+![](assets/polymorphic_vectors.png)
 
 ## Constrained methods
 
@@ -45,4 +45,4 @@ Vector 1 2 3 . dotProduct (Vector 4 5 6) # returns 32 :: Int
 Vector 1.0 2.0 3.0 . dotProduct (Vector 4.0 5.0 6.0) # returns 32.0 :: Real
 Vector "hello" "world" "!" . dotProduct (Vector "foo" "bar" "baz") # does not compile
 ```
-![](vector_dot_product.png)
+![](assets/vector_dot_product.png)
