@@ -1,7 +1,18 @@
 # Visual representation
 
-Luna is a data processing language and like every language Luna provides a syntax. However, in contrast to majority of languages Luna has more than one syntax representation – visual and textual. This chapter describes the former – visual data flow graph.
+Luna is a data processing language and like every language Luna provides a syntax. However, in contrast to majority of languages Luna has more than one syntax representation – visual and textual. This chapter describes the former – visual data flow graph. We have designed the visual representation to be 
 
+While designing the visual representation we've put an enormous emphasis on productivity and ergonomics. Every element and every action was carefully designed to allow you express your thoughts easily, understand the results rapidly and clearly see all the data transformations. You have to learn how to "speak this language", however it's worth doing, even hardcore coders much prefer using Luna for building high-level data processing workflows than writing code. We are on a mission to constantly improve how you work with Luna, so your feedback and suggestions are very important to us. If you have any ideas related to how the visual representation works, [tell us about it](http://luna-lang.org/forum)!
+
+
+## Navigation
+
+Luna Visual Editor is a two dimensional canvas allowing you for fluid navigation so you can always focus on what is important at the moment. You can:
+* **pan** the view using two fingers drag gesture or the middle mouse button;
+* **zoom** the view using pinch gesture or the right mouse button;
+* **select nodes** by clicking them or using left mouse button to draw selection area starting from the background;
+* **dive into nodes** by double clicking them;
+* **view parent nodes** by double clicking on the background or using the breadcrumb controls on top of the Visual Editor.
 
 
 ## Nodes
@@ -30,6 +41,20 @@ Sometimes you don't want to process data, you want to inspect and deconstruct it
 
 
 
+## Creating nodes
+
+Nodes are always created with the help of [Luna Explorer](explorer.md), however, there are several options to launch it and guide towards our intentions:
+
+* press the <kbd>tab</kbd> key to search across all available components;
+* click on the input or output port with the right mouse button to guide the Explorer to look for functions capable of processing its type of data;
+* select a node and then press the <kbd>tab</kbd> key to guide the Explorer to look for functions capable of processing its results.
+
+
+
+## Connecting and disconnecting nodes
+
+
+
 
 
 
@@ -48,10 +73,4 @@ The colors of ports and connections indicate what type of data flows trough them
 ![](/assets/placeholder.jpg)
 
 
-## Creating nodes
 
-Nodes are always created with the [Luna Explorer](explorer.md), however, there are several options to launch it and guide towards our intentions:
-
-* press the <kbd>tab</kbd> key to search across all available components;
-* click on the input or output port with the right mouse button to guide the Explorer to look for functions capable of processing its type of data;
-* select a node and then press the <kbd>tab</kbd> key to guide the Explorer to look for functions capable of processing its results.
