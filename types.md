@@ -8,7 +8,7 @@ In this chapter we introduce types – Luna's facility to handle such descriptio
 
 ## How do I see types?
 
-Luna differs from most typed languages in that you will never need to specify the types of values manually. The type of a given object is computed automatically by Luna's typechecker. This computation ensures that any operation can be safely performed, without any contradicting properties arising.
+Luna differs from most typed languages in that you will never need to specify the types of values manually. The type of a given object is computed automatically by Luna's type inferencer. This computation ensures that any operation can be safely performed, without any contradicting properties arising.
 
 Since the types are usually not expressed in code, we need a way to show them to you. You have probably already noticed that the nodes in our visual editor come in different, seemingly random, colors. Those colors are just one of the ways the visual editor communicates types. Each of the ports on the node is assigned a color corresponding to its type. All the connections are also colored, the colors meaning the type of data "being sent" via this connection.
 
