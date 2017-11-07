@@ -32,3 +32,6 @@ Other than providing a better understanding of the program behavior, types have 
 
 Let's try doing something clearly nonsensical: adding a text and a number. This is how Luna reacts:
 
+![](assets/tc_error.png)
+
+Luna's typechecker has found out about our mistake. The `+` function works only with arguments of the same type, so it complained that `Real` and `Text` are not the same and we cannot safely proceed.
