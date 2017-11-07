@@ -14,7 +14,7 @@ Since the types are usually not expressed in code, we need a way to show them to
 
 ![](colorful_graph.png)
 
-Colors are a great indication for some values being of different or same type, but it's not enough. Just imagine referring to them like "the text `"hello world!"` has type `magenta`". That's why the colors serve only as visual aids,   but the real types have a text representation. If you hover above a node, the real types are revealed. Each of the node inputs and outputs displays its corresponding type.
+Colors are a great indication for some values being of different or same types, but it's not enough. Just imagine referring to them like "the text `"hello world!"` has type `magenta`". That's why the colors serve only as visual aids,   but the real types have a text representation. If you hover above a node, the real types are revealed. Each of the node inputs and outputs displays its corresponding type.
 
 ![](graph_with_types.png)
 
@@ -23,3 +23,7 @@ In the above image you can see the actual type names and thus understand the beh
 1. The nodes `number2` and `number3` don't have inputs – they are both constants of type `Real`,
 2. The node `sum3` has two `Real` inputs and a `Real` output – it transforms two `Real` numbers into another `Real` number,
 3. The node `just2` has a `Real` input and a `Maybe Real` output – it transforms a `Real` number into a `Maybe Real` value.
+
+## What happens when I mess up?
+
+Other than providing a better understanding of the program behavior, types have an even more important role to play: they make sure everything will work smoothly and safely. They are crucial in preventing many errors that may accidentally arise during development. So what happens when you make a mistake?
