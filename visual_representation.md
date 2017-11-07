@@ -52,9 +52,10 @@ Nodes are always created with the help of [Luna Explorer](explorer.md), however,
 
 
 ## Connecting and disconnecting nodes
+There is no a single best way to connect nodes. It depends on your preferences, graph complexity, zoom level and much much more. Luna provides you with several alternative ways to connect and disconnect nodes, so you can choose the one which suits you most in a given situation. 
 
-
-
+* **Connect by drag**  
+  Click on the output port and holding the button down drag the connection. over the desired input port. Release the button over desired input port to connect to it or over a whole node to automatically choose  to make the connection. Release it  
 
 
 
