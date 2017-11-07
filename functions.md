@@ -48,4 +48,4 @@ Defining toplevel or complex functions is best accomplished with the ``def`` key
         transformed
 
 
-![](fundef.png)
+![](assets/fundef.png)
