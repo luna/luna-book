@@ -24,6 +24,11 @@ In the above image you can see the actual type names and thus understand the beh
 2. The node `sum3` has two `Real` inputs and a `Real` output – it transforms two `Real` numbers into another `Real` number,
 3. The node `just2` has a `Real` input and a `Maybe Real` output – it transforms a `Real` number into a `Maybe Real` value.
 
+Oh, and the type of `"hello world!"` is not `magenta`. It's `Text`.
+
 ## What happens when I mess up?
 
 Other than providing a better understanding of the program behavior, types have an even more important role to play: they make sure everything will work smoothly and safely. They are crucial in preventing many errors that may accidentally arise during development. So what happens when you make a mistake?
+
+Let's try doing something clearly nonsensical: adding a text and a number. This is how Luna reacts:
+
