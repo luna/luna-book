@@ -4,8 +4,5 @@
 
 Different values in our programs represent different things. A value may represent a velocity, a question asked by the user to our chatbot or a collection of all the users in the system. Some operations, such as multiplication, make sense only for numeric values, others like reversing a list will work with any list, with no regard to the values of individual elements. Yet others, like summing a list will work with any non-empty list containing arithmetic elements, but we don't really care for the exact structure of the elements inside: they may be integers, fractions or even matrices – the common theme is just having an addition operation defined.
 
-In this chapter we introduce types – Luna's facility to handle such descriptions. You'll learn how types are described, how to check a type of a given value and what happens when the expected properties are not satisfied by the values.
-
-Luna is equipped with a powerful type system. The philosophy behind it is to provide as much safety and useful hints as possible without restricting your expressive powers. In this chapter we'll introduce the basic concepts of Luna type system and the plans for its future development.
-
+In this chapter we introduce types – Luna's facility to handle such descriptions. You'll learn how types are described, how to check a type of a given value and what happens when the expected properties are not satisfied by the values. The philosophy behind this system is to provide as much safety and useful hints as possible without restricting your expressive powers.
 
