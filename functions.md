@@ -35,11 +35,12 @@ Multi–argument functions are typed using more arrows – for example a functio
 
 ## Currying
 
-All functions are curried. This means, that you may provide less arguments than the function expects. This fixes some of the function arguments, allowing to pass the rest later on. This is particularly useful when passing functions as arguments. Using currying, we can rewrite the example from previous section as:
+Luna supports currying. This means, that you may provide fewer arguments than the function expects. This fixes some of the function arguments, allowing to pass the rest later on. This is particularly useful when passing functions as arguments. Using currying, we can rewrite the example from previous section as:
+```
+myList = [1, 2, 3]
+myList.each (+ 2)
+```
 
-    myList = [1, 2, 3]
-    myList.each (+ 2)
-    myList.fold 0 (+)
 
 ## Lambdas
 
