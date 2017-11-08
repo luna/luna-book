@@ -86,8 +86,9 @@ To establish a new flow of data, you can connect an output port to either an inp
   ![](/assets/placeholder2.jpg)
 
 * **Using connection pen**
-  Press and drag on the stage while holding both <kbd>ctrl</kbd> and <kbd>shift</kbd> keys to draw a red stroke using the connection pen. Connection pen will automatically break every connection it crosses.
+  Press and drag on the stage while holding both <kbd>ctrl</kbd> and <kbd>shift</kbd> keys to draw a red stroke, which will every connection it crosses.
   ![](/assets/placeholder2.jpg)
+
 
 
 
