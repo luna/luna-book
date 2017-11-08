@@ -40,6 +40,8 @@ Luna supports currying. This means, that you may provide fewer arguments than th
 myList = [1, 2, 3]
 myList.each (+ 2)
 ```
+It is also important to understand how currying works when using nodes. Whenever you don't set a port's value, this argument is automatically curried. This is shown by the changing type of the node's output. Note how the output type changes based on the arguments connected, depending on the number of ports connected:
+
 
 
 ## Lambdas
