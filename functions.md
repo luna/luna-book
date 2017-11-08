@@ -1,5 +1,22 @@
 # Functions
 
+Functions are the basic units for reusable logic. A function is a piece of logic that takes any number of arguments, performs some operations and returns a result of these operations. Most nodes you have used so far are actually functions. In this chapter you'll learn how to use functions and how to define them.
+
+## Calling functions
+
+Calling functions in text is accomplished by passing space–separated arguments. In the visual graph it corresponds to setting the values of respective input ports on a node – either by connecting other values to them or setting the values in the expression or by using port controls such as sliders.
+
+```
+a = 1
+b = 2
+c = add a b
+d = add 53 2
+```
+
+![](assets/calling_functions.png)
+
+
+
 ## First order functions
 
 Functions in Luna are first order. That means, you can treat them like any other value. You can assign them to variables, pass as function arguments or even store them in other data structures, like lists or maps. Many classes and libraries in Luna define functions or methods which expect other functions as their arguments. Most common examples are List methods `each` and `fold`. The former takes a single argument function and calls it on each element of the list, while the latter takes a two-argument function which is used to combine all the elements:
