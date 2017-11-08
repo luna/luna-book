@@ -40,7 +40,6 @@ Sometimes you don't want to process data, you want to inspect and deconstruct it
 ![](/assets/placeholder.jpg)
 
 
-
 ## Creating nodes
 
 Nodes are always created with the help of [Luna Explorer](explorer.md), however, there are several options to launch it and guide towards our intentions:
@@ -93,7 +92,9 @@ To establish a new flow of data, you can connect an output port to either an inp
 
 
 
+## Node's details view
 
+Luna allows you to view nodes in two forms – a compact, as seen above, and in a detailed form. The details view
 
 
 
