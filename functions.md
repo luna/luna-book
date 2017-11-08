@@ -18,12 +18,20 @@ d = add 53 2
 
 ## First order functions
 
-Functions in Luna are first order. That means, you can treat them like any other value. You can assign them to variables, pass as function arguments or even store them in other data structures, like lists or maps. Many classes and libraries in Luna define functions or methods which expect other functions as their arguments. Most common examples are List methods `each` and `fold`. The former takes a single argument function and calls it on each element of the list, while the latter takes a two-argument function which is used to combine all the elements:
+Functions in Luna are first order citizens. That means, you can treat them like any other value. You can assign them to variables, pass as arguments to other functions or even store them in other data structures, like lists or maps. Many classes and libraries in Luna define functions or methods which expect other functions as their arguments. Most common examples are `List` methods `each` and `fold`. The former takes a single argument function and calls it on each element of the list, while the latter takes a two-argument function which is used to combine all the elements:
+```
+f = x: x + 2
+myList = [1, 2, 3]
+myList.each f        # => [3, 4, 5]
+myList.fold 0 add    # => 6
+```
+![](assets/first_order_funs.png)
 
-    f = x: x + 2
-    myList = [1, 2, 3]
-    myList.each f               # => [3, 4, 5]
-    myList.fold 0 (x: y: x + y) # => 6
+## Type of functions
+
+Since functions are ordinary values, they need to have a type (all values in Luna are typed, remember?). The type of function taking an argument `A` and returning a `B` is `A -> B`. It's easy to remember when you think about the arrow as representing a transformation from type `A` to type `B`.
+
+Multi–argument functions are typed using more arrows – for example a function taking a `Real`, an `Int` and returning a `Text` would be typed as `Real -> Int -> Text`. The last part of such an arrow chain is the return value, while all the parts before are consecutive arguments.
 
 ## Currying
 
