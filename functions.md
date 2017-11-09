@@ -14,7 +14,6 @@ d = add 53 2
 ```
 
 ![](assets/calling_functions.png)
-"hello"
 
 ## First order functions
 
