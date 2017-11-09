@@ -6,14 +6,7 @@ Welcome to the Luna book. Although it is far from being a proper book, the name 
 
 This book is aimed at people who work with data processing on a daily basis. It includes both software developers as well as domain experts, like data scientists, architects or even procedural graphic designers. Even if you have a significant programming experience and you are functional programming guru, you should find lot of interesting information here.
 
-Writing a good manual is hard. Anybody who have ever tried it, knows how insanely time consuming and exhaustive is to create clear, usable and concise document. If you feel that we can improve it in some way, feel free to contact us. If you feel that what we do is important, don't hesitate to [join us and contribute](http://luna-lang.org/contributors)!
-
-
-## How to contribute
-
-We love to receive your feedback. This will help us refine the language and decide on priorities of its evolution. You can use the official [GitHub repository](http://github.com/luna) to report bugs, ideas and new features proposals.
-
-~~TODO OSS description + call for contribution~~
+Writing a good manual is hard. Anybody who have ever tried it, knows how insanely time consuming and exhaustive is to create clear, usable and concise document. If you feel that it could be improved in some way, don't hesitate to [edit it](http://luna-lang.org/contributors) or [talk with us about your suggestions](http://luna-lang.org/forum).
 
 ## Additional resources
 
