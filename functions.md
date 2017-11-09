@@ -47,7 +47,7 @@ It is also important to understand how currying works when using nodes. Whenever
 1. The `add1` node does not set any arguments, thus the output type is `Int -> Int -> Int`,
 2. The `add2` node has the second argument connected, so the output type is `Int -> Int`. Note the `_` in it's expression. This underscore introduces explicit currying for this argument – `add _ number1` means "set the second argument and leave the first one unapplied",
 3. The `add3` node applies the first argument and leaves the second one. There is no need for the `_` in this case, since the applied argument precedes the unapplied. The type is the same as that of `add2`, since both arguments have the same type.
-4. The `add4` node is fully applied, hence the return type is just an `Int`, as 
+4. The `add4` node is fully applied, so the return type is just `Int`.
 
 ## Lambdas
 
