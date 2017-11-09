@@ -2,8 +2,6 @@
 
 We strongly encourage you to play with examples and interactive tutorials before reading following chapters. Gaining feelings of how Luna works as much important as gaining technical knowledge.
 
-After opening Luna you will be greeted with the Dashboard containing tutorials and examples sections. The "Introduction to Luna" is a great tutorial to start with.
-
 Moreover, don't hesitate to join the Luna community, ask questions and share your ideas. It is also the ultimate way to dispel any doubts while reading the book:
 
 * [Chat](http://luna-lang.org/chat) / [IRC](http://luna-lang.org/irc) – use it to fastly discuss ideas and get help on the fly while using Luna.
