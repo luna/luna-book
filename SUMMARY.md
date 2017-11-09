@@ -21,12 +21,5 @@
   * [Algebraic classes](classes.md)
   * [Constructors and pattern matching](constructors.md)
   * [Type polymorphism](polymorphism.md)
-* [WYSIWYG data interface](dummy.md)
-  * [Data visualizators](dummy.md)
-  * [Data manipulators](dummy.md)
-* [Contexts](contexts_intro.md)
-  * [What is a context?](contexts_intro.md)
-  * [Input and output](io.md)
-* [Modules and libraries](dummy.md)
 * [Advanced types](advanced_types.md)
 
