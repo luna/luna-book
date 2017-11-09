@@ -65,7 +65,7 @@ To establish a new flow of data, you have to create a connection between an outp
   ![](/assets/placeholder2.jpg)
 
 * **Using connection pen**
-  Press and drag on the stage while holding the <kbd>ctrl</kbd> key to use the connection pen in connecting mode. A green stroke will follow your pointer and will connect all nodes on its way. Currently, if a connection pen connects two nodes, the results from the first one will be connected to the first input of the second node. This behavior will be enhanced soon and Luna will try to create connection between ports with matching types.
+  Press and drag on the stage while holding the <kbd>ctrl</kbd> key to use the connection pen in connecting mode. A green stroke will follow your pointer and will connect all nodes on its way. Currently, if a connection pen connects two nodes, the results from the first one will be connected to the self port of the second node. This behavior will be enhanced soon and Luna will try to create connection between ports with matching types.
   ![](/assets/placeholder2.jpg)
 
 * **On creation**
