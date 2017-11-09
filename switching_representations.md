@@ -4,7 +4,7 @@ Luna delivers a sophisticated mechanism for the two way translation between visu
 
 In the most common case, each Luna node corresponds to a line of code. For example:
 
-![](ex1.png)
+![](assets/ex1.png)
 
 ```python
 a = 1
