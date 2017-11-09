@@ -23,7 +23,7 @@ Dashboard allows you to:
 
 ## Workspace
 
-![](/assets/placeholder.jpg)
+![](/assets/workspace.jpg)
 
 Luna is like a toolbox. The Workspace is a way to arrange the tools for your convenience. The Workspace is divided into panels<span class="uiref">1</span>. Each panel is able to display tabs. Each tab is a separate tool from the toolbox. The most important tools are described below.
 
