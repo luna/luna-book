@@ -51,13 +51,13 @@ It is also important to understand how currying works when using nodes. Whenever
 
 ## Lambdas
 
-A lambda is a simple, annonymous function. They are created using the ``:`` operator. The part before `:` is the lambda argument, while the part after is the returned value. Thanks to currying it's also possible to define multi-argument lambdas – all you need to do is return another lambda, e.g. `x: y: x + y`.
+A lambda is a simple, annonymous function. They are defined with the ``:`` operator. The part before `:` is the lambda argument, while the part after it is the returned value. Thanks to currying it's also possible to define multi-argument lambdas – all you need to do is return another lambda, e.g. `x: y: x + y`.
 
     id = x: x
     const = x: y: x
     myLambda = x: y: z: (x + y) * z
 
-Simple lambdas can often be shortened even more by using the `_` idiom. All occurences of `_` inside a parenthesized expression are replaced with consecutive lambda arguments. This allows to simplify some constructions like this:
+Simple lambdas can often be shortened even more by using the `_` idiom, which we have first seen in the section on currying. All occurences of `_` inside a parenthesized expression are replaced with consecutive lambda arguments. This allows to simplify some constructions like this:
 
 
     _.succ              # same as (x: x.succ)
@@ -67,7 +67,7 @@ Note that each pair of parentheses creates a new lambda context, so `(_ + 2) + _
 
 ## Function definitions
 
-Defining toplevel or complex functions is best accomplished with the ``def`` keyword. The first line defines the function name and its arguments. The last line of a definition is the returned value. In the graphical language, the arguments are ports on the left hand side bar, and the returned value is connected to the right hand side.
+Defining toplevel or complex functions is best accomplished with the ``def`` keyword. Any function defined this way on the module toplevel are then visible by any modules importing it (and of course throughout the defining module itself). The first line defines the function name and its arguments. The last line of a definition is the returned value. In the graphical language, the arguments are ports on the left hand side bar, and the returned value is connected to the right hand side.
 
     def move shape tx ty:
         translation = translationTrans tx ty
