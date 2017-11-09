@@ -51,25 +51,25 @@ Nodes are always created with the help of [Luna Explorer](explorer.md), however,
 
 
 ## Connecting and disconnecting nodes
-To establish a new flow of data, you can connect an output port to either an input port or a self port. There is no a single best way to do it. It depends on your preferences, graph complexity, zoom level and much more. Luna provides you with several alternative ways to connect and disconnect nodes, so you can choose the one which suits you most in a given situation.
+To establish a new flow of data, you have to create a connection between an output port and an input port (including self port). There is no a single best way to do it, it depends on your preferences, graph complexity, zoom level and much more. Luna provides you with several alternative ways to connect and disconnect nodes, so you can choose the one which suits you most in a given situation.
 
 
 ###### Connecting nodes
 
 * **By drag**  
-  Press an output port, drag and drop it over desired input or self port. Alternatively you can press the input port, drag and drop it over desired output port. You cannot, however, start the connection by pressing the self port – pressing the node body selects it instead. Drop over the background to cancel.
+  Press an output port, drag and drop it over desired input or self port. Alternatively you can press the input port, drag and drop it over desired output port. You cannot, however, start the connection by pressing the self port – pressing the node body selects the whole node instead. Drop over the background to cancel.
   ![](/assets/placeholder2.jpg)
 
 * **By click**  
-  Click (press and release) an output port, the connection will follow your mouse until you click again. Click on the desired input port or self port to create new connection or click on the background to cancel. You can also click on the input port and then on the output port. Click on the background to cancel.
+  Click (press and release) an output port, the connection will follow your mouse until you click again. Click on the desired input port or self port to create new connection or click on the background to cancel. You can alternatively click first on the input port and then on the output port. Click on the background to cancel.
   ![](/assets/placeholder2.jpg)
 
 * **Using connection pen**
-  Press and drag on the stage while holding the <kbd>ctrl</kbd> key to draw a green stroke using the connection pen. Connection pen will automatically connect all nodes on its way. Currently if connection pen connects two nodes, the results from the first one will be connected to the first input of the second node. This behavior will be enhanced soon and Luna will try to create connection between ports with matching types.
+  Press and drag on the stage while holding the <kbd>ctrl</kbd> key to use the connection pen in connecting mode. A green stroke will follow your pointer and will connect all nodes on its way. Currently, if a connection pen connects two nodes, the results from the first one will be connected to the first input of the second node. This behavior will be enhanced soon and Luna will try to create connection between ports with matching types.
   ![](/assets/placeholder2.jpg)
 
 * **On creation**
-  Select a node before opening Explorer to guide it to search for functions associated with the node's results and automatically connect the results to the self port of newely created node.
+  Select a node before opening Explorer to guide it to search for functions associated with the node's results and automatically connect them to the self port of a newely created node.
   ![](/assets/placeholder2.jpg)
 
 
@@ -83,6 +83,9 @@ To establish a new flow of data, you can connect an output port to either an inp
 * **By click**
   Click one of connection's ends to disconnect it and enter "connecting by click" mode. You can click on other port to reconnect or click on the background to remove the connection.
   ![](/assets/placeholder2.jpg)
+  
+* **By connecting to an occupied port**
+  Create a new connection using any above method to a port which is already connected to replace the old connection with the new one.
 
 * **Using connection pen**
   Press and drag on the stage while holding both <kbd>ctrl</kbd> and <kbd>shift</kbd> keys to draw a red stroke, which will every connection it crosses.
@@ -90,16 +93,20 @@ To establish a new flow of data, you can connect an output port to either an inp
 
 
 
-
-
 ## Node's details view
 
-Luna allows you to view nodes in two forms – a compact, as seen above, and in a detailed form. The details view
+Luna allows you to display a node in either of two views – a compact, as seen above, and in a detailed one. The detailed view takes much more screen space, however, it also provides widgets to interactively control the node's input values. To switch between the views, select the desired nodes and press the <kbd>enter</kbd>.
+
+###### Parameters widgets
+Every input to a node is called a parameter. A parameter can either be delivered by a connection or set manually using widgets. Luna delivers an [extensible framework for displaying and creating custom widgets](dummy.md). 
+
+![](/assets/placeholder.jpg)
 
 
 
+## Results visualisations
 
-
+Every node is able to visualize its results. Luna delivers an [extensible framework for displaying and creating custom visualizations](dummy.md) for a particular result type. To open the visualization either press the eye icon above the node <span class="uiref">1</span> or press the <kbd>space bar</kbd>. You can choose which visualization to use from the drop-down visualization's menu <span class="uiref">2</span>.
 
 
 
