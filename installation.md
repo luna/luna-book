@@ -8,7 +8,7 @@ The Luna Manager is a tool for managing your Luna environment. It allows install
 
 For your convenience we distribute it as a binary, so you can download it and literally "double click" to start the installation process. You can download it from our [website](http://luna-lang.org) or build it from [source](http://github.com/luna/luna-manager).
 
-![](/assets/placeholder.jpg)
+![](/assets/installer.png)
 
 After running the installer you can choose whether you want Luna to be installed locally \(recommended option\) or system-wide. If you need more fine grained control over the installation process, please download and use the Luna Command Line Manager from our [website](http://luna-lang.org) instead.
 
