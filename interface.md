@@ -25,7 +25,7 @@ Dashboard allows you to:
 
 ![](/assets/placeholder.jpg)
 
-Luna is like a toolbox. The Workspace is a way to arrange the tools for your convenience. The Workspace is divided into panels, two dimensional, non-overlapping rectangles on your screen <span class="uiref">1</span>. Each panel is able to display tabs. Each tab is a separate tool from the toolbox. The most important tools are described below.
+Luna is like a toolbox. The Workspace is a way to arrange the tools for your convenience. The Workspace is divided into panels<span class="uiref">1</span>. Each panel is able to display tabs. Each tab is a separate tool from the toolbox. The most important tools are described below.
 
 #### Luna Visual Editor
 Luna Visual Editor <span class="uiref">2</span> is the most important tool from our toolbox. It allows you to edit the data flow using whiteboard like interface. Moreover, it has the ability to use other tools on demand. For example, the Visual Editor is able to display interactive results visualizations next to graph nodes, making it much more accessible for fast preview than using a separate visualization window.
