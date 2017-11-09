@@ -7,7 +7,7 @@
   * [What you need to dive in](installation.md)
   * [Learning the interface](interface.md)
 * [Explorer](explorer.md)
-* [Syntax](syntax.md)
+* [Syntax](visual_representation.md)
   * [Visual representation](visual_representation.md)
   * [Textual representation](textual_representation.md)
   * [Switching between representations](switching_representations.md)
