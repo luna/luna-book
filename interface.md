@@ -5,7 +5,7 @@ We are ready to get started! If you're the kind of person who just skips introdu
 
 ## Dashboard
 
-![](/assets/placeholder.jpg)
+![](/assets/hello_screen.png)
 
 Alright, you've got Luna Studio installed on your computer. After launch you will be greeted with your Dashboard <span class="uiref">1</span>. Think about it like about a mix of a "hello screen" and a place gathering all common quick start actions. You can always access the dashboard simply by pressing the Luna logo on the left toolbar <span class="uiref">2</span> (or by selecting it from menu `View → Dashboard`).
 
