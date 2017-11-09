@@ -42,7 +42,12 @@ myList.each (+ 2)
 ```
 It is also important to understand how currying works when using nodes. Whenever you don't set a port's value, this argument is automatically curried. This is shown by the changing type of the node's output. Note how the output type changes depending on the number of ports connected, showing the different curried variants of a function:
 
+![](assets/curried_fun.png)
 
+1. The `add1` node does not set any arguments, thus the output type is `Int -> Int -> Int`,
+2. The `add2` node has the second argument connected, so the output type is `Int -> Int`. Note the `_` in it's expression. This underscore introduces explicit currying for this argument – `add _ number1` means "set the second argument and leave the first one unapplied",
+3. The `add3` node applies the first argument and leaves the second one. There is no need for the `_` in this case, since the applied argument precedes the unapplied. The type is the same as that of `add2`, since both arguments have the same type.
+4. The `add4` node is fully applied, hence the return type is just an `Int`, as 
 
 ## Lambdas
 
