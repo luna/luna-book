@@ -1,6 +1,6 @@
 # Functions
 
-Functions are the basic units for reusable logic. A function is a piece of logic that takes any number of arguments, performs some operations and returns a result of these operations. Most nodes you have used so far are actually functions. In this chapter you'll learn how to use functions and how to define them.
+Functions are the basic units of reusable logic. A function is a piece of logic that takes any number of arguments, performs some operations and returns a result of these operations. Most nodes you have used so far are actually functions. In this chapter you'll learn how to use functions and how to define them.
 
 ## Calling functions
 
