@@ -106,24 +106,6 @@ Every input to a node is called a parameter. A parameter can either be delivered
 
 ## Results visualisations
 
-Every node is able to visualize its results. Luna delivers an [extensible framework for displaying and creating custom visualizations](dummy.md) for a particular result type. To open the visualization either press the eye icon above the node <span class="uiref">1</span> or press the <kbd>space bar</kbd>. You can choose which visualization to use from the drop-down visualization's menu <span class="uiref">2</span>.
+Every node is able to visualize its results. Luna delivers an [extensible framework for displaying and creating custom visualizations](dummy.md) for a particular result type. To open the visualization press either the eye icon above the node <span class="uiref">1</span> or the <kbd>space</kbd> bar. If you press and hold the <kbd>space</kbd> bar, the visualization would enter the full-screen mode. You can choose which visualization to use from the drop-down visualization's menu <span class="uiref">2</span>. 
 
-
-
-
-
-  for now just think of data flowing between nodes like objects capable to take action. If you connect data to the self port, the node expression tells it what to do. If you for example connect list of numbers to a self port of node `sort`   It means that every data is a combination of information and behavior. that flows between nodes does not only represent data, but also  , which means that you 
-In Luna every data is an object, which
-
-The self port<span class="uiref">4</span> is a special input port. Luna is an object oriented language, which means that you should think of data flowing between nodes like objects which could perform actions. If such an object flows into the self port, the nodes expression tells him what to do
-
-
-
-Node body could be displayed in one of two forms – compact and detailed. The detailed view allows to interactively change node parameters and will be covered later. The node body consist of input ports <span class="uiref">3</span> and output ports <span class="uiref">4</span>. Ports are like gates. 
-
-The colors of ports and connections indicate what type of data flows trough them. You can learn more about data types in the following [Types 101](dummy.md) chapter.
-
-![](/assets/placeholder.jpg)
-
-
-
+Many visualizations provide interactive controls. In order to access them you have to focus the visualization by clicking on it. When you focus a visualization, the graph gets dimmed and you cannot control it until you exit the focus by pressing the <kbd>escape</kbd> key or pressing on the dimmed background.
