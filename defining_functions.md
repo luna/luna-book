@@ -29,7 +29,7 @@ transformed = shape.transform translation
 transformed
 ```
 
-There is also a way to create functions out of existing pieces of logic – just select any number of nodes and press <kbd>f</kbd>. The nodes will get frkwis very handy when prototyping solutions and playing around with different ways of solving particular problems. For example the following graph:
+There is also a way to create functions out of existing pieces of logic – just select any number of nodes and press <kbd>f</kbd>. The nodes will get folded into a function, with any external input connection becoming an argument, and any external output connection being returned from the function. This workflow is very handy when prototyping solutions and playing around with different ways of solving particular problems. For example the following graph:
 
 ![](assets/before_collapse.png)
 
