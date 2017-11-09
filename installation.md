@@ -1,6 +1,6 @@
 ## What you need to dive in
 
-Luna Studio is available as a stand-alone application for Mac OS, Linux and Windows. All its core graphical tools are based on web technologies, so it is possible to run them in a web browser. However, Luna Studio desktop distribution was tightly integrated with the Atom code editor, in order to provide decent code editing capabilities. Currently only the desktop distribution is supported, however, you are welcome to play and contribute to the web version. To learn more, please refer to the [Luna architecture description](architecture.md).
+Luna is available as a stand-alone application for Mac OS, Linux and Windows named Luna Studio. All its core graphical tools are based on web technologies, so it is possible to run them in a web browser too. However, Luna Studio desktop distribution was tightly integrated with [GitHub's Atom](https://atom.io) in order to provide decent code editing capabilities. Currently only the desktop distribution is supported, however, you are welcome to play and [contribute](http://luna-lang.org/contribute) to the web version. To learn more, please refer to the [Luna architecture description](architecture.md).
 
 #### Luna Manager
 
