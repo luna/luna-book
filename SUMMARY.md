@@ -7,7 +7,6 @@
 * [Starting Out](installation.md)
   * [What you need to dive in](installation.md)
   * [Learning the interface](interface.md)
-  * [First steps](first_steps.md)
 * [Explorer](explorer.md)
 * [Syntax](syntax.md)
   * [Visual representation](visual_representation.md)
