@@ -10,7 +10,7 @@ For your convenience we distribute it as a binary, so you can download it and li
 
 ![](/assets/installer.png)
 
-After running the installer you can choose whether you want Luna to be installed locally \(recommended option\) or ~~system-wide~~ (the graphical installer supports currently only the local installation scenario). If you need more fine grained control over the installation process, please download and use the Luna Command Line Manager from our [website](http://luna-lang.org) instead.
+After running the installer ~~you can choose whether you want Luna to be installed locally \(recommended option\) or system-wide~~ (the graphical installer supports currently only the local installation scenario). If you need more fine grained control over the installation process, please download and use the Luna Command Line Manager from our [website](http://luna-lang.org) instead.
 
 > **\[info\] Local or system-wide installation?**
 >
