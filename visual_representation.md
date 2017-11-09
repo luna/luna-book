@@ -31,13 +31,13 @@ Ports are the data node's communication gates. Data flows into input ports on th
 ###### Self port<span class="uiref">4</span> 
 Luna is an object oriented language. It means that every data that flows between nodes is not just information, it can also respond to your commands. You can for example tell a car to stop, a dog to bark, a number to increase or a list to sort its items. If a data is connected to self port, then the node's expression tell it what to do. A rule of thumb is that if you want to process a data, connect it to the self port. You will learn in detail about it in the [Making our own type](dummy.md) chapter.
 
-![](/assets/placeholder.jpg)
+![](/assets/node_with_self_and_args.png)
 
 
 ### Reference nodes
 Sometimes you don't want to process data, you want to inspect and deconstruct it instead. Nodes that do not affect the data, but just allow you to look into it are called reference nodes. They usage is covered in detail in the [Pattern matching](dummy.md) chapter. They contain a special target port <span class="uiref">1</span> which accepts data that you want to inspect. 
 
-![](/assets/placeholder.jpg)
+![](/assets/reference_node.png)
 
 
 ## Creating nodes
@@ -100,7 +100,7 @@ Luna allows you to display a node in either of two views – a compact, as seen 
 ###### Parameters widgets
 Every input to a node is called a parameter. A parameter can either be delivered by a connection or set manually using widgets. Luna delivers an [extensible framework for displaying and creating custom widgets](dummy.md). 
 
-![](/assets/placeholder.jpg)
+![](/assets/expanded_node.png)
 
 
 
