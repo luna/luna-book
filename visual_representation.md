@@ -88,7 +88,7 @@ To establish a new flow of data, you have to create a connection between an outp
   Create a new connection using any above method to a port which is already connected to replace the old connection with the new one.
 
 * **Using connection pen**
-  Press and drag on the stage while holding both <kbd>ctrl</kbd> and <kbd>shift</kbd> keys to draw a red stroke, which will every connection it crosses.
+  Press and drag on the stage while holding both <kbd>ctrl</kbd> and <kbd>shift</kbd> keys to draw a stroke, which will disconnect every connection it crosses.
   ![](/assets/disconnection_pen.gif)
 
 
