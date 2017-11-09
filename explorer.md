@@ -15,7 +15,7 @@ The circle below the Explorer is called a node<span class="uiref">4</span>. It i
 > The Explorer is currently available only from within the data flow editor. It will be also integrated with the code editor in the future.
 
 
-![](/assets/placeholder.jpg)
+![](/assets/explorer.png)
 
 
 ## Using the Explorer
