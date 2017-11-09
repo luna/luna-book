@@ -5,13 +5,13 @@ Luna is a data processing language and like every language it provides a syntax.
 Luna was designed to be a highly readable language. While designing its textual representation the main focused was put on creating a clean, concise yet expressive syntax.
 
 ## Code layout
-Luna code is indentation sensitive, which means that logically nested expressions are also visually nested in code. Luna does not allow mixing the use of tabs and spaces, only spaces are allowed for making code indentations. The layout were designed to maximally increase code readability and layout flexibility. There are three rules describing how it works:
+Luna code is indentation sensitive, which means that logically nested expressions are also visually nested in code. The layout were designed to maximally increase code readability and layout flexibility. There are three rules describing how it works:
 
 1. Each block could start in current or a new line. The block's indentation level is the same as it's first expression's indentation;
 2. Each nested code block should have bigger indentation level than the parent's one;
 3. Expressions can span over multiple lines, but all the spanned lines have to be indented more than the expression itself.
 
-Almost every block starts with the colon `:` operator. Here are some examples of different usages of indentation layout. You do not have to understand the code yet, it's important however to feel how the layout works.
+Luna does not allow mixing the use of tabs and spaces, only spaces are allowed for making code indentations. Almost every block starts with the colon `:` operator. Here are some examples of different usages of indentation layout. You do not have to understand the code yet, it's important however to feel how the layout works.
 
 ```ruby
 # inline expression
@@ -44,7 +44,4 @@ def main: v = Vector 1 2 3
 
 ##Scoping
 Scopes define when a particular name is accessible in a program. Each code block creates a distinct name scope, inheriting the names from the parent one. All the names of entities defined in a scope cannot escape its boundaries, in particular they cannot be accessed from the parent scope.
-
-It is valid to have different entities with the same name available within a single scope, but it is invalid to use them. Such situation can happen when importing functions from different modules – sometimes the same name can be imported. In such case a compilation error about the name ambiguity will be raised when trying to use such name. The Luna compiler warns about ambigous names within single scope even if they are not used anywhere in the code.
-
 
