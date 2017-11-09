@@ -79,5 +79,14 @@ def move shape tx ty:
     transformed
 ```
 
-There is also a way to create functions out of existing pieces of logic – just select any number of nodes and press <kbd>f</kbd>. The nodes will get folded into a function, with any external input connection becoming an argument, and any external output connection being returned from the function. For example the following graph:
+There is also a way to create functions out of existing pieces of logic – just select any number of nodes and press <kbd>f</kbd>. The nodes will get folded into a function, with any external input connection becoming an argument, and any external output connection being returned from the function. This style of work is very handy when prototyping solutions and playing around with different ways of solving particular problems. For example the following graph:
 
+![](assets/before_collapse.png)
+
+after collapsing the selected nodes becomes:
+
+![](assets/after_collapse.png)
+
+and the newly created `func1` function looks like this on the inside:
+
+![](assets/collapsed_inside.png)
