@@ -4,18 +4,12 @@
 
 Luna can process any kind of data. It can compute car's velocity, reply to user's questions via chat-like interface or process all photos from your last trip to San Francisco. Some operations make sense only with very specific kind of data. You can multiply numbers, however it's hard to imagine what would be the result of a cake multiplication. Other operations allow some degree of freedom. Reversing, for example, works with any list with no regard to what its individual elements are. Yet other operations provide more complex constraints. Summing a list will work with any non-empty list containing arithmetic elements only, but we don't really care for the exact structure of these elements. They may be integers, fractions or even matrices, the only requirement is just having an addition operation defined.
 
--=-=-=-=-=-
-In this chapter we introduce the type system, a way Luna handles such constraints. You will learn how types are defined, how to check a type of a given value and what happens when the constraints could not be resolved. The philosophy behind type system is to provide as much safety and useful hints as possible without restricting your expressive powers.
-
-The idea behind a type system **TODO**
-The type system in Luna was designed to provide as much safety and useful hints as possible without restricting your expressiveness.
-
--=-=-=-=-=-
+In this chapter we introduce the type system, a way Luna handles such constraints. You will learn how types are defined, how to check a type of a given value and what happens when the constraints could not be resolved. The philosophy behind the type system is to provide as much safety and useful hints as possible without restricting your expressive powers.
 
 
 ## How do I see types?
 
-The type system in Luna is fundamentally different than any type system used in other statically typed programming languages. It was designed to provide as much safety and useful hints as possible without restricting your expressiveness. You will never need to specify the types manually, the type inferencer computes every type behind the scenes. This computation ensures that any operation can be safely performed, without any contradicting properties arising.
+The type system in Luna is fundamentally different than any other type system used in programming languages nowadays. It was designed from scratch to be invisible until you need it, yet fully aware of structure of the data being processed. You will never need to manually specify the types in Luna. The type inferencer computes every single type behind the scenes automatically for you. This computation ensures that every operation will be performed safetely, without any contradicting properties arising.
 
 Since the types are usually not expressed in code, we need a way to show them to you. You have probably already noticed that the nodes in our visual editor come in different, seemingly random, colors. Those colors are just one of the ways the visual editor communicates types. Each of the ports on the node is assigned a color corresponding to its type. All the connections are also colored, the colors meaning the type of data "being sent" via this connection.
 
