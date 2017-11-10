@@ -21,3 +21,7 @@ Your feedback is very important to us. Join the Luna community, ask questions an
 * [GUI bugtracker](https://github.com/luna/luna-studio/issues) and [Compiler bugtracker](https://github.com/luna/luna/issues) – if you are sure you are facing a bug, please report it to us. Be as precise as possible. Screenshots are always more than welcome! Please do not use the bug tracker to express improvement ideas – use forum instead. Forum is a much better place to discuss them before formulating an official task for developers.
 
 
+> **[info] Improvements ahead!**
+>
+> The above links do not work yet. They will be active as soon as Luna hits the public release.
+
