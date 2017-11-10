@@ -23,7 +23,7 @@ Since the types are usually not expressed in code, we need a way to show them to
 
 Colors are a great indication for some values being of different or same types, but it's not enough. Just imagine referring to them like "the text `"hello world!"` has type `magenta`". That's why the colors serve only as visual aids,   but the real types have a text representation. If you hover above a node, the real types are revealed. Each of the node inputs and outputs displays its corresponding type.
 
-![](graph_with_types.png)
+![](assets/graph_with_types.png)
 
 In the above image you can see the actual type names and thus understand the behavior of the node:
 
