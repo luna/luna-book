@@ -15,6 +15,16 @@ _.toText + _.toText # same as (x: y: x.toText + y.toText)
 
 Note that each pair of parentheses creates a new lambda context, so `(_ + 2) + _` is interpreted as `x: (y: y + 2) + x`, not `x: y: (x + 2) + y`.
 
+## File view
+
+So far we were always concerned about the body of a particular function. However, there is also a view containing all functions defined in the given file. You will need it to build more complex pieces of logic in Luna. To access this view, simply double click on the workspace background or select it on the breadcrumb in the top left corner of visual editor.
+
+In this view, you can see all the functions defined in a file, displayed as nodes like this:
+
+![](assets/toplevel.png)
+
+To enter any of these functions, double click the node. If there is a function called `main`, the visual editor will automatically enter this function when opening the file.
+
 ## Function definitions
 
 Defining toplevel or complex functions is best accomplished with the ``def`` keyword. Any function defined this way on the module toplevel are then visible by any modules importing it (and of course throughout the defining module itself).
