@@ -34,7 +34,7 @@ Luna Visual Editor <span class="uiref">2</span> delivers a whiteboard-like inter
 Code Editor <span class="uiref">3</span> is a powerful text editor. It allows you to edit the textual Luna representation and source code of other languages. It is integrated with the Visual Editor – whenever you modify the code, the data flow graph updates. It works the other way around too – every graph modification updates the code.
 
 #### Data View <comingsoon>coming soon</comingsoon>
-Data View <span class="uiref">4</span> is a data visualization and manipulation toolkit. It provides processing utilities highly tailored for a particular data type. You can switch between available visualizations and manipulators or [define your own](dummy.md). Note that in the current release, the Data View is available only within the Visual Editor. It would be available as separate tool soon.
+Data View <span class="uiref">4</span> is a data visualization and manipulation toolkit. It provides processing utilities highly tailored for a particular data type. You can switch between available visualizations and manipulators or [define your own](dummy.md).
 
 #### Project view
 Project View <span class="uiref">5</span>is a list of modules in current Luna project. You will learn more about modules in the [Modules and libraries](dummy.md) chapter.
