@@ -10,10 +10,6 @@ The Explorer consists of three panels – expression editor <span class="uiref">
 
 The circle below the Explorer is called a node<span class="uiref">4</span>. It is a preview of the component you are going to create. You will learn more about nodes in the following chapter.
 
-> **[info] Improvements ahead!**
->
-> The Explorer is currently available only from within the data flow editor. It will be also integrated with the code editor in the future.
-
 
 ![](/assets/explorer.png)
 
