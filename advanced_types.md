@@ -30,7 +30,7 @@ All this is handled by the Luna compiler under the hood, so that you don't need 
 
 Let's consider another example:
 
-```def foo x: x.succ + 1```
+```def foo x: x.succ + 1 ```
 
 What is the type of this function?
 First of all, we can see that the result of `x.succ` is added to an `Int`, so (from the definition of `+` above) we know that `x.succ :: Int` and that the result of this function is also an `Int`. So the final type with the underlying assumptions is:
