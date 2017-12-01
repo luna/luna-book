@@ -45,7 +45,6 @@ Sometimes you don't want to process data, you want to inspect and deconstruct it
 Nodes are always created with the help of [Luna Explorer](explorer.md), however, there are several options to launch it and guide towards our intentions:
 
 * press the <kbd>tab</kbd> key to search across all available components;
-* click on the input or output port with the right mouse button to guide the Explorer to look for functions capable of processing its type of data;
 * select a node and then press the <kbd>tab</kbd> key to guide the Explorer to look for functions capable of processing its results.
 
 
