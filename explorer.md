@@ -15,7 +15,7 @@ The circle below the Explorer is called a node<span class="uiref">4</span>. It i
 
 
 ## Using the Explorer
-The Explorer will search Luna libraries for components that match your query. The provided query do not need to be precise – it is usually sufficient to provide only a part or several parts of the name you are looking for. You can even misspell it, the Explorer will try to get it right for you! 
+The Explorer will search Luna libraries for components that match your query. The provided query do not need to be precise – it is usually sufficient to provide only a part or several parts of the name you are looking for. You can even omit some letters, the Explorer will try to get it right for you! 
 
 The Explorer will provide suggestions on the fly while you are typing. The best match will be displayed on the bottom of the list and will be selected by default. You can move the selection by using the up <kbd>up arrow</kbd> and <kbd>down arrow</kbd> keys. To confirm your choice and create the selected component, press the <kbd>enter</kbd> key.
 
