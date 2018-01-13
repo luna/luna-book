@@ -38,7 +38,7 @@ Luna is an object oriented language. It means that every piece of data that flow
 
 
 ### Reference nodes
-Sometimes you don't want to process data, you want to inspect and deconstruct it instead. Nodes that do not affect the data, but allow you to look into it are called reference nodes. They usage is covered in detail in the [Pattern matching](dummy.md) chapter. They contain a special target port <span class="uiref">1</span> which accepts data that you want to inspect. 
+Sometimes you don't want to process data, you want to inspect and deconstruct it instead. Nodes that do not affect the data, but allow you to look into it are called reference nodes. Their usage is covered in detail in the [Pattern matching](constructors.md) chapter. They contain a special target port <span class="uiref">1</span> which accepts data that you want to inspect. 
 
 ![](/assets/reference_node.png)
 
@@ -48,7 +48,6 @@ Sometimes you don't want to process data, you want to inspect and deconstruct it
 Nodes are always created with the help of [Luna Explorer](explorer.md), however, there are several options to launch it and guide towards our intentions:
 
 * press the <kbd>tab</kbd> key to search across all available components;
-* click on the input or output port with the right mouse button to guide the Explorer to look for functions capable of processing its type of data;
 * select a node and then press the <kbd>tab</kbd> key to guide the Explorer to look for functions capable of processing its results.
 
 
@@ -88,7 +87,7 @@ To establish a new flow of data, you have to create a connection between an outp
   ![](/assets/disconnect_drag.gif)
   
 * **By connecting to an occupied port**
-  Create a new connection using any above method to a port which is already connected to replace the old connection with the new one.
+  Create a new connection using any above method to an input (or self) port which is already connected to replace the old connection with the new one.
 
 * **Using connection pen**
   Press and drag on the stage while holding both <kbd>ctrl</kbd> and <kbd>shift</kbd> keys to draw a stroke, which will disconnect every connection it crosses.
@@ -98,10 +97,10 @@ To establish a new flow of data, you have to create a connection between an outp
 
 ## Node's details view
 
-Luna allows you to display a node in either of two views – a compact, as seen above, and in a detailed one. The detailed view takes much more screen space, however, it also provides widgets to interactively control the node's input values. To switch between the views, select the desired nodes and press the <kbd>enter</kbd>.
+Luna allows you to display a node in either of two views – a compact, as seen above, or in a detailed one. The detailed view takes more screen space, however, it also provides widgets to interactively control the node's input values. To switch between the views, select the desired nodes and press the <kbd>enter</kbd>.
 
 ###### Parameters widgets
-Every input to a node is called a parameter. A parameter can either be delivered by a connection or set manually using widgets. Luna delivers an [extensible framework for displaying and creating custom widgets](dummy.md). 
+Every input to a node is called a parameter. A parameter can either be delivered by a connection or set manually using widgets.
 
 ![](/assets/expanded_node.png)
 
