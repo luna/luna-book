@@ -108,6 +108,6 @@ Every input to a node is called a parameter. A parameter can either be delivered
 
 ## Results visualisations
 
-Every node is able to visualize its results. Luna delivers an [extensible framework for displaying and creating custom visualizations](dummy.md) for a particular result type. To open the visualization press either the eye icon above the node <span class="uiref">1</span> or the <kbd>space</kbd> bar. If you press and hold the <kbd>space</kbd> bar, the visualization would enter the full-screen mode. You can choose which visualization to use from the drop-down visualization's menu <span class="uiref">2</span>. 
+Every node is able to visualize its results. To open the visualization press the eye icon above the node. If you press and hold the <kbd>space</kbd> bar, the visualization will enter full-screen mode. You can choose which visualization to use from the drop-down visualizations menu. 
 
 Many visualizations provide interactive controls. In order to access them you have to focus the visualization by clicking on it. When you focus a visualization, the graph gets dimmed and you cannot control it until you exit the focus by pressing the <kbd>escape</kbd> key or pressing on the dimmed background.
