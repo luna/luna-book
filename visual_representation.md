@@ -2,12 +2,12 @@
 
 Luna is a data processing language and like every language it provides a syntax. However, in contrast to majority of languages Luna has more than one syntax representation – visual and textual. In order to use Luna efficiently you should learn both of them – the visual representation uses the textual one to define component's expressions. This chapter describes the former – visual data flow graph.
 
-While designing the visual representation we've put an enormous emphasis on productivity and ergonomics. Every element and every action was carefully designed to allow you express your thoughts easily, understand the results rapidly and clearly see all the data transformations. You have to learn how to "speak this language", however it's worth doing, even hardcore coders much prefer using Luna for building high-level data processing workflows than writing code. We are on a mission to constantly improve how you work with Luna, so your feedback and suggestions are very important to us. If you have any ideas related to how the visual representation works, [tell us about it](http://luna-lang.org/forum)!
+While designing the visual representation we've put an enormous emphasis on productivity and ergonomics. Every element and every action was carefully designed to allow you express your thoughts easily, understand the results rapidly and clearly see all the data transformations. You have to learn how to "speak this language", however it's worth doing, as even hardcore coders much prefer using Luna for building high-level data processing workflows than writing code. We are on a mission to constantly improve how you work with Luna, so your feedback and suggestions are very important to us. If you have any ideas related to how the visual representation works, [tell us about it](https://discuss.luna-lang.org)!
 
 
 ## Navigation
 
-Luna Visual Editor is a two dimensional canvas allowing you for fluid navigation so you can always focus on what is important at the moment. You can:
+Luna Visual Editor is a canvas allowing you for fluid navigation so you can always focus on what is important at the moment. You can:
 * **pan** the view using two fingers drag gesture or the middle mouse button;
 * **zoom** the view using pinch gesture or the right mouse button;
 * **select nodes** by clicking them or using left mouse button to draw selection area starting from the background;
@@ -16,19 +16,22 @@ Luna Visual Editor is a two dimensional canvas allowing you for fluid navigation
 
 
 ## Nodes
-A node is the most primitive entity, which connected with other nodes form the data flow graph. 
+Nodes are the most primitive entities in the visual representation, which, together with other nodes, form the data flow graph. 
 
 
 ### Value nodes
-Value nodes are the most common node types. They represent any valid Luna value, including data processing functions. From the high perspective, a value node can generate data, modify it or store in a database. Value nodes consist of several visual elements:
+Value nodes are the most common node types. They represent any valid Luna value, including data processing functions. From the high perspective, a value node can generate data, modify it or pass to it some external service like a web service or a database. Value nodes consist of several visual elements:
 
-###### Node expression (the node name) <span class="uiref">1</span> 
-The node expression, sometimes referred to as the node name, is any valid Luna code, in particular a function name. For example, a node which adds together two objects is named `+`. 
+###### Node expression <span class="uiref">1</span> 
+The node expression is any valid Luna code, in particular a function name. For example, a node adding two objects is named `+`.
 
-###### Input ports <span class="uiref">2</span> and output ports <span class="uiref">3</span>
-Ports are the data node's communication gates. Data flows into input ports on the left side, is processed according to the node expression and the result flows out from the output ports on the right side. Port colors indicate what type of data flows trough them. You will learn more about data types in the [Types 101](dummy.md) chapter.
+###### Node name <span class="uiref">2</span>
+The node name is a name you give to it to describe its role in the graph. Any other node referencing this one uses this name.
 
-###### Self port<span class="uiref">4</span> 
+###### Input ports <span class="uiref">3</span> and output ports <span class="uiref">4</span>
+Ports are the node's communication gates. Data flows into input ports on the left side, is processed according to the node expression and the result flows out from the output ports on the right side. Port colors indicate what type of data flows trough them. You will learn more about data types in the [Types 101](dummy.md) chapter.
+
+###### Self port<span class="uiref">5</span> 
 Luna is an object oriented language. It means that every data that flows between nodes is not just information, it can also respond to your commands. You can for example tell a car to stop, a dog to bark, a number to increase or a list to sort its items. If a data is connected to self port, then the node's expression tell it what to do. A rule of thumb is that if you want to process a data, connect it to the self port. You will learn in detail about it in the [Making our own type](dummy.md) chapter.
 
 ![](/assets/node_with_self_and_args.png)
