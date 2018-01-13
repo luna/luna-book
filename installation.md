@@ -6,15 +6,9 @@ Luna is available as a stand-alone application for Mac OS, Linux and Windows, na
 
 The Luna Manager is a tool for managing your Luna environment. It allows installing and uninstalling different Luna versions side by side, switching between them, managing the development environment, building Luna packages and much more. It is bundled with a simple graphical interface for everyday use, like installing or updating Luna.
 
-For your convenience we distribute it as a binary, so you can download it and literally "double click" to start the installation process. You can download it from our [website](http://luna-lang.org) or build it from [source](http://github.com/luna/luna-manager).
+For your convenience we distribute it as a binary, so you can download it and literally "double click" to start the installation process. You can download it from our [website](http://luna-lang.org) or build it from [source](https://github.com/luna/luna-manager).
 
 ![](/assets/installer.png)
 
-After running the installer ~~you can choose whether you want Luna to be installed locally \(recommended option\) or system-wide~~ (the graphical installer supports currently only the local installation scenario). If you need more fine grained control over the installation process, please download and use the Luna Command Line Manager from our [website](http://luna-lang.org) instead.
-
-> **\[info\] Local or system-wide installation?**
->
-> Local installation has many advantages over system-wide one – it does not require the administrator password, is more modular and you can literally remove the installation directory to completely uninstall Luna or move it to other machine keeping all your settings. We recommend it for everyone, unless you've got important reasons to install it globally. A possible reason is when the system is shared among various users and you want to install Luna for everybody at once.
-
-After the successful installation you should be able to execute Luna Studio using your system application manager \(like Mac OS Spotlight, Gnome Shell or Windows Start menu\) or run it manually from the installation path \(`$HOME/.luna` in case of local installation\).
+After the successful installation you should be able to execute Luna Studio using your system application manager \(Mac OS Spotlight, or Windows Start menu\) or run it manually from the installation path \(`$HOME/.luna/bin`\).
 
