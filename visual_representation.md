@@ -32,7 +32,7 @@ The node name is a name you give to it to describe its role in the graph. Any ot
 Ports are the node's communication gates. Data flows into input ports on the left side, is processed according to the node expression and the result flows out from the output ports on the right side. Port colors indicate what type of data flows trough them. You will learn more about data types in the [Types 101](types.md) chapter.
 
 ###### Self port<span class="uiref">5</span> 
-Luna is an object oriented language. It means that every data that flows between nodes is not just information, it can also respond to your commands. You can for example tell a car to stop, a dog to bark, a number to increase or a list to sort its items. If a data is connected to self port, then the node's expression tell it what to do. A rule of thumb is that if you want to process a data, connect it to the self port. You will learn in detail about it in the [Making our own type](dummy.md) chapter.
+Luna is an object oriented language. It means that every piece of data that flows between nodes is not just information, it can also respond to your commands. You can for example tell a car to stop, a dog to bark, a number to increase or a list to sort its items. If data is connected to self port, then the node's expression tells it what to do. A rule of thumb is that if you want to process a piece of data, connect it to the self port. You will learn in detail about it in the [Making our own type](classes.md) chapter.
 
 ![](/assets/node_with_self_and_args.png)
 
