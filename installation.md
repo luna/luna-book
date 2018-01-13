@@ -10,5 +10,5 @@ For your convenience we distribute it as a binary, so you can download it and li
 
 ![](/assets/installer.png)
 
-After the successful installation you should be able to execute Luna Studio using your system application manager \(Mac OS Spotlight, or Windows Start menu\) or run it manually from the installation path \(`$HOME/.luna/bin`\).
+After the successful installation you should be able to execute Luna Studio using your system application manager \(Mac OS Spotlight, or Windows Start menu\) or run a `luna-studio` binary manually from the installation path \(`$HOME/.luna/bin`\).
 
