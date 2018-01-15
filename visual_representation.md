@@ -108,6 +108,10 @@ Every input to a node is called a parameter. A parameter can either be delivered
 
 ## Results visualisations
 
-Every node is able to visualize its results. To open the visualization press the eye icon above the node. If you press and hold the <kbd>space</kbd> bar, the visualization will enter full-screen mode. You can choose which visualization to use from the drop-down visualizations menu. 
+Every node is able to visualize its results. To open the visualization press the eye icon above the node. If you press and hold the <kbd>space</kbd> bar, the visualization will enter full-screen mode. You can choose which visualization to use from the drop-down visualizations menu.
+
+> **[info] Changes ahead!**
+>
+> Currently, result visualisations are only available inside no–argument nodes. If there are any arguments on the left–hand–side bar of your workspace, this means that the results would depend on those arguments and we are not computing them. This will be changed soon, so you will be able to inspect the results with given input arguments. You can learn more more about functions and arguments in the [Functions chapter](defining_functions.md).
 
 Many visualizations provide interactive controls. In order to access them you have to focus the visualization by clicking on it. When you focus a visualization, the graph gets dimmed and you cannot control it until you exit the focus by pressing the <kbd>escape</kbd> key or pressing on the dimmed background.
