@@ -108,7 +108,7 @@ Every input to a node is called a parameter. A parameter can either be delivered
 
 ## Results visualisations
 
-Every node is able to visualize its results. To open the visualization press the eye icon above the node. If you press and hold the <kbd>space</kbd> bar, the visualization will enter full-screen mode. You can choose which visualization to use from the drop-down visualizations menu.
+Every node is able to visualize its results. To open the visualization press the eye icon above the node. If you press and hold the <kbd>space</kbd> bar, the visualization will enter full-screen mode. You can also press <kbd>space + ctrl</kbd> to lock the visualization in full-screen mode (press <kbd>ESC</kbd> to exit this view). You can choose which visualization to use from the drop-down visualizations menu available to the left of visualization.
 
 > **[info] Changes ahead!**
 >
