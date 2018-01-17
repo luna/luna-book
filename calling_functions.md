@@ -15,9 +15,9 @@ d = add 53 2
 
 ![](assets/calling_functions.png)
 
-## First order functions
+## First class functions
 
-Functions in Luna are first order citizens. It means that you can treat them like any other value. You can assign them to variables, pass as arguments to other functions or even store them in other data structures, like lists or maps. Many classes and libraries in Luna define functions or methods which expect other functions as their arguments. Most common examples are `List` methods `each` and `fold`. The former takes a single argument function and calls it on each element of the list, while the latter takes a two-argument function which is used to combine all the elements:
+Functions in Luna are first class citizens. It means that you can treat them like any other value. You can assign them to variables, pass as arguments to other functions or even store them in other data structures, like lists or maps. Many classes and libraries in Luna define functions or methods which expect other functions as their arguments. Most common examples are `List` methods `each` and `fold`. The former takes a single argument function and calls it on each element of the list, while the latter takes a two-argument function which is used to combine all the elements:
 ```
 f = x: x + 2
 myList = [1, 2, 3]
