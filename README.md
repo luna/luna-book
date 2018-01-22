@@ -10,7 +10,7 @@ Writing a good manual is hard. Anybody who has ever tried, knows how insanely ti
 
 
 ## Quick start!
-We strongly encourage you to play with interactive tutorials and demo scenes available in Luna Studio before reading the book. Gaining feelings of how Luna works is as important as gaining technical knowledge.
+We strongly encourage you to [download Luna Studio](http://luna-lang.org) and play with interactive tutorials and demo scenes before reading the book. Gaining feelings of how Luna works is as important as gaining technical knowledge.
 
 
 ## Join us!
