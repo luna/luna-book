@@ -82,7 +82,7 @@ Luna, much like other functional languages, does not have a `null` value. That m
 ```
 reportedValue = case myNumber of
     Just v -> 'Got a number ' + v.toText + '.'
-    None   -> 'Didn't get a number.'
+    None   -> 'Did not get a number.' # or 'Didn\'t get a number'
 print reportedValue
 ```
 There is also a bunch of useful methods like `getWithDefault`, which are handy to replace the pattern match in most cases. Consult Explorer for more details.
