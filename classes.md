@@ -44,7 +44,7 @@ The first section in this code snippet defines constructors. Constructors are di
 
 Both methods defined in the above snippet use pattern matching – the `case` construction, that allows to change the behavior based on the constructor of some object.
 
-We can use our newly defined `Bool` class as follows:
+We can use our newly defined `Circle` class as follows:
 
 ```Circle 2.0 . area```
 

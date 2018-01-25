@@ -6,7 +6,7 @@ id = x: x
 const = x: y: x
 myLambda = x: y: z: (x + y) * z
 ```
-Simple lambdas can often be shortened even more by using the `_` idiom, which we have first seen in the section on currying. All occurences of `_` inside a parenthesized expression are replaced with consecutive lambda arguments. This allows to simplify some constructions like this:
+Simple lambdas can often be shortened even more by using the `_` idiom, which we have first seen in the section on currying. All occurrences of `_` inside a parenthesized expression are replaced with consecutive lambda arguments. This allows to simplify some constructions like this:
 
 ```
 _.succ # same as (x: x.succ)
