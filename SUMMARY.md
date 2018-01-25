@@ -21,4 +21,5 @@
   * [Constructors and pattern matching](constructors.md)
   * [Type polymorphism](polymorphism.md)
 * [Advanced types](advanced_types.md)
+* [FAQ](faq.md)
 
