@@ -1,0 +1,176 @@
+@import url("https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700");
+p {
+  text-align: justify; }
+
+.book-summary ul.summary li.header {
+  padding-top: 40px; }
+
+.book.font-family-1 {
+  font-family: Quicksand, "Helvetica Neue", Helvetica, Arial, sans-serif !important; }
+
+.book-body .page-wrapper .page-inner section.normal hr {
+  background: transparent !important; }
+
+p img {
+  margin: 10px 0; }
+
+.book.color-theme-2 .book-body {
+  background: #1e1c1a; }
+.book.color-theme-2 .book-body .page-wrapper .page-inner section {
+  background: transparent; }
+.book.color-theme-2 .book-summary {
+  background: #1e1c1a; }
+.book.color-theme-2 .book-body .page-wrapper .page-inner section.normal p, .book.color-theme-2 .book-body .page-wrapper .page-inner section.normal ul, .book.color-theme-2 .book-body .page-wrapper .page-inner section.normal h1, .book.color-theme-2 .book-body .page-wrapper .page-inner section.normal h2, .book.color-theme-2 .book-body .page-wrapper .page-inner section.normal h3, .book.color-theme-2 .book-body .page-wrapper .page-inner section.normal h4, .book.color-theme-2 .book-body .page-wrapper .page-inner section.normal h5 {
+  transition: opacity 0.2s; }
+.book.color-theme-2 .book-body .page-wrapper .page-inner section.normal h1 {
+  font-size: 40px;
+  font-weight: 100; }
+.book.color-theme-2 .book-body .page-wrapper .page-inner section.normal h2 {
+  font-size: 30px;
+  font-weight: 100;
+  margin-top: 50px; }
+.book.color-theme-2 .book-body .page-wrapper .page-inner section.normal h4 {
+  margin-top: 50px; }
+.book.color-theme-2 .book-body .page-wrapper .page-inner section.normal p, .book.color-theme-2 .book-body .page-wrapper .page-inner section.normal ul, .book.color-theme-2 .book-body .page-wrapper .page-inner section.normal h1, .book.color-theme-2 .book-body .page-wrapper .page-inner section.normal h2, .book.color-theme-2 .book-body .page-wrapper .page-inner section.normal h3, .book.color-theme-2 .book-body .page-wrapper .page-inner section.normal h4, .book.color-theme-2 .book-body .page-wrapper .page-inner section.normal h5 {
+  transition: opacity 0.2s; }
+.book.color-theme-2 .book-body .page-wrapper .page-inner section.normal h6 {
+  margin-top: 24px;
+  margin-bottom: 10px; }
+.book.color-theme-2 .book-body .page-wrapper .page-inner section.normal p, .book.color-theme-2 .book-body .page-wrapper .page-inner section.normal ul {
+  color: rgba(255, 255, 255, 0.6);
+  opacity: 1; }
+.book.color-theme-2 .book-body .page-wrapper .page-inner section.normal h1, .book.color-theme-2 .book-body .page-wrapper .page-inner section.normal h2, .book.color-theme-2 .book-body .page-wrapper .page-inner section.normal h3, .book.color-theme-2 .book-body .page-wrapper .page-inner section.normal h4, .book.color-theme-2 .book-body .page-wrapper .page-inner section.normal h5 {
+  color: rgba(255, 255, 255, 0.7);
+  opacity: 1; }
+.book.color-theme-2 .book-body .page-wrapper .page-inner section.normal h6 {
+  color: rgba(255, 255, 255, 0.6);
+  opacity: 1; }
+.book.color-theme-2 .book-body .page-wrapper.comments-open .page-inner section.normal p:not(.has-comments-open), .book.color-theme-2 .book-body .page-wrapper.comments-open .page-inner section.normal ul:not(.has-comments-open) {
+  opacity: 0.3; }
+.book.color-theme-2 .book-body .page-wrapper.comments-open .page-inner section.normal h1, .book.color-theme-2 .book-body .page-wrapper.comments-open .page-inner section.normal h2, .book.color-theme-2 .book-body .page-wrapper.comments-open .page-inner section.normal h3, .book.color-theme-2 .book-body .page-wrapper.comments-open .page-inner section.normal h4, .book.color-theme-2 .book-body .page-wrapper.comments-open .page-inner section.normal h5, .book.color-theme-2 .book-body .page-wrapper.comments-open .page-inner section.normal h6 {
+  opacity: 0.3; }
+.book.color-theme-2 .markdown-section h1
+#book-search-input {
+  border: 0 !important;
+  margin: 0; }
+.book.color-theme-2 #book-search-results .search-results .search-results-title {
+  color: rgba(255, 255, 255, 0.7);
+  font-weight: 100;
+  opacity: 1;
+  margin-bottom: 50px; }
+.book.color-theme-2 #book-search-results .search-results .has-results .search-results-item {
+  color: rgba(255, 255, 255, 0.6); }
+  .book.color-theme-2 #book-search-results .search-results .has-results .search-results-item a {
+    font-size: 30px;
+    font-weight: 100;
+    color: rgba(255, 255, 255, 0.7); }
+    .book.color-theme-2 #book-search-results .search-results .has-results .search-results-item a:hover {
+      text-decoration: none; }
+  .book.color-theme-2 #book-search-results .search-results .has-results .search-results-item h3 {
+    margin-bottom: 10px; }
+.book.color-theme-2 #book-search-results .search-results ul.search-results-list li {
+  margin-bottom: 30px; }
+.book.color-theme-2 #book-search-results span.search-highlight-keyword {
+  background: #B4812C; }
+.book.color-theme-2 .book-summary {
+  border-right: 2px solid black; }
+  .book.color-theme-2 .book-summary ul.summary li.header {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 20px;
+    font-weight: 100; }
+  .book.color-theme-2 .book-summary ul.summary li a, .book.color-theme-2 .book-summary ul.summary li span {
+    transition: color 0.2s; }
+  .book.color-theme-2 .book-summary ul.summary li.divider {
+    display: none !important; }
+  .book.color-theme-2 .book-summary ul.summary li.active > a, .book.color-theme-2 .book-summary ul.summary li a:hover {
+    background: transparent;
+    color: rgba(255, 255, 255, 0.7) !important;
+    text-decoration: none;
+    font-weight: normal; }
+  .book.color-theme-2 .book-summary ul.summary li a, .book.color-theme-2 .book-summary ul.summary li span {
+    font-weight: normal;
+    color: rgba(255, 255, 255, 0.2) !important; }
+  .book.color-theme-2 .book-summary ul.summary > :first-child {
+    display: none !important; }
+.book.color-theme-2 .book-header .btn {
+  color: rgba(255, 255, 255, 0.2); }
+  .book.color-theme-2 .book-header .btn:hover {
+    color: rgba(255, 255, 255, 0.4); }
+.book.color-theme-2 .book-header h1 {
+  display: none; }
+.book.color-theme-2 .book-body .navigation {
+  transition: color 0.2s;
+  color: rgba(255, 255, 255, 0); }
+  .book.color-theme-2 .book-body .navigation:hover {
+    color: rgba(255, 255, 255, 0.2); }
+.book.color-theme-2 .dropdown-menu {
+  border: 0;
+  background-color: #292623; }
+  .book.color-theme-2 .dropdown-menu .dropdown-caret .caret-inner {
+    border-bottom-color: #292623; }
+.book.color-theme-2 .book-body .page-wrapper .page-inner section.normal a {
+  color: #B4812C; }
+.book.color-theme-2 .book-body .page-wrapper .page-inner .comments-section.has-comments-open {
+  background: none; }
+.book.color-theme-2 .book-body .page-wrapper .page-inner .comments-section .comments-icon {
+  transition: opacity 0.2s;
+  display: block;
+  opacity: 0; }
+  .book.color-theme-2 .book-body .page-wrapper .page-inner .comments-section .comments-icon:hover {
+    opacity: 1; }
+  .book.color-theme-2 .book-body .page-wrapper .page-inner .comments-section .comments-icon .marker {
+    background: #292623;
+    color: #1e1c1a;
+    font-weight: 900; }
+    .book.color-theme-2 .book-body .page-wrapper .page-inner .comments-section .comments-icon .marker:hover {
+      background: #2f2b28; }
+.book.color-theme-2 .markdown-section blockquote {
+  padding: 15px;
+  border: 0;
+  border-radius: 15px;
+  color: rgba(255, 255, 255, 0.6) !important; }
+  .book.color-theme-2 .markdown-section blockquote .comments-section strong {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 18px; }
+  .book.color-theme-2 .markdown-section blockquote .comments-section i {
+    vertical-align: text-top; }
+    .book.color-theme-2 .markdown-section blockquote .comments-section i::before {
+      margin-right: 10px;
+      font-size: 24px; }
+  .book.color-theme-2 .markdown-section blockquote.info {
+    background: #245C88 !important; }
+.book.color-theme-2 .anchorjs-link {
+  transition: color 0.2s, opacity 0.2s;
+  color: rgba(255, 255, 255, 0.2) !important;
+  text-decoration: none; }
+  .book.color-theme-2 .anchorjs-link:hover {
+    color: rgba(255, 255, 255, 0.4) !important; }
+.book.color-theme-2 .book-body .page-wrapper .page-inner section.normal pre, .book.color-theme-2 .book-body .page-wrapper .page-inner section.normal code {
+  background: #1e1c1a; }
+.book.color-theme-2 .uiref {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  font-size: 12px;
+  vertical-align: middle;
+  margin: 0 3px;
+  border-radius: 24px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.1); }
+.book.color-theme-2 kbd {
+  color: #1e1c1a;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 5px;
+  box-shadow: inset 0 2px 0 rgba(255, 255, 255, 0.15), inset 0 -2px 0 rgba(0, 0, 0, 0.25);
+  font-size: 12px; }
+.book.color-theme-2 blockquote::before {
+  color: rgba(255, 255, 255, 0.6);
+  content: open-quote;
+  font-size: 63px;
+  font-weight: 100;
+  position: absolute;
+  top: 79px; }
+.book.color-theme-2 blockquote p {
+  margin-left: 30px; }
+.book.color-theme-2 blockquote strong {
+  font-weight: 100; }
