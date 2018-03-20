@@ -109,7 +109,7 @@ Luna defines the `CDouble` and `CFloat` classes as counterparts of C's `double` 
 > Since version 1.4 Luna will support managed pointers – pointers with a finalizer to run when the pointer is garbage collected. Currently, you need to carefully plan out memory management, as there is no way to free a pointer automatically.
 
 
-The basic pointer type is just `Pointer`. It takes a single argument denoting the type of its content. So, for example, `Pointer CInt` corresponds to `*int` in C, while `Pointer (Pointer None)` is `**void`.
+The basic pointer type is just `Pointer`. It takes a single argument denoting the type of its content. So, for example, `Pointer CInt` corresponds to `int*` in C, while `Pointer (Pointer None)` is `void**`.
 
 ### Creating and freeing pointers
 
