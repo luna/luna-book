@@ -22,7 +22,7 @@ Another important property of objects in Luna is immutability. You may be used t
 
 Classes in Luna are defined with the `class` keyword. It is followed by definitions of constructors and methods. Let's consider this definition of the `Shape` class to better understand its different parts.
 
-```
+```haskell
 class Shape:
     Circle:
         radius :: Real
