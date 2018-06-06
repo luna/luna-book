@@ -11,15 +11,15 @@ To choose the different type of visualization you can drop a list of possible to
 To create custom visualization for your project you need to add visualizers folder in the root of the project folder:
 ```
 MyProject/
-	MyProject.lunaproject
-	src/
-    	Main.luna
-	visualizers/
-    	example/
-        	config.js
-        	example.css
-        	example.html
-        	example.js       	 
+    MyProject.lunaproject
+    src/
+        Main.luna
+    visualizers/
+        example/
+            config.js
+            example.css
+            example.html
+            example.js            
 ```
 It contains few files:
     - `min.js` - minified JS file with library you want to connect with visualization (not included in visualizer template)
@@ -34,50 +34,59 @@ At this moment you can not change the size of the visualization, it is fixed to 
 Communication between Luna and visualization is through JSON structures. Simplest way to create custom visualization, on Luna side, is creating proper type for a visualization. Let's assume we want to connect with a new plotting library written in JS. The JS part of visualization is expecting id of html object in which it will show the result and plot definition. The chart object will contain two nested objects: data series called `data` and `type` with type of plot. The datatype looks like:
 ```
 class PlotType:
-	Bar
-	Pie
-	Scatter
+    Bar
+    Pie
+    Scatter
 
 class DataSeries:
-	data:: List Int
-	type:: PlotType
+    data:: List Int
+    type:: PlotType
 ```
 Data series can be an Int list and the plot type can be `Scatter` , `Pie` or `Bar`. I will create separate type called `PlotType`. Additional helpers for `DataSeries` are defined to make creating JSON more simple and straightforward. To use it in JS we need to define `toJSON` method on each of the classes.
 ```
 class PlotType:
-	Bar
-	Pie
-	Scatter
+    Bar
+    Pie
+    Scatter
 
-	def toJSON:
-    	Bar: 	JSONString "bar"
-    	Pie: 	JSONString "pie"
-    	Scatter: JSONString "scatter"
+    def toJSON: case self of
+        Bar:     JSONString "bar"
+        Pie:     JSONString "pie"
+        Scatter: JSONString "scatter"
 
 class DataSeries:
-	DataSeries
-	DataSeriesVal:
-    	data:: List Int
-    	type:: PlotType
+    DataSeries
+    DataSeriesVal:
+        data:: List Int
+        type:: PlotType
 
-	def getData: case self of
-    	DataSeriesVal data _: data
-	def getType: case self of
-    	DataSeriesVal _ type: type
+    def getData: case self of
+        DataSeriesVal data _: data
+    def getType: case self of
+        DataSeriesVal _ type: type
 
-	def toJSON:
-    	JSON.empty . insert "data" self.getData . insert "type" self.type
+    def toJSON:
+        JSON.empty . insert "data" self.getData . insert "type" self.getType
 ```
 As you can see I don't have to define `toJSON` method for `List Int` separately. It is predefined in a `List` class in Luna.Base.
+Plot will be a simple list of `DataSeries`, so the class for final type to plot with `toJSON` method is:
+```
+class Plot:
+    Plot
+    PlotVal (List DataSeries)
+    def toJSON: case self of
+        PlotVal ds: ds.toJSON
+```
+
 To read the data in JS in `example.js` file you need to unpack the JSON:
 ```
   window.addEventListener("message", function (evt) {
-	if(evt.data.data) {
-    	data = JSON.parse(evt.data.data);
-    	dataSeries = data;
-    	ExamplePlottingLibrary.plotCommand("example_div", dataSeries)
-	};
-	}
+    if(evt.data.data) {
+        data = JSON.parse(evt.data.data);
+        dataToPlot = data;
+        ExamplePlottingLibrary.plotCommand("example_div", dataToPlot)
+    };
+    }
 ```
 If you want the visualization behave in certain way on "resize" or "load" message you can define it in the same file in proper event listeners (look at the template - https://github.com/luna/visualizers-template/blob/master/example/example.js).
 
@@ -85,7 +94,7 @@ To set on which type visualization should be shown we need to add a constructor 
 ```
 module.exports = function (type) {
     var examplePattern =
-        { constructor: ["DataSeries"], fields: [{constructor: ["Int", "Real"], fields: { any: true }}]
+        { constructor: ["Plot"], fields: [{constructor: ["Int", "Real"], fields: { any: true }}]
         };
 
     if (cfgHelper.matchesType(type, examplePattern))
@@ -96,10 +105,14 @@ module.exports = function (type) {
         return [];
 };
 ```
-If a node will have `DataSeries` type the `example` visualization will be shown in drop-down menu on the left side of the node.
+If a node will have `Plot` type the `example` visualization will be shown in drop-down menu on the left side of the node.
 
-To use such defined visualization in your project you need to define the list of ints which will be your data: (screen z list of ints node)
-and a new node packing it in the `DataSeries` type: (another screen screen)
+To use such defined visualization in your project you need to define the list of Int which will be your data:
+![](/assets/visualizations_list.png)
+and a new node packing it in the `DataSeries` type:
+![](/assets/visualizations_dataseries.png)
+and then into `Plot` type with single element list contains your data:
+![](/assets/visualizations_plot.png)
 
 And voila! you can see your plot in Node Editor!
 
