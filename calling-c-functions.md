@@ -60,7 +60,7 @@ def awesomeFunction i:
 
 ### Translating between C and Luna data types
 
-We have successfully called a C function. It is not very usable for most Luna code though – it requires us to use the C types throughout the program. We'll fix that with a few conversion methods. First of all, the function argument needs to be a `CInt`. Most Luna programs, however, use standard `Int`s and these cannot easily be represented in C. This can be fixed with the help of `CInt.fromInt` function, which converts an ordinary `Int` object into a `CInt`. 
+We have successfully called a C function. It is not very usable for most Luna code though – it requires us to use the C types throughout the program. We'll fix that with a few conversion methods. First of all, the function argument needs to be a `CInt`. Most Luna programs, however, use standard `Int`s and these cannot easily be represented in C. This can be fixed with the help of `CInt.fromInt` function, which converts an ordinary `Int` object into a `CInt`.
 It also returns a `CInt`, which again is not very handy. This can be fixed with the help of `toInt` method of `CInt`. The final version of our wrapper, which operates on `Int`s and from the outside is nearly indistinguishable from pure Luna code looks like this:
 
 ```
@@ -104,16 +104,12 @@ Luna defines the `CDouble` and `CFloat` classes as counterparts of C's `double` 
 
 ## Pointers
 
-> **[info] Changes ahead!**
->
-> Since version 1.4 Luna will support managed pointers – pointers with a finalizer to run when the pointer is garbage collected. Currently, you need to carefully plan out memory management, as there is no way to free a pointer automatically.
-
 
 The basic pointer type is just `Pointer`. It takes a single argument denoting the type of its content. So, for example, `Pointer CInt` corresponds to `int*` in C, while `Pointer (Pointer None)` is `void**`.
 
 ### Creating and freeing pointers
 
-To create a pointer able to hold a single value of type `X` use the `malloc` method on pointer class: 
+To create a pointer able to hold a single value of type `X` use the `malloc` method on pointer class:
 ```
 ptr = Pointer X . malloc
 ```
@@ -155,20 +151,59 @@ def sha1Digest inputList:
     indexed = 0 . upto inputLength . zip inputList
     indexed . each (ix, elem):
         inBuf . moveElems ix . write (CUChar.fromInt elem) # Write each element to the buffer at correct position.
-        
+
     # Calling the foreign function
     sha1FunPtr = lookupSymbol "openssl" "SHA1"                          # Get the function from dynamic library.
     sha1FunPtr . call None [inBuf.toCArg, inSize.toCArg, outBuf.toCArg] # Call the function passing all the arguments
                                                                         # and specifying the return type as None
-                                                                        
+
     # Getting the final results                                                                    
     result = 0 . upto 19 . each i:
         outBuf . moveElems i . read . toInt    # Read from the output buffer at consecutive positions
                                                # and convert the values back to Ints.
-    
+
     # Cleanup
     inBuf.free    # Free the buffers.
     outBuf.free
-    
+
+    result
+```
+
+## Managed Pointers
+
+The improved version of pointers are managed pointers - pointers with a finalizer to run when the pointer is garbage collected. To create managed pointer for single value of `X` type call, like for pointer, `malloc` method just on the managed pointer class:
+```
+ptr = ManagedPointer X . malloc
+```
+(czy X musi mieć metode free??) Allocating multiple elements with `mallocElems` works just like for regular poinetrs.
+It is also possible to create managed pointer from existing pointer `ptr`. For this finalizer function `fin` is required. Finalizer will free the pointer when it will not be used any more:
+```
+ptr = ManagedPointer X .fromPtr fin ptr
+```
+Methods like `read`, `write`, `moveElems` works the same way for managed pointers like for regular pointers. The example shown for pointers using `SHA1` function from `openssl` with managed pointers looks:
+```
+import Std.Foreign
+import Std.Foreign.C.Value
+
+def sha1Digest inputList:
+    # Inputs preparation
+    inputLength = inputList . length
+    inBuf  = ManagedPointer CUChar . mallocElems inputLength      # Allocate the input buffer.
+    inSize = CSize.fromInt inputLength                            # Convert the length to a CSize.
+    outBuf = ManagedPointer CUChar . mallocElems 20               # Allocate the output buffer.
+    indexed = 0 . upto inputLength . zip inputList
+    indexed . each (ix, elem):
+        inBuf . moveElems ix . write (CUChar.fromInt elem) # Write each element to the buffer at correct position.
+
+    # Calling the foreign function
+    sha1FunPtr = lookupSymbol "openssl" "SHA1"                          # Get the function from dynamic library.
+    sha1FunPtr . call None [inBuf.toCArg, inSize.toCArg, outBuf.toCArg] # Call the function passing all the arguments
+                                                                        # and specifying the return type as None
+
+    # Getting the final results                                                                    
+    result = 0 . upto 19 . each i:
+        outBuf . moveElems i . read . toInt    # Read from the output buffer at consecutive positions
+                                               # and convert the values back to Ints.
+
     result
 ```
