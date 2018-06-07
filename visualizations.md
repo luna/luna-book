@@ -22,10 +22,10 @@ MyProject/
             example.js            
 ```
 It contains few files:
-    * `config.js` - module responsible for checking if your visualization is able to present data of current type and presenting to gui all compatible presentation forms
-    * `example.js` - event listeners for different events (like `message`, `resize` and `load`). All the important things will happen here.
-    * `example.css` - css styling for visualizer
-    * `example.html` - html file with all css and js imports.
+* `config.js` - module responsible for checking if your visualization is able to present data of current type and presenting to gui all compatible presentation forms
+* `example.js` - event listeners for different events (like `message`, `resize` and `load`). All the important things will happen here.
+* `example.css` - css styling for visualizer
+* `example.html` - html file with all css and js imports.
 
 You can download template `visualizers` folder from https://github.com/luna/visualizers-template/archive/master.zip
 At this moment you can not change the size of the visualization, it is fixed to `300 x 300 px`. If you hold `space` key the visualization will be maximized to the Node Editor size.
