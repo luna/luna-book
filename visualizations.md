@@ -1,4 +1,4 @@
-#Visualizations in Luna
+## Visualizations in Luna
 
 Visualization in Luna is a widget responsible for displaying data in certain way in Node Editor. In Luna Studio we have few types of visualizations available for different types of data, i.e. echarts plots for lists.
 To show the visualziation you have to click the eye icon on the right side of node name:
@@ -6,7 +6,7 @@ To show the visualziation you have to click the eye icon on the right side of no
 To choose the different type of visualization you can drop a list of possible to use types of visualizations.
 ![](/assets/visualizations_drop_list.png)
 
-#Creating custom visualizations
+## Creating custom visualizations
 
 To create custom visualization for your project you need to add visualizers folder in the root of the project folder:
 ```
@@ -22,13 +22,13 @@ MyProject/
             example.js            
 ```
 It contains few files:
-    - `min.js` - minified JS file with library you want to connect with visualization (not included in visualizer template)
-    - `config.js` - list of constructors for visualization to be active and types, calling proper html when types matches
-    - `example.js` - event listeners for different events (message, resize - full screen and load). All the important things will happen here.
-    - `example.css` - basic  css file for visualization
-    - `example.html` - html file with all css and js imports and custom div id predefined.
+    * `config.js` - module responsible for checking if your visualization is able to present data of current type and presenting to gui all compatible presentation forms
+    * `example.js` - event listeners for different events (like `message`, `resize` and `load`). All the important things will happen here.
+    * `example.css` - css styling for visualizer
+    * `example.html` - html file with all css and js imports.
+
 You can download template `visualizers` folder from https://github.com/luna/visualizers-template/archive/master.zip
-At this moment you can not change the size of the visualization, it is fixed to 300 x 300 px. If you hold `space` key the visualization will be maximized to the Node Editor size.
+At this moment you can not change the size of the visualization, it is fixed to `300 x 300 px`. If you hold `space` key the visualization will be maximized to the Node Editor size.
 
 
 Communication between Luna and visualization is through JSON structures. Simplest way to create custom visualization, on Luna side, is creating proper type for a visualization. Let's assume we want to connect with a new plotting library written in JS. The JS part of visualization is expecting id of html object in which it will show the result and plot definition. The chart object will contain two nested objects: data series called `data` and `type` with type of plot. The datatype looks like:
@@ -94,7 +94,7 @@ To set on which type visualization should be shown we need to add a constructor 
 ```
 module.exports = function (type) {
     var examplePattern =
-        { constructor: ["Plot"], fields: [{constructor: ["Int", "Real"], fields: { any: true }}]
+        { constructor: ["List"], fields: [{constructor: ["Int", "Real"], fields: { any: true }}]
         };
 
     if (cfgHelper.matchesType(type, examplePattern))
