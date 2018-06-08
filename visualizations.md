@@ -2,7 +2,7 @@
 
 Visualization in Luna is a widget responsible for displaying data in certain way in Node Editor. In Luna Studio we have few types of visualizations available for different types of data, i.e. echarts plots for lists.
 To show the visualziation you have to click the eye icon on the right side of node name:
-![](/assets/visualizations_eye_icon.png)
+![](/assets/visualizatons_eye_icon.png)
 To choose the different type of visualization you can drop a list of possible to use types of visualizations.
 
 ## Creating custom visualizations
