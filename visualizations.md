@@ -4,7 +4,6 @@ Visualization in Luna is a widget responsible for displaying data in certain way
 To show the visualziation you have to click the eye icon on the right side of node name:
 ![](/assets/visualizations_eye_icon.png)
 To choose the different type of visualization you can drop a list of possible to use types of visualizations.
-![](/assets/visualizations_drop_list.png)
 
 ## Creating custom visualizations
 
@@ -28,10 +27,49 @@ It contains few files:
 * `example.html` - html file with all css and js imports.
 
 You can download template `visualizers` folder from https://github.com/luna/visualizers-template/archive/master.zip
-At this moment you can not change the size of the visualization, it is fixed to `300 x 300 px`. If you hold `space` key the visualization will be maximized to the Node Editor size.
+At this moment you can not change the size of the visualization, it is fixed to `300 x 300 px`, but if you hold `space` key the visualization will be maximized to the Node Editor size.
 
+Let's try to add a visualization for a list of Ints. `Main.luna` will be:
+```
+def main:
+    list1 = [1,2,3,4,5,6]
+    None
+```
+Communication between Luna and visualization is through JSON structures. `toJSON` method for a list is predefined in `Base.luna` so it is not nescessary to define it in our project.
+To read the data in JS in `example.js` file you need to unpack the JSON and visualize the data:
+```
+window.addEventListener("message", function (evt) {
+    if(evt.data.data) {
+        data = JSON.parse(evt.data.data);
+        document.getElementById('example_div').innerHTML = "<span>" + data.toString() + "</span>";
+    };
+    }
+```
+In this case visualization will show the numbers from the list.
 
-Communication between Luna and visualization is through JSON structures. Simplest way to create custom visualization, on Luna side, is creating proper type for a visualization. Let's assume we want to connect with a new plotting library written in JS. The JS part of visualization is expecting id of html object in which it will show the result and plot definition. The chart object will contain two nested objects: data series called `data` and `type` with type of plot. The datatype looks like:
+If you want the visualization behave in certain way on "resize" or "load" message you can define it in the same file in proper event listeners (look at the template - https://github.com/luna/visualizers-template/blob/master/example/example.js).
+
+To set on which type visualization should be shown we need to add a constructor to constructors list in `config.js` file. The return value is a list of all visualizers served by this packet:
+```
+module.exports = function (type) {
+    var examplePattern =
+        { constructor: ["List"], fields: [{constructor: ["Int", "Real"], fields: { any: true }}]
+        };
+
+    if (cfgHelper.matchesType(type, examplePattern))
+        {
+            return [{name: "example", path: "example.html"}]
+        }
+    else
+        return [];
+};
+```
+With this config the visualizer will show for list of Ints or Reals as the `example` visualizer. The visualization will print all the numbers as a String:
+![](/assets/visualizations_list_of_ints.png)
+
+### Connecting visualizations with plotting library
+
+Let's assume we want to connect with a new plotting library written in JS. It will work for a list of Ints like the example above. This time it will be able to show multiple lists of Ints on a single plot with different plots types like `Scatter`, `Pie` or `Bar`. The JS part of visualization is expecting a list of data series. Each data serie will contain two nested objects: list of  called `data` and `type` with a plot type. The datatype looks like:
 ```
 class PlotType:
     Bar
@@ -39,10 +77,12 @@ class PlotType:
     Scatter
 
 class DataSeries:
-    data:: List Int
-    type:: PlotType
+    DataSeries
+    DataSeriesVal:
+        data:: List Int
+        type:: PlotType
 ```
-Data series can be an Int list and the plot type can be `Scatter` , `Pie` or `Bar`. I will create separate type called `PlotType`. Additional helpers for `DataSeries` are defined to make creating JSON more simple and straightforward. To use it in JS we need to define `toJSON` method on each of the classes.
+To use it in JS we need to define `toJSON` method on each of the classes.
 ```
 class PlotType:
     Bar
@@ -68,7 +108,6 @@ class DataSeries:
     def toJSON:
         JSON.empty . insert "data" self.getData . insert "type" self.getType
 ```
-As you can see I don't have to define `toJSON` method for `List Int` separately. It is predefined in a `List` class in Luna.Base.
 Plot will be a simple list of `DataSeries`, so the class for final type to plot with `toJSON` method is:
 ```
 class Plot:
@@ -77,34 +116,8 @@ class Plot:
     def toJSON: case self of
         PlotVal ds: ds.toJSON
 ```
+In `config.js` file the visualiztion should react on the `Plot` type like in example above for `List`. Instead of printing a list of Ints in `example.js` this time a plotting function will be called.
 
-To read the data in JS in `example.js` file you need to unpack the JSON:
-```
-  window.addEventListener("message", function (evt) {
-    if(evt.data.data) {
-        data = JSON.parse(evt.data.data);
-        dataToPlot = data;
-        ExamplePlottingLibrary.plotCommand("example_div", dataToPlot)
-    };
-    }
-```
-If you want the visualization behave in certain way on "resize" or "load" message you can define it in the same file in proper event listeners (look at the template - https://github.com/luna/visualizers-template/blob/master/example/example.js).
-
-To set on which type visualization should be shown we need to add a constructor to constructors list in `config.js` file:
-```
-module.exports = function (type) {
-    var examplePattern =
-        { constructor: ["List"], fields: [{constructor: ["Int", "Real"], fields: { any: true }}]
-        };
-
-    if (cfgHelper.matchesType(type, examplePattern))
-        {
-            return [{name: "example", path: "example.html"}]
-        }
-    else
-        return [];
-};
-```
 If a node will have `Plot` type the `example` visualization will be shown in drop-down menu on the left side of the node.
 
 To use such defined visualization in your project you need to define the list of Int which will be your data:
@@ -113,6 +126,15 @@ and a new node packing it in the `DataSeries` type:
 ![](/assets/visualizations_dataseries.png)
 and then into `Plot` type with single element list contains your data:
 ![](/assets/visualizations_plot.png)
+
+`main` function will be:
+```
+def main:
+    list1 = [1,2,3,4,5,6]
+    ds = DataSeriesVal list1 Scatter
+    PlotVal [ds]
+```
+The library should be put as minified JS file into `MyProject/visualizers/example/example.min.js`.
 
 And voila! you can see your plot in Node Editor!
 
