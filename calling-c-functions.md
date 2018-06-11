@@ -133,54 +133,28 @@ For the basic C types, the required methods are already defined in the standard 
 Any pointer can be moved by a specified number of bytes using the `ptr.moveBytes i` method – it returns a new pointer, resulting from adding `i` bytes to `ptr`.
 There is also a `moveElems` method, that will move the pointer by the specified number of elements (i.e. by `number of elements * element.byteSize` bytes).
 
-## Real life example
-
-Now that we've covered all the basics, let's dive into a more involved example – using the `SHA1` function from `openssl`. It takes an input buffer of type `unsigned char*`, a `size_t` denoting the length of input and an output buffer of type `unsigned char*` and length 20.
-Suppose you have a list of Luna `Int`s and want to compute the SHA1 digest of this list, as another list of `Int`s. This is how this can be done with Luna's FFI:
-
-```
-import Std.Foreign
-import Std.Foreign.C.Value
-
-def sha1Digest inputList:
-    # Inputs preparation
-    inputLength = inputList . length
-    inBuf  = Pointer CUChar . mallocElems inputLength      # Allocate the input buffer.
-    inSize = CSize.fromInt inputLength                     # Convert the length to a CSize.
-    outBuf = Pointer CUChar . mallocElems 20               # Allocate the output buffer.
-    indexed = 0 . upto inputLength . zip inputList
-    indexed . each (ix, elem):
-        inBuf . moveElems ix . write (CUChar.fromInt elem) # Write each element to the buffer at correct position.
-
-    # Calling the foreign function
-    sha1FunPtr = lookupSymbol "openssl" "SHA1"                          # Get the function from dynamic library.
-    sha1FunPtr . call None [inBuf.toCArg, inSize.toCArg, outBuf.toCArg] # Call the function passing all the arguments
-                                                                        # and specifying the return type as None
-
-    # Getting the final results                                                                    
-    result = 0 . upto 19 . each i:
-        outBuf . moveElems i . read . toInt    # Read from the output buffer at consecutive positions
-                                               # and convert the values back to Ints.
-
-    # Cleanup
-    inBuf.free    # Free the buffers.
-    outBuf.free
-
-    result
-```
-
 ## Managed Pointers
 
 The improved version of pointers are managed pointers - pointers with a finalizer to run when the pointer is garbage collected. To create managed pointer for single value of `X` type call, like for pointer, `malloc` method just on the managed pointer class:
 ```
 ptr = ManagedPointer X . malloc
 ```
-(czy X musi mieć metode free??) Allocating multiple elements with `mallocElems` works just like for regular poinetrs.
+Allocating multiple elements with `mallocElems` works just like for regular poinetrs. To create array with managed pointer use:
+```
+arr = ManagedPointer CInt . mallocElems 40
+```
+
 It is also possible to create managed pointer from existing pointer `ptr`. For this finalizer function `fin` is required. Finalizer will free the pointer when it will not be used any more:
 ```
 ptr = ManagedPointer X .fromPtr fin ptr
 ```
-Methods like `read`, `write`, `moveElems` works the same way for managed pointers like for regular pointers. The example shown for pointers using `SHA1` function from `openssl` with managed pointers looks:
+Methods like `read`, `write`, `moveElems` works the same way for managed pointers like for regular pointers.
+
+## Real life example
+
+Now that we've covered all the basics, let's dive into a more involved example – using the `SHA1` function from `openssl`. It takes an input buffer of type `unsigned char*`, a `size_t` denoting the length of input and an output buffer of type `unsigned char*` and length 20.
+Suppose you have a list of Luna `Int`s and want to compute the SHA1 digest of this list, as another list of `Int`s. This is how this can be done with Luna's FFI:
+
 ```
 import Std.Foreign
 import Std.Foreign.C.Value
