@@ -146,7 +146,7 @@ arr = ManagedPointer CInt . mallocElems 40
 
 It is also possible to create managed pointer from existing pointer `ptr`. For this finalizer function `fin` is required. Finalizer will free the pointer when it will not be used any more:
 ```
-ptr = ManagedPointer X .fromPtr fin ptr
+ptr = ManagedPointer X . fromPtr fin ptr
 ```
 Methods like `read`, `write`, `moveElems` works the same way for managed pointers like for regular pointers.
 
