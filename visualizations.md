@@ -7,7 +7,7 @@ To show the visualziation you have to click the eye icon on the right side of no
 
 To choose the different type of visualization you can drop a list of possible to use types of visualizations (hover the mouse cursor over a triangle on the left side of the node):
 
-![](/assets/visualizatons_dropdown.png)
+![](/assets/visualizations_dropdown.png)
 
 ## Creating custom visualizations
 
