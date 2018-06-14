@@ -135,7 +135,8 @@ There is also a `moveElems` method, that will move the pointer by the specified 
 
 ## Managed Pointers
 
-The improved version of pointers are managed pointers - pointers with a finalizer to run when the pointer is garbage collected. To create managed pointer for single value of `X` type call, like for pointer, `malloc` method just on the managed pointer class:
+With standard pointers we need to think about freeing unused memory, or it will clutter up our RAM. We can fix that issue with managed pointers – pointers that can be automatically garbage collected when no longer needed. Since managed pointers are available the regular pointers should not be used any more.
+To create managed pointer for single value of `X` type call, like for pointer, `malloc` method just on the managed pointer class:
 ```
 ptr = ManagedPointer X . malloc
 ```
@@ -144,7 +145,7 @@ Allocating multiple elements with `mallocElems` works just like for regular poin
 arr = ManagedPointer CInt . mallocElems 40
 ```
 
-It is also possible to create managed pointer from existing pointer `ptr`. For this finalizer function `fin` is required. Finalizer will free the pointer when it will not be used any more:
+It is also possible to create managed pointer from existing pointer `ptr`. For this finalizer function `fin` is required. Finalizer will be run when the pointer will be garbage collected:
 ```
 ptr = ManagedPointer X . fromPtr fin ptr
 ```
