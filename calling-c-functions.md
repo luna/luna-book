@@ -60,7 +60,7 @@ def awesomeFunction i:
 
 ### Translating between C and Luna data types
 
-We have successfully called a C function. It is not very usable for most Luna code though – it requires us to use the C types throughout the program. We'll fix that with a few conversion methods. First of all, the function argument needs to be a `CInt`. Most Luna programs, however, use standard `Int`s and these cannot easily be represented in C. This can be fixed with the help of `CInt.fromInt` function, which converts an ordinary `Int` object into a `CInt`. 
+We have successfully called a C function. It is not very usable for most Luna code though – it requires us to use the C types throughout the program. We'll fix that with a few conversion methods. First of all, the function argument needs to be a `CInt`. Most Luna programs, however, use standard `Int`s and these cannot easily be represented in C. This can be fixed with the help of `CInt.fromInt` function, which converts an ordinary `Int` object into a `CInt`.
 It also returns a `CInt`, which again is not very handy. This can be fixed with the help of `toInt` method of `CInt`. The final version of our wrapper, which operates on `Int`s and from the outside is nearly indistinguishable from pure Luna code looks like this:
 
 ```
@@ -104,16 +104,12 @@ Luna defines the `CDouble` and `CFloat` classes as counterparts of C's `double` 
 
 ## Pointers
 
-> **[info] Changes ahead!**
->
-> Since version 1.4 Luna will support managed pointers – pointers with a finalizer to run when the pointer is garbage collected. Currently, you need to carefully plan out memory management, as there is no way to free a pointer automatically.
-
 
 The basic pointer type is just `Pointer`. It takes a single argument denoting the type of its content. So, for example, `Pointer CInt` corresponds to `int*` in C, while `Pointer (Pointer None)` is `void**`.
 
 ### Creating and freeing pointers
 
-To create a pointer able to hold a single value of type `X` use the `malloc` method on pointer class: 
+To create a pointer able to hold a single value of type `X` use the `malloc` method on pointer class:
 ```
 ptr = Pointer X . malloc
 ```
@@ -137,6 +133,24 @@ For the basic C types, the required methods are already defined in the standard 
 Any pointer can be moved by a specified number of bytes using the `ptr.moveBytes i` method – it returns a new pointer, resulting from adding `i` bytes to `ptr`.
 There is also a `moveElems` method, that will move the pointer by the specified number of elements (i.e. by `number of elements * element.byteSize` bytes).
 
+## Managed Pointers
+
+With standard pointers we need to think about freeing unused memory, or it will clutter up our RAM. We can fix that issue with managed pointers – pointers that can be automatically garbage collected when no longer needed. Since managed pointers are available the regular pointers should not be used any more.
+To create managed pointer for single value of `X` type call, like for pointer, `malloc` method just on the managed pointer class:
+```
+ptr = ManagedPointer X . malloc
+```
+Allocating multiple elements with `mallocElems` works just like for regular poinetrs. To create array with managed pointer use:
+```
+arr = ManagedPointer CInt . mallocElems 40
+```
+
+It is also possible to create managed pointer from existing pointer `ptr`. For this finalizer function `fin` is required. Finalizer will be run when the pointer will be garbage collected:
+```
+ptr = ManagedPointer X . fromPtr fin ptr
+```
+Methods like `read`, `write`, `moveElems` works the same way for managed pointers like for regular pointers.
+
 ## Real life example
 
 Now that we've covered all the basics, let's dive into a more involved example – using the `SHA1` function from `openssl`. It takes an input buffer of type `unsigned char*`, a `size_t` denoting the length of input and an output buffer of type `unsigned char*` and length 20.
@@ -149,26 +163,22 @@ import Std.Foreign.C.Value
 def sha1Digest inputList:
     # Inputs preparation
     inputLength = inputList . length
-    inBuf  = Pointer CUChar . mallocElems inputLength      # Allocate the input buffer.
-    inSize = CSize.fromInt inputLength                     # Convert the length to a CSize.
-    outBuf = Pointer CUChar . mallocElems 20               # Allocate the output buffer.
+    inBuf  = ManagedPointer CUChar . mallocElems inputLength      # Allocate the input buffer.
+    inSize = CSize.fromInt inputLength                            # Convert the length to a CSize.
+    outBuf = ManagedPointer CUChar . mallocElems 20               # Allocate the output buffer.
     indexed = 0 . upto inputLength . zip inputList
     indexed . each (ix, elem):
         inBuf . moveElems ix . write (CUChar.fromInt elem) # Write each element to the buffer at correct position.
-        
+
     # Calling the foreign function
     sha1FunPtr = lookupSymbol "openssl" "SHA1"                          # Get the function from dynamic library.
     sha1FunPtr . call None [inBuf.toCArg, inSize.toCArg, outBuf.toCArg] # Call the function passing all the arguments
                                                                         # and specifying the return type as None
-                                                                        
+
     # Getting the final results                                                                    
     result = 0 . upto 19 . each i:
         outBuf . moveElems i . read . toInt    # Read from the output buffer at consecutive positions
                                                # and convert the values back to Ints.
-    
-    # Cleanup
-    inBuf.free    # Free the buffers.
-    outBuf.free
-    
+
     result
 ```
