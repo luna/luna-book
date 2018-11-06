@@ -11,7 +11,7 @@ In this chapter we introduce the type system, a way Luna handles such constraint
 
 ## How do I see types?
 
-The type system in Luna is fundamentally different from any other type system used in programming languages nowadays. It was designed from scratch to be invisible until you need it, yet fully aware of the structure of the data being processed. You will never need to manually specify the types in Luna. The type inferencer computes every single type behind the scenes automatically for you. This computation ensures that every operation will be performed safely, without any contradicting properties arising.
+The type system in Luna is fundamentally different from any other type system used in programming languages nowadays. It was designed from scratch to be invisible until you need it, yet fully aware of the structure of the data being processed. You will never _need_ to manually specify the types in Luna. The type inference engine computes every single type behind the scenes automatically for you. This computation ensures that every operation will be performed safely, without any contradictory properties arising.
 
 Since the types are usually not expressed in code, we need a way to show them to you. You have probably already noticed that the nodes in our visual editor come in different, seemingly random, colors. Those colors are just one of the ways the visual editor communicates types. Each of the ports on the node is assigned a color corresponding to its type. All the connections are also colored; the colors correspond to the type of data "being sent" via this connection.
 
