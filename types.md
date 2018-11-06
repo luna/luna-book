@@ -2,7 +2,9 @@
 
 ## What are types and why do they matter?
 
-Luna can process any kind of data. It can compute a car's velocity, reply to a user's questions via a chat-like interface or process all photos from your last trip to San Francisco. Some operations make sense only with very specific kinds of data. You can multiply numbers, however it's hard to imagine what the result of a cake multiplication would be. Other operations allow some degree of freedom. Reversing, for example, works with any list with no regard to what its individual elements are. Yet other operations provide more complex constraints. Summing a list will work with any non-empty list containing arithmetic elements only, but we don't really care about the exact structure of these elements. They may be integers, fractions or even matrices; the only requirement is having an addition operation defined.
+Luna can process any kind of data. It can compute a car's velocity, reply to a user's questions via a chat-like interface or process all photos from your last trip to San Francisco. 
+
+Some operations, however, only make sense with very specific kinds of data. You can multiply numbers, however it's hard to imagine what the result of a cake multiplication would be. Other operations allow some degree of freedom. Reversing, for example, works with any list with no regard to what its individual elements are. Yet other operations provide more complex constraints. Summing a list will work with any non-empty list containing arithmetic elements only, but we don't really care about the exact structure of these elements. They may be integers, fractions or even matrices; the only requirement is having an addition operation defined.
 
 In this chapter we introduce the type system, a way Luna handles such constraints. You will learn how types are defined, how to check a type of a given value and what happens when the constraints could not be resolved. The philosophy behind the type system is to provide as much safety and useful hints as possible without restricting your expressive powers.
 
