@@ -31,7 +31,7 @@ Oh, and the type of `"hello world!"` is not `magenta`. It's `Text`.
 
 ## What happens when I mess up?
 
-Besides providing a better understanding of the program behavior, types have an even more important role to play: they make sure everything will work smoothly and safely. They are crucial in preventing many errors that may accidentally arise during development. So what happens when you make a mistake?
+Besides providing a better understanding of program behavior, types have an even more important role to play: they make sure everything will work smoothly and safely. They are crucial in preventing many errors that may accidentally arise during development. So what happens when you make a mistake?
 
 Let's try doing something clearly nonsensical: adding a text and a number. This is how Luna reacts:
 
