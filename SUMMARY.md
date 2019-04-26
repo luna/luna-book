@@ -24,5 +24,5 @@
 * [Libraries](libraries.md)
 * [Calling C Functions](calling-c-functions.md)
 * [FAQ](faq.md)
-* [API Reference](https://docs.luna-lang.org)
+* [API Reference](http://docs.luna-lang.org)
 
