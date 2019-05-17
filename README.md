@@ -1,6 +1,7 @@
-# The Luna Book
-
-## About this book
+<p align="center">
+<img src="https://github.com/luna/luna-studio/raw/master/resources/logo.ico" style="margin: 0 auto;">
+</p>
+<h1 align="center">The Luna Book</h1>
 
 Welcome to the Luna book. Although it is far from being a proper book, the name refers to what we want it to evolve into – an intuitive, easy to follow, yet complete Luna introduction. We strongly believe that tutorials are easier to read and understand than formal documents, therefore the style used is a fusion of both, often relying on examples and intuitive explanations.
 
