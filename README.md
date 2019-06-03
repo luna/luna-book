@@ -19,7 +19,6 @@ We strongly encourage you to [download Luna Studio](http://luna-lang.org) and pl
 Your feedback is very important to us. Join the Luna community, ask questions and share your ideas. It is also the ultimate way to dispel any doubts while reading the book:
 
 * [Chat](http://chat.luna-lang.org) – use it to quickly discuss ideas and get help on the fly while using Luna.
-* [Forum](https://discuss.luna-lang.org) – use it to discuss further development plans, possible use cases or get help with complex problems.
-* [Mail](mailto:contact@luna-lang.org) – write to us if you want to say "hi!", or you want to collaborate with us. Please do not use mail to report problems or get help with Luna usage – using forum is always a better idea.
-* [GUI bugtracker](https://github.com/luna/luna-studio/issues) and [Compiler bugtracker](https://github.com/luna/luna/issues) – if you are sure you are facing a bug, please report it to us. Be as precise as possible. Screenshots and logs are always more than welcome! Please do not use the bug tracker to express improvement ideas – use forum instead. Forum is a much better place to discuss them before formulating an official task for developers.
+* [Mail](mailto:contact@luna-lang.org) – write to us if you want to say "hi!", or you want to collaborate with us. Please do not use mail to report problems or get help with Luna usage – using chat is always a better idea.
+* [GUI bugtracker](https://github.com/luna/luna-studio/issues) and [Compiler bugtracker](https://github.com/luna/luna/issues) – if you are sure you are facing a bug, please report it to us. Be as precise as possible. Screenshots and logs are always more than welcome! Please do not use the bug tracker to express improvement ideas – use chat instead. Chat is a much better place to discuss them before formulating an official task for developers.
 
