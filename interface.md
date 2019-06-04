@@ -10,7 +10,7 @@ We are ready to get started! If you're the kind of person who just skips introdu
 Alright, you've got Luna Studio installed and running on your computer. After launch you will be greeted with the Dashboard. Think about it like about a mix of a "hello screen" and a place gathering all common quick start actions. You can always access the dashboard simply by pressing the Luna logo on the left toolbar.
 
 Dashboard allows you to:
-  * access the community channels (forum and chat);
+  * access the community channels (chat);
   * load one of example projects or tutorials;
   * create new local project; 
   * open your recent projects;
