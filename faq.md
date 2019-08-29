@@ -16,4 +16,4 @@
 
 **Q:** Can Luna/Luna Studio run in browser?
 
-**A:** Luna Studio could be configured to run in a browser, and much of how the UI was implemented was done specifically with the intent to make the possible to do in the future. However, the core Luna team is not actively working on implementing Luna in browser at the moment.
+**A:** Luna Studio could be configured to run in a browser, and much of how the UI was implemented was done specifically with the intent to make this possible to do in the future. However, the core Luna team is not actively working on implementing Luna in browser at the moment.

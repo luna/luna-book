@@ -10,9 +10,9 @@ First of all, Luna objects, besides having multiple fields, can also come in mul
 
 Using this technique we can say that any `Shape` is either a `Circle` or a `Rectangle`. Given an object of type `Shape` you are always sure it's one of those but you need to use [pattern matching](constructors.md) to discover which one was it.
 
-However, thanks to methods, you can call some behaviors regardless of the constructor used. This means, given a `Shape` value, you may always use its `area` method, even though you may not know what was the real constructor used.
+However, thanks to methods, you can call some behaviors regardless of the constructor used. This means, given a `Shape` value, you may always use its `area` method, even though you may not know what real constructor was used.
 
-Another important property of objects in Luna is immutability. You may be used to mutable objects and expressions like `counter.count += 1` in other languages. In Luna every object is immutable – once it's created in a given way, it will never change. If you write `foo = Circle 15.0`, `foo` will always remain a `Circle` with the same radius, no matter how it is used. Any method that may seem to mutate the object, actually returns its changed version. So if you have a list and call its `sort` method, the original list remains unsorted – the sorted list is returned from the method instead and you need to assign this value to another variable if you want to use the sorted version later on.
+Another important property of objects in Luna is immutability. You may be used to mutable objects and expressions like `counter.count += 1` in other languages. In Luna every object is immutable – once it's created in a given way, it will never change. If you write `foo = Circle 15.0`, `foo` will always remain a `Circle` with the same radius, no matter how it is used. Any method that may seem to mutate the object, actually returns its changed version. So if you have a list and call its `sort` method, the original list remains unsorted – the sorted list is returned from the method instead, and you need to assign this value to another variable if you want to use the sorted version later on.
 
 ## Class definition
 
@@ -42,7 +42,7 @@ class Shape:
 
 The first section in this code snippet defines constructors. Constructors are different variants of a given object. So the first part of the definition says "a Shape is either a Circle or a Rectangle". Then we define some methods. Methods are just like functions, but they have one implicit argument – `self`. They are called using the `.` operator and the object before `.` becomes the `self` inside method definition.
 
-Both methods defined in the above snippet use pattern matching – the `case` construction, that allows to change the behavior based on the constructor of some object.
+Both methods defined in the above snippet use pattern matching – the `case` construction, that allows the behavior to change based on the constructor of some object.
 
 We can use our newly defined `Circle` class as follows:
 

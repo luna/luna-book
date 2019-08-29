@@ -1,12 +1,12 @@
 ## Lambdas
 
-A lambda is a simple, annonymous function. They are defined with the ``:`` operator. The part before `:` is the lambda argument, while the part after it is the returned value. Thanks to currying it's also possible to define multi-argument lambdas – all you need to do is return another lambda, e.g. `x: y: x + y`.
+A lambda is a simple, anonymous function. They are defined with the `:` operator. The part before `:` is the lambda argument, while the part after it is the returned value. Thanks to currying it's also possible to define multi-argument lambdas – all you need to do is return another lambda, e.g. `x: y: x + y`.
 ```
 id = x: x
 const = x: y: x
 myLambda = x: y: z: (x + y) * z
 ```
-Simple lambdas can often be shortened even more by using the `_` idiom, which we have first seen in the section on currying. All occurrences of `_` inside a parenthesized expression are replaced with consecutive lambda arguments. This allows to simplify some constructions like this:
+Simple lambdas can often be shortened even more by using the `_` idiom, which we have first seen in the section on currying. All occurrences of `_` inside a parenthesized expression are replaced with consecutive lambda arguments. This allows some constructions to be simplified like this:
 
 ```
 _.succ # same as (x: x.succ)
@@ -17,7 +17,7 @@ Note that each pair of parentheses creates a new lambda context, so `(_ + 2) + _
 
 ## Module view
 
-So far we were always concerned about the body of a particular function. However, there is also a view containing all functions defined in the given module. You will need it to build more complex pieces of logic in Luna. To access this view, simply double click on the workspace background or select it on the breadcrumb in the top left corner of visual editor.
+So far, we were always concerned about the body of a particular function. However, there is also a view containing all functions defined in the given module. You will need it to build more complex pieces of logic in Luna. To access this view, simply double click on the workspace background or select it on the breadcrumb in the top left corner of visual editor.
 
 In this view, you can see all the functions defined in a file, displayed as nodes like this:
 
@@ -27,7 +27,7 @@ To enter any of these functions, double click the node. If there is a function c
 
 ## Function definitions
 
-Defining module-level or complex functions is best accomplished with the ``def`` keyword. Any functions defined this way on the module toplevel are visible by any modules importing it (and of course throughout the defining module itself).
+Defining module-level or complex functions is best accomplished with the `def` keyword. Any functions defined this way at the module top-level are visible by any modules importing it (and of course throughout the defining module itself).
 To define a function named `foo` in the visual editor just type in `def foo` in the explorer and press <kbd>enter</kbd>. This will create an empty function that you can then enter and complete the logic definition.
 The arguments are ports on the left hand side bar, and the returned value is connected to the right hand side.
 
