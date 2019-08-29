@@ -1,20 +1,20 @@
 # Interface
 
-We are ready to get started! If you're the kind of person who just skips introductions, you might want to read it anyway because it explains what you need to follow this chapter.
+We are ready to get started! If you're the kind of person who just skips introductions, you might want to read it anyway because it explains what you need in order to follow this chapter.
 
 
 ## Dashboard
 
 ![](/assets/hello_screen.png)
 
-Alright, you've got Luna Studio installed and running on your computer. After launch you will be greeted with the Dashboard. Think about it like about a mix of a "hello screen" and a place gathering all common quick start actions. You can always access the dashboard simply by pressing the Luna logo on the left toolbar.
+Alright, you've got Luna Studio installed and running on your computer. After launch, you will be greeted with the Dashboard. Think about it as a mix of a "hello screen" and a place gathering all common quick start actions. You can always access the dashboard simply by pressing the Luna logo on the left toolbar.
 
 Dashboard allows you to:
   * access the community channels (chat);
-  * load one of example projects or tutorials;
-  * create new local project; 
+  * load one of the example projects or tutorials;
+  * create a new local project; 
   * open your recent projects;
-  * load one of community projects;
+  * load one of the community projects;
   * create a new community project. 
 
 
@@ -43,5 +43,5 @@ Project View <span class="uiref">6</span> is a list of modules in current Luna p
 
 #### Status bar
 Status bar has two important properties: 
-* Controlling the graph evaluation engine <span class="uiref">7</span>. By default Luna tries to evaluate every node as soon as possible. There are sometimes situations, however, when you want to disable this behavior and refresh the scene on demand. The pause button allows stopping and resuming the interactive graph evaluation. The refresh button tells Luna to re-compute every value from scratch.
+* Controlling the graph evaluation engine <span class="uiref">7</span>. By default, Luna tries to evaluate every node as soon as possible. Sometimes there are situations, however, when you want to disable this behavior and refresh the scene on demand. The pause button allows stopping and resuming the interactive graph evaluation. The refresh button tells Luna to re-compute every value from scratch.
 * Current status information <span class="uiref">8</span> displays information about what is currently computed and guides you when using tools. Currently, however, the information is very limited.

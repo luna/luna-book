@@ -10,10 +10,10 @@ Library is a set of modules shared by others for reuse in other projects. This i
 
 ## How to create a library?
 
-On the technical level library does not differ at all from an ordinary Luna project. It has the same structure as any other project. Maybe even some of the projects you've already created deserve to become publicly available libraries?
+On the technical level, library does not differ at all from an ordinary Luna project. It has the same structure as any other project. Maybe even some of the projects you've already created deserve to become publicly available libraries?
 
-From the design perspective, there are some things you need take into account when creating a library. In order for others to enjoy using it, put some thought into the basic usage patterns – what set of functionalities is really needed and how do the functionalities compose? Think about the classes you define – do they encompass well the usage you intend for the library?
-If yes – congratulations, your project is a library! Publish it and encourage others to use it. Also, let us know, we love to learn about awesome things happening in the community!
+From the design perspective, there are some things you need take into account when creating a library. In order for others to enjoy using it, put some thought into the basic usage patterns – what set of functionalities is really needed and how do the functionalities compose? Think about the classes you define – do they encompass the usage well, that you intend for the library?
+If yes – congratulations, your project is a library! Publish it and encourage others to use it. Also, let us know. We love to learn about awesome things happening in the community!
 
 ## How to use a library?
 

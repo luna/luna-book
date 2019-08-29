@@ -37,4 +37,4 @@ Let's try doing something clearly nonsensical: adding a text and a number. This 
 
 ![](assets/tc_error.png)
 
-Luna's typechecker has found out about our mistake. The `+` function works only with arguments of the same type, so it complained that `Real` and `Text` are not the same and we cannot safely proceed.
+Luna's typechecker has discovered our mistake. The `+` function works only with arguments of the same type, so it complained that `Real` and `Text` are not the same and we cannot safely proceed.

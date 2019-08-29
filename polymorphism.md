@@ -2,7 +2,7 @@
 
 ## Type parameters
 
-Classes in Luna can also take type parameters, making them polymorphic in some values. For an example, consider the previous definition of `Vector`:
+Classes in Luna can also take type parameters, making them polymorphic for some values. For an example, consider the previous definition of `Vector`:
 
 ```haskell
 class Vector:

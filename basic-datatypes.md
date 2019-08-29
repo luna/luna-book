@@ -35,7 +35,7 @@ The basic type for text processing in Luna is, unsurprisingly, `Text`. Luna supp
 
 Logical values are represented using the `Bool` class. It has two constructors: `True` and `False`. They support basic logical combinators such as `&&`, `||` or `not`.
 
- The most common function used for conditional branching in Luna is `if_then_else`. It can be used in this form (i.e. `if_then_else condition valueWhenTrue valueWhenFalse`) or, more elegantly, in its _mixfix_ form:
+The most common function used for conditional branching in Luna is `if_then_else`. It can be used in this form (i.e. `if_then_else condition valueWhenTrue valueWhenFalse`) or, more elegantly, in its _mixfix_ form:
 
 ```ruby
 if condition then valueWhenTrue else valueWhenFalse
@@ -55,7 +55,7 @@ def reportRelationshipToSeven x:
 
 The most basic container types in Luna are tuples and lists.
 
-Lists are arbitrary–length containers for same-type values. Some examples are `[3, 4, 5]` of type `List Int` or `['first', 'second', 'third']` of type ``List Text``. There are also some interesting functions and methods in the standard library, that return lists of desired shape – make sure to go through the available methods using the Explorer. Some examples are:
+Lists are arbitrary–length containers for same-type values. Some examples are `[3, 4, 5]` of type `List Int` or `['first', 'second', 'third']` of type `List Text`. There are also some interesting functions and methods in the standard library that return lists of a desired shape – make sure to go through the available methods using the Explorer. Some examples are:
 
 ```ruby
 1.upto 5                       # => [1, 2, 3, 4, 5]
@@ -85,4 +85,4 @@ reportedValue = case myNumber of
     Nothing -> 'Did not get a number.'
 print reportedValue
 ```
-There is also a bunch of useful methods like `getWithDefault`, which are handy to replace the pattern match in most cases. Consult Explorer for more details.
+There are also a bunch of useful methods like `getWithDefault`, which are handy for replacing the pattern match in most cases. Consult Explorer for more details.
